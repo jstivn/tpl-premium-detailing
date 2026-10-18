@@ -1540,7 +1540,7 @@ Shopify.SignInWithShop.User.recognized = false;</script>
 </script>
 <script>(()=>{var d="shopify:webmcp_adapter_loaded",n=Symbol.for("shopify.webmcp_adapter_loading");function s(c,a,{win:r=window,doc:o=document}={}){function p(){try{return r.localStorage.getItem(d)==="true"}catch{return!1}}function l(){try{r.localStorage.setItem(d,"true")}catch{}}function u(){return typeof(o.modelContext||r.navigator?.modelContext)?.registerTool=="function"}function f(){if(r[n]||!u())return;let t=o.head||o.getElementsByTagName("head")[0];if(!t)return;let e=o.createElement("script");e.type="module",e.crossOrigin="anonymous",a&&(e.integrity=a),e.src=c,e.addEventListener("load",l,{once:!0}),e.addEventListener("error",()=>{r[n]=!1},{once:!0}),t.appendChild(e),r[n]=!0}function _(t){let e=o.getElementById("shopify-origin-trials");if(!e||r.__shopifyOriginTrialsDone){t();return}e.addEventListener("load",t,{once:!0}),e.addEventListener("error",t,{once:!0})}function i(){_(()=>r.setTimeout(f,0))}function m(){o.addEventListener("DOMContentLoaded",i,{once:!0})}p()?i():m()}s("\/\/premiumcardetailing.ch\/cdn\/shopifycloud\/storefront\/assets\/storefront\/webmcp-f427de6a.js","sha256-ypGF+5vIq4Psw4WG7nsVtdd\/TCfsJWnrNuACdqLCElY=");})();
 </script>
-<script data-source-attribution="shopify.dynamic_checkout.dynamic.init">var Shopify=Shopify||{};Shopify.PaymentButton=Shopify.PaymentButton||{isStorefrontPortableWallets:!0,init:function(){window.Shopify.PaymentButton.init=function(){};var t=document.createElement("script");t.src="./assets/js/shopify-perf-kit-3.11.0.min.js",t.type="module",document.head.appendChild(t)}};
+<script data-source-attribution="shopify.dynamic_checkout.dynamic.init">var Shopify=Shopify||{};Shopify.PaymentButton=Shopify.PaymentButton||{isStorefrontPortableWallets:!0,init:function(){window.Shopify.PaymentButton.init=function(){};var t=document.createElement("script");t.src="https://premiumcardetailing.ch/cdn/shopifycloud/portable-wallets/latest/portable-wallets.en.js",t.type="module",document.head.appendChild(t)}};
 </script>
 <script data-source-attribution="shopify.dynamic_checkout.buyer_consent">
   function portableWalletsHideBuyerConsent(e){var t=document.getElementById("shopify-buyer-consent"),n=document.getElementById("shopify-subscription-policy-button");t&&n&&(t.classList.add("hidden"),t.setAttribute("aria-hidden","true"),n.removeEventListener("click",e))}function portableWalletsShowBuyerConsent(e){var t=document.getElementById("shopify-buyer-consent"),n=document.getElementById("shopify-subscription-policy-button");t&&n&&(t.classList.remove("hidden"),t.removeAttribute("aria-hidden"),n.addEventListener("click",e))}window.Shopify?.PaymentButton&&(window.Shopify.PaymentButton.hideBuyerConsent=portableWalletsHideBuyerConsent,window.Shopify.PaymentButton.showBuyerConsent=portableWalletsShowBuyerConsent);
@@ -1622,23 +1622,23 @@ Shopify.SignInWithShop.User.recognized = false;</script>
 
 
 
-  <script src='assets/js/pagefly-helper.js' defer='defer'></script>
+  <script src='./assets/js/pagefly-helper.js' defer='defer'></script>
 
-  <script src='assets/js/pagefly-general-helper.js' defer='defer'></script>
+  <script src='./assets/js/pagefly-general-helper.js' defer='defer'></script>
 
-  <script src='assets/js/pagefly-snap-slider.js' defer='defer'></script>
+  <script src='./assets/js/pagefly-snap-slider.js' defer='defer'></script>
 
-  <script src='assets/js/pagefly-slideshow-v3.js' defer='defer'></script>
+  <script src='./assets/js/pagefly-slideshow-v3.js' defer='defer'></script>
 
-  <script src='assets/js/pagefly-slideshow-v4.js' defer='defer'></script>
+  <script src='./assets/js/pagefly-slideshow-v4.js' defer='defer'></script>
 
-  <script src='assets/js/pagefly-glider.js' defer='defer'></script>
+  <script src='./assets/js/pagefly-glider.js' defer='defer'></script>
 
-  <script src='assets/js/pagefly-slideshow-v1-v2.js' defer='defer'></script>
+  <script src='./assets/js/pagefly-slideshow-v1-v2.js' defer='defer'></script>
 
-  <script src='assets/js/pagefly-product-media.js' defer='defer'></script>
+  <script src='./assets/js/pagefly-product-media.js' defer='defer'></script>
 
-  <script src='assets/js/pagefly-product.js' defer='defer'></script>
+  <script src='./assets/js/pagefly-product.js' defer='defer'></script>
 
 
 <script id='pagefly-helper-data' type='application/json'>
@@ -1736,7 +1736,7 @@ Shopify.SignInWithShop.User.recognized = false;</script>
 <script>
   window.__TREKKIE_SHIM_QUEUE = window.__TREKKIE_SHIM_QUEUE || [];
 </script>
-<script>(function(){var wpmLoader=function(){"use strict";var e=/Googlebot|Storebot-Google|bingbot|Baiduspider|YandexBot|DuckDuckBot|Slurp|facebookexternalhit|Twitterbot|LinkedInBot|Applebot|AdsBot-Google|Mediapartners-Google|APIs-Google|PetalBot|SemrushBot|AhrefsBot|MJ12bot|DotBot|Acunetix|PerplexityBot|Perplexity-User/i,t=/bytedance/i;function i(){try{var e=document.cookie;if(!e||"string"!=typeof e)return;for(var t=0,i=e.split(";");t<i.length;t++){var n=i[t],r=n.indexOf("=");if(-1!==r){var o=n.slice(0,r).trim();if(o){var a=void 0;try{a=decodeURIComponent(o)}catch(e){a=o}if("_shopify_s"===a){var d=n.slice(r+1).trim();try{return decodeURIComponent(d)}catch(e){return d}}}}}return}catch(e){return}}function n(e){try{"undefined"!=typeof console&&"function"==typeof console.warn&&console.warn(e)}catch(e){}}function r(e,t){return"string"==typeof e&&e.length>0&&e.length<=t?e:void 0}function o(e){var t;switch(null==(t=null==e?void 0:e.navigation)?void 0:t.type){case 0:return"navigate";case 1:return"reload";case 2:return"back_forward";default:return}}function a(){var e,t,i;try{var n=null==(i=null==(t=null==(e=self.ShopifyAnalytics)?void 0:e.lib)?void 0:t.trekkie)?void 0:i.state;return"awaiting-consent"===n||"initialized"===n?n:void 0}catch(e){return}}return function(d,s,u,l){var c=arguments.length>4&&void 0!==arguments[4]?arguments[4]:{};try{var p=c.trekkieShim;!0!==p&&"true"!==p||null!=window.__TREKKIE_SHIM_QUEUE||(window.__TREKKIE_SHIM_QUEUE=[])}catch(e){}var f,v,h,y,g=(v=(f={modern:/Edge?\/(1{2}[4-9]|1[2-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Firefox\/(1{2}[4-9]|1[2-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Chrom(ium|e)\/(9{2}|\d{3,})\.\d+(\.\d+|)|(Maci|X1{2}).+ Version\/(15\.\d+|(1[6-9]|[2-9]\d|\d{3,})\.\d+)([,.]\d+|)( \(\w+\)|)( Mobile\/\w+|) Safari\/|Chrome.+OPR\/(9{2}|\d{3,})\.\d+\.\d+|(CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS|CPU iPad OS)[ +]+(15[._]\d+|(1[6-9]|[2-9]\d|\d{3,})[._]\d+)([._]\d+|)|Android:?[ /-](14[89]|1[5-9]\d|[2-9]\d{2}|\d{4,})(\.\d+|)(\.\d+|)|Android.+Firefox\/(15\d|1[6-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+Chrom(ium|e)\/(14[89]|1[5-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|SamsungBrowser\/([2-9]\d|\d{3,})\.\d+/,legacy:/Edge?\/(1[6-9]|[2-9]\d|\d{3,})\.\d+(\.\d+|)|Firefox\/(5[4-9]|[6-9]\d|\d{3,})\.\d+(\.\d+|)|Chrom(ium|e)\/(5[1-9]|[6-9]\d|\d{3,})\.\d+(\.\d+|)([\d.]+$|.*Safari\/(?![\d.]+ Edge\/[\d.]+$))|(Maci|X1{2}).+ Version\/(10\.\d+|(1[1-9]|[2-9]\d|\d{3,})\.\d+)([,.]\d+|)( \(\w+\)|)( Mobile\/\w+|) Safari\/|Chrome.+OPR\/(3[89]|[4-9]\d|\d{3,})\.\d+\.\d+|(CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS|CPU iPad OS)[ +]+(10[._]\d+|(1[1-9]|[2-9]\d|\d{3,})[._]\d+)([._]\d+|)|Android:?[ /-](14[89]|1[5-9]\d|[2-9]\d{2}|\d{4,})(\.\d+|)(\.\d+|)|Mobile Safari.+OPR\/([89]\d|\d{3,})\.\d+\.\d+|Android.+Firefox\/(15\d|1[6-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+Chrom(ium|e)\/(14[89]|1[5-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+(UC? ?Browser|UCWEB|U3)[ /]?(15\.([5-9]|\d{2,})|(1[6-9]|[2-9]\d|\d{3,})\.\d+)\.\d+|SamsungBrowser\/(5\.\d+|([6-9]|\d{2,})\.\d+)|Android.+MQ{2}Browser\/(14(\.(9|\d{2,})|)|(1[5-9]|[2-9]\d|\d{3,})(\.\d+|))(\.\d+|)|K[Aa][Ii]OS\/(3\.\d+|([4-9]|\d{2,})\.\d+)(\.\d+|)/}).modern,h=f.legacy,(y=navigator.userAgent).match(e)?"bot":y.match(v)?"modern":y.match(h)?"legacy":y.match(t)?"bot":"unknown"),m=function(e){var t,i,n=r(e,128);try{var a=window.performance,d=null==(t=null==a?void 0:a.getEntriesByType)?void 0:t.call(a,"navigation")[0];if(!d)return{requestId:n,navigationType:o(a)};var s="type"in d?r(d.type,64):void 0,u="serverTiming"in d&&Array.isArray(d.serverTiming)?d.serverTiming:[];return{requestId:null!=n?n:r(null==(i=u.find(function(e){return"requestID"===e.name}))?void 0:i.description,128),navigationType:s}}catch(e){return{requestId:n}}}(c.requestId),w=function(e){var t=e.version,r=e.browserTarget,o=e.surface,a=e.shopId,d=e.monorailEndpoint,s=window.location.href;return{emit:function(e){var u=e.status,l=e.errorMsg,c=e.failureReason,p=e.useKeepaliveFallback,f=void 0!==p&&p,v=e.navigationType,h=e.pagehidePersisted,y=e.requestId,g=e.trekkieState;if(d){var m,w;try{var b=(new Date).getTime();m=JSON.stringify({metadata:{event_sent_at_ms:b},events:[{schema_id:"web_pixels_manager_load/3.3",payload:{version:t,bundle_target:r,page_url:s,status:u,surface:o,error_msg:l,failure_reason:c,navigation_type:v,pagehide_persisted:h,request_id:y,trekkie_state:g,shop_id:a,visit_token:i()},metadata:{event_created_at_ms:b}}]})}catch(e){return}try{if("function"==typeof window.navigator.sendBeacon&&-1===(w=window.navigator.userAgent).indexOf("iPhone; CPU iPhone OS 12_")&&-1===w.indexOf("iPad; CPU OS 12_")&&-1===w.indexOf("iPod touch; CPU iPhone OS 12_")&&window.navigator.sendBeacon.bind(window.navigator)(d,m))return}catch(e){}if(f)try{"function"==typeof window.fetch&&window.fetch(d,{method:"POST",headers:{"Content-Type":"text/plain"},body:m,keepalive:!0}).catch(function(){})}catch(e){}else try{var _=new XMLHttpRequest;_.open("POST",d,!0),_.setRequestHeader("Content-Type","text/plain"),_.send(m)}catch(e){n("[Web Pixels Manager] Got an unhandled error while logging to Monorail.")}}else n("[Web Pixels Manager] No Monorail endpoint provided, skipping logging.")}}}({version:u,browserTarget:g,surface:d.surface,shopId:d.shopId,monorailEndpoint:d.monorailEndpoint});if(Boolean(null==(_=null==(b=window.Shopify)?void 0:b.analytics)?void 0:_.replayQueue))w.emit({status:"setup-skipped",errorMsg:"replay queue already initialized."});else{var b,_;w.emit({status:"setup-started"}),window.Shopify=window.Shopify||{};var S=window.Shopify;S.analytics=S.analytics||{};var P=S.analytics;P.replayQueue=[],P.publish=function(e,t,i){return P.replayQueue.push([e,t,i]),!0};try{self.performance.mark("wpm:start")}catch(e){}var k,C="modern"===g?"modern":"legacy",E=(null!=l?l:{modern:"",legacy:""})[C],I=[(k={baseUrl:s,hashVersion:u,buildTarget:C}).baseUrl,"/wpm","/b",k.hashVersion,"modern"===k.buildTarget?"m":"l",".js"].join(""),O=!1,T=!1;try{c.browserTarget=g,function(){O=!0;try{window.addEventListener("pagehide",M)}catch(e){O=!1}}(),R(function(){try{R(x)}catch(e){D(e)}}),w.emit({status:"loading",requestId:m.requestId,navigationType:m.navigationType,trekkieState:a()})}catch(e){D(e)}}function U(){var e;if(q(),!function(){var e,t;return Boolean(null==(t=null==(e=window.Shopify)?void 0:e.analytics)?void 0:t.initialized)}()){var t,i,n;try{if("function"!=typeof(null==(e=window.webPixelsManager)?void 0:e.init))return void A();if(!(null!==(n=i=t=window.webPixelsManager.init(d))&&"function"!=typeof n&&Object(n)===n&&"publish"in i&&"function"==typeof i.publish&&"publishCustomEvent"in i&&"function"==typeof i.publishCustomEvent&&"visitor"in i&&"function"==typeof i.visitor))return void A()}catch(e){return void A(e)}var r=window.Shopify.analytics;r.replayQueue.forEach(function(e){var i=e[0],n=e[1],r=e[2];t.publishCustomEvent(i,n,r)}),r.replayQueue=[],r.publish=t.publishCustomEvent,r.visitor=t.visitor,r.initialized=!0}}function A(e){B("manager_api_unavailable",void 0===e?void 0:Q(e))}function x(){B("script_load_failed","".concat(I," has failed to load"))}function B(e,t){T||(T=!0,q(),w.emit({status:"failed",errorMsg:t,failureReason:e,requestId:m.requestId,navigationType:m.navigationType,trekkieState:a()}))}function M(e){O&&(q(),w.emit({status:"pagehide-while-loading",useKeepaliveFallback:!0,pagehidePersisted:e.persisted,requestId:m.requestId,navigationType:m.navigationType,trekkieState:a()}))}function q(){O=!1;try{window.removeEventListener("pagehide",M)}catch(e){}}function R(e){var t;!function(e){var t=e.src,i=e.async,n=void 0===i||i,r=e.onload,o=e.onerror,a=e.sri,d=e.scriptDataAttributes,s=void 0===d?{}:d,u=document.createElement("script"),l=document.querySelector("head"),c=document.querySelector("body");if(u.async=n,u.src=t,a&&(u.integrity=a,u.crossOrigin="anonymous"),s)for(var p in s)if(Object.prototype.hasOwnProperty.call(s,p))try{u.dataset[p]=String(s[p])}catch(e){}if(r&&u.addEventListener("load",r),o&&u.addEventListener("error",o),l)l.appendChild(u);else{if(!c)throw new Error("Did not find a head or body element to append the script");c.appendChild(u)}}({src:I,async:!0,onload:U,onerror:e,sri:(t=E,"string"==typeof t&&/^sha384-[A-Za-z0-9+/=]+$/.test(t)?E:""),scriptDataAttributes:c})}function D(e){B("script_append_failed",Q(e))}function Q(e){return e instanceof Error?e.message:"Unknown error"}}}();wpmLoader({shopId: 97663517019,storefrontBaseUrl: "https://premiumcardetailing.ch",extensionsBaseUrl: "https://extensions.shopifycdn.com/cdn/shopifycloud/web-pixels-manager",monorailEndpoint: "https://premiumcardetailing.ch/.well-known/shopify/monorail/unstable/produce_batch",surface: "storefront-renderer",enabledBetaFlags: ["4c64608a","16072cab"],webPixelsConfigList: [{"id":"shopify-app-pixel","configuration":"{}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"0530","apiClientId":"shopify-pixel","type":"APP","privacyPurposes":["ANALYTICS","MARKETING"]},{"id":"shopify-custom-pixel","eventPayloadVersion":"v1","runtimeContext":"LAX","scriptVersion":"0530","apiClientId":"shopify-pixel","type":"CUSTOM","privacyPurposes":["ANALYTICS","MARKETING"]}],isMerchantRequest: false,initData: {"shop":{"name":"Premium Car Detailing","paymentSettings":{"currencyCode":"CHF"},"myshopifyDomain":"scewz0-vu.myshopify.com","countryCode":"CH","storefrontUrl":"https:\/\/premiumcardetailing.ch"},"customer":null,"cart":null,"checkout":null,"productVariants":[],"products":[],"purchasingCompany":null},},"https://premiumcardetailing.ch/cdn","9f5e2762wb720532ap19708c42m93b2bec3",{"modern":"","legacy":""},{"trekkieShim":true,"agentContext":true,"apiClientId":"580111","facebookCapiEnabled":"false","themeId":"192995164507","themeStoreId":"2481","themePublished":"true","eventMetadataId":"13264929-741c-4f7c-b482-4253621a88ad","pageType":"page","resourceId":"157465543003","shopId":"97663517019","storefrontBaseUrl":"https:\/\/premiumcardetailing.ch","extensionBaseUrl":"https:\/\/extensions.shopifycdn.com\/cdn\/shopifycloud\/web-pixels-manager","surface":"storefront-renderer","enabledBetaFlags":"[\"4c64608a\", \"16072cab\"]","isMerchantRequest":"false","hashVersion":"9f5e2762wb720532ap19708c42m93b2bec3","publish":"custom","events":"[[\"page_viewed\",{}]]"});})();</script><script>
+<script>(function(){var wpmLoader=function(){"use strict";var e=/Googlebot|Storebot-Google|bingbot|Baiduspider|YandexBot|DuckDuckBot|Slurp|facebookexternalhit|Twitterbot|LinkedInBot|Applebot|AdsBot-Google|Mediapartners-Google|APIs-Google|PetalBot|SemrushBot|AhrefsBot|MJ12bot|DotBot|Acunetix|PerplexityBot|Perplexity-User/i,t=/bytedance/i;function i(){try{var e=document.cookie;if(!e||"string"!=typeof e)return;for(var t=0,i=e.split(";");t<i.length;t++){var n=i[t],r=n.indexOf("=");if(-1!==r){var o=n.slice(0,r).trim();if(o){var a=void 0;try{a=decodeURIComponent(o)}catch(e){a=o}if("_shopify_s"===a){var d=n.slice(r+1).trim();try{return decodeURIComponent(d)}catch(e){return d}}}}}return}catch(e){return}}function n(e){try{"undefined"!=typeof console&&"function"==typeof console.warn&&console.warn(e)}catch(e){}}function r(e,t){return"string"==typeof e&&e.length>0&&e.length<=t?e:void 0}function o(e){var t;switch(null==(t=null==e?void 0:e.navigation)?void 0:t.type){case 0:return"navigate";case 1:return"reload";case 2:return"back_forward";default:return}}function a(){var e,t,i;try{var n=null==(i=null==(t=null==(e=self.ShopifyAnalytics)?void 0:e.lib)?void 0:t.trekkie)?void 0:i.state;return"awaiting-consent"===n||"initialized"===n?n:void 0}catch(e){return}}return function(d,s,u,l){var c=arguments.length>4&&void 0!==arguments[4]?arguments[4]:{};try{var p=c.trekkieShim;!0!==p&&"true"!==p||null!=window.__TREKKIE_SHIM_QUEUE||(window.__TREKKIE_SHIM_QUEUE=[])}catch(e){}var f,v,h,y,g=(v=(f={modern:/Edge?\/(1{2}[4-9]|1[2-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Firefox\/(1{2}[4-9]|1[2-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Chrom(ium|e)\/(9{2}|\d{3,})\.\d+(\.\d+|)|(Maci|X1{2}).+ Version\/(15\.\d+|(1[6-9]|[2-9]\d|\d{3,})\.\d+)([,.]\d+|)( \(\w+\)|)( Mobile\/\w+|) Safari\/|Chrome.+OPR\/(9{2}|\d{3,})\.\d+\.\d+|(CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS|CPU iPad OS)[ +]+(15[._]\d+|(1[6-9]|[2-9]\d|\d{3,})[._]\d+)([._]\d+|)|Android:?[ /-](14[89]|1[5-9]\d|[2-9]\d{2}|\d{4,})(\.\d+|)(\.\d+|)|Android.+Firefox\/(15\d|1[6-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+Chrom(ium|e)\/(14[89]|1[5-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|SamsungBrowser\/([2-9]\d|\d{3,})\.\d+/,legacy:/Edge?\/(1[6-9]|[2-9]\d|\d{3,})\.\d+(\.\d+|)|Firefox\/(5[4-9]|[6-9]\d|\d{3,})\.\d+(\.\d+|)|Chrom(ium|e)\/(5[1-9]|[6-9]\d|\d{3,})\.\d+(\.\d+|)([\d.]+$|.*Safari\/(?![\d.]+ Edge\/[\d.]+$))|(Maci|X1{2}).+ Version\/(10\.\d+|(1[1-9]|[2-9]\d|\d{3,})\.\d+)([,.]\d+|)( \(\w+\)|)( Mobile\/\w+|) Safari\/|Chrome.+OPR\/(3[89]|[4-9]\d|\d{3,})\.\d+\.\d+|(CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS|CPU iPad OS)[ +]+(10[._]\d+|(1[1-9]|[2-9]\d|\d{3,})[._]\d+)([._]\d+|)|Android:?[ /-](14[89]|1[5-9]\d|[2-9]\d{2}|\d{4,})(\.\d+|)(\.\d+|)|Mobile Safari.+OPR\/([89]\d|\d{3,})\.\d+\.\d+|Android.+Firefox\/(15\d|1[6-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+Chrom(ium|e)\/(14[89]|1[5-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+(UC? ?Browser|UCWEB|U3)[ /]?(15\.([5-9]|\d{2,})|(1[6-9]|[2-9]\d|\d{3,})\.\d+)\.\d+|SamsungBrowser\/(5\.\d+|([6-9]|\d{2,})\.\d+)|Android.+MQ{2}Browser\/(14(\.(9|\d{2,})|)|(1[5-9]|[2-9]\d|\d{3,})(\.\d+|))(\.\d+|)|K[Aa][Ii]OS\/(3\.\d+|([4-9]|\d{2,})\.\d+)(\.\d+|)/}).modern,h=f.legacy,(y=navigator.userAgent).match(e)?"bot":y.match(v)?"modern":y.match(h)?"legacy":y.match(t)?"bot":"unknown"),m=function(e){var t,i,n=r(e,128);try{var a=window.performance,d=null==(t=null==a?void 0:a.getEntriesByType)?void 0:t.call(a,"navigation")[0];if(!d)return{requestId:n,navigationType:o(a)};var s="type"in d?r(d.type,64):void 0,u="serverTiming"in d&&Array.isArray(d.serverTiming)?d.serverTiming:[];return{requestId:null!=n?n:r(null==(i=u.find(function(e){return"requestID"===e.name}))?void 0:i.description,128),navigationType:s}}catch(e){return{requestId:n}}}(c.requestId),w=function(e){var t=e.version,r=e.browserTarget,o=e.surface,a=e.shopId,d=e.monorailEndpoint,s=window.location.href;return{emit:function(e){var u=e.status,l=e.errorMsg,c=e.failureReason,p=e.useKeepaliveFallback,f=void 0!==p&&p,v=e.navigationType,h=e.pagehidePersisted,y=e.requestId,g=e.trekkieState;if(d){var m,w;try{var b=(new Date).getTime();m=JSON.stringify({metadata:{event_sent_at_ms:b},events:[{schema_id:"web_pixels_manager_load/3.3",payload:{version:t,bundle_target:r,page_url:s,status:u,surface:o,error_msg:l,failure_reason:c,navigation_type:v,pagehide_persisted:h,request_id:y,trekkie_state:g,shop_id:a,visit_token:i()},metadata:{event_created_at_ms:b}}]})}catch(e){return}try{if("function"==typeof window.navigator.sendBeacon&&-1===(w=window.navigator.userAgent).indexOf("iPhone; CPU iPhone OS 12_")&&-1===w.indexOf("iPad; CPU OS 12_")&&-1===w.indexOf("iPod touch; CPU iPhone OS 12_")&&window.navigator.sendBeacon.bind(window.navigator)(d,m))return}catch(e){}if(f)try{"function"==typeof window.fetch&&window.fetch(d,{method:"POST",headers:{"Content-Type":"text/plain"},body:m,keepalive:!0}).catch(function(){})}catch(e){}else try{var _=new XMLHttpRequest;_.open("POST",d,!0),_.setRequestHeader("Content-Type","text/plain"),_.send(m)}catch(e){n("[Web Pixels Manager] Got an unhandled error while logging to Monorail.")}}else n("[Web Pixels Manager] No Monorail endpoint provided, skipping logging.")}}}({version:u,browserTarget:g,surface:d.surface,shopId:d.shopId,monorailEndpoint:d.monorailEndpoint});if(Boolean(null==(_=null==(b=window.Shopify)?void 0:b.analytics)?void 0:_.replayQueue))w.emit({status:"setup-skipped",errorMsg:"replay queue already initialized."});else{var b,_;w.emit({status:"setup-started"}),window.Shopify=window.Shopify||{};var S=window.Shopify;S.analytics=S.analytics||{};var P=S.analytics;P.replayQueue=[],P.publish=function(e,t,i){return P.replayQueue.push([e,t,i]),!0};try{self.performance.mark("wpm:start")}catch(e){}var k,C="modern"===g?"modern":"legacy",E=(null!=l?l:{modern:"",legacy:""})[C],I=[(k={baseUrl:s,hashVersion:u,buildTarget:C}).baseUrl,"/wpm","/b",k.hashVersion,"modern"===k.buildTarget?"m":"l",".js"].join(""),O=!1,T=!1;try{c.browserTarget=g,function(){O=!0;try{window.addEventListener("pagehide",M)}catch(e){O=!1}}(),R(function(){try{R(x)}catch(e){D(e)}}),w.emit({status:"loading",requestId:m.requestId,navigationType:m.navigationType,trekkieState:a()})}catch(e){D(e)}}function U(){var e;if(q(),!function(){var e,t;return Boolean(null==(t=null==(e=window.Shopify)?void 0:e.analytics)?void 0:t.initialized)}()){var t,i,n;try{if("function"!=typeof(null==(e=window.webPixelsManager)?void 0:e.init))return void A();if(!(null!==(n=i=t=window.webPixelsManager.init(d))&&"function"!=typeof n&&Object(n)===n&&"publish"in i&&"function"==typeof i.publish&&"publishCustomEvent"in i&&"function"==typeof i.publishCustomEvent&&"visitor"in i&&"function"==typeof i.visitor))return void A()}catch(e){return void A(e)}var r=window.Shopify.analytics;r.replayQueue.forEach(function(e){var i=e[0],n=e[1],r=e[2];t.publishCustomEvent(i,n,r)}),r.replayQueue=[],r.publish=t.publishCustomEvent,r.visitor=t.visitor,r.initialized=!0}}function A(e){B("manager_api_unavailable",void 0===e?void 0:Q(e))}function x(){B("script_load_failed","".concat(I," has failed to load"))}function B(e,t){T||(T=!0,q(),w.emit({status:"failed",errorMsg:t,failureReason:e,requestId:m.requestId,navigationType:m.navigationType,trekkieState:a()}))}function M(e){O&&(q(),w.emit({status:"pagehide-while-loading",useKeepaliveFallback:!0,pagehidePersisted:e.persisted,requestId:m.requestId,navigationType:m.navigationType,trekkieState:a()}))}function q(){O=!1;try{window.removeEventListener("pagehide",M)}catch(e){}}function R(e){var t;!function(e){var t=e.src,i=e.async,n=void 0===i||i,r=e.onload,o=e.onerror,a=e.sri,d=e.scriptDataAttributes,s=void 0===d?{}:d,u=document.createElement("script"),l=document.querySelector("head"),c=document.querySelector("body");if(u.async=n,u.src=t,a&&(u.integrity=a,u.crossOrigin="anonymous"),s)for(var p in s)if(Object.prototype.hasOwnProperty.call(s,p))try{u.dataset[p]=String(s[p])}catch(e){}if(r&&u.addEventListener("load",r),o&&u.addEventListener("error",o),l)l.appendChild(u);else{if(!c)throw new Error("Did not find a head or body element to append the script");c.appendChild(u)}}({src:I,async:!0,onload:U,onerror:e,sri:(t=E,"string"==typeof t&&/^sha384-[A-Za-z0-9+/=]+$/.test(t)?E:""),scriptDataAttributes:c})}function D(e){B("script_append_failed",Q(e))}function Q(e){return e instanceof Error?e.message:"Unknown error"}}}();wpmLoader({shopId: 97663517019,storefrontBaseUrl: "https://premiumcardetailing.ch",extensionsBaseUrl: "https://extensions.shopifycdn.com/cdn/shopifycloud/web-pixels-manager",monorailEndpoint: "#",surface: "storefront-renderer",enabledBetaFlags: ["4c64608a","16072cab"],webPixelsConfigList: [{"id":"shopify-app-pixel","configuration":"{}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"0530","apiClientId":"shopify-pixel","type":"APP","privacyPurposes":["ANALYTICS","MARKETING"]},{"id":"shopify-custom-pixel","eventPayloadVersion":"v1","runtimeContext":"LAX","scriptVersion":"0530","apiClientId":"shopify-pixel","type":"CUSTOM","privacyPurposes":["ANALYTICS","MARKETING"]}],isMerchantRequest: false,initData: {"shop":{"name":"Premium Car Detailing","paymentSettings":{"currencyCode":"CHF"},"myshopifyDomain":"scewz0-vu.myshopify.com","countryCode":"CH","storefrontUrl":"https:\/\/premiumcardetailing.ch"},"customer":null,"cart":null,"checkout":null,"productVariants":[],"products":[],"purchasingCompany":null},},"https://premiumcardetailing.ch/cdn","9f5e2762wb720532ap19708c42m93b2bec3",{"modern":"","legacy":""},{"trekkieShim":true,"agentContext":true,"apiClientId":"580111","facebookCapiEnabled":"false","themeId":"192995164507","themeStoreId":"2481","themePublished":"true","eventMetadataId":"13264929-741c-4f7c-b482-4253621a88ad","pageType":"page","resourceId":"157465543003","shopId":"97663517019","storefrontBaseUrl":"https:\/\/premiumcardetailing.ch","extensionBaseUrl":"https:\/\/extensions.shopifycdn.com\/cdn\/shopifycloud\/web-pixels-manager","surface":"storefront-renderer","enabledBetaFlags":"[\"4c64608a\", \"16072cab\"]","isMerchantRequest":"false","hashVersion":"9f5e2762wb720532ap19708c42m93b2bec3","publish":"custom","events":"[[\"page_viewed\",{}]]"});})();</script><script>
   window.ShopifyAnalytics = window.ShopifyAnalytics || {};
   window.ShopifyAnalytics.meta = window.ShopifyAnalytics.meta || {};
   window.ShopifyAnalytics.meta.currency = 'CHF';
@@ -1945,7 +1945,7 @@ first.parentNode.insertBefore(script, first);
   data-shs-beacon="true"
   data-shs-export-with-fetch="true"
   data-shs-logs-sample-rate="1"
-  data-shs-beacon-endpoint="https://premiumcardetailing.ch/api/collect"
+  data-shs-beacon-endpoint="#"
 ></script>
 <meta name="shopify-y" content="380fad6b-edec-4000-a8a4-eb79effd393d" data-expiration="1823885612000"><meta name="shopify-s" content="f06aec59-6d70-4ea7-99cf-8bf6f819a50f" data-expiration="1792329812000">
 </head>
@@ -3019,7 +3019,7 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
     <div class="ai-premium-hero-divider-aztc1thhwsytmntrqnaigenblock8de0d41rpkhxv"></div>
 
     
-      <p class="ai-premium-hero-subtitle-aztc1thhwsytmntrqnaigenblock8de0d41rpkhxv">Mobile Vehicle Detailing auf höchstem Niveau – direkt bei Ihnen vor Ort, tiefenrein und bis ins Detail perfektioniert.</p>
+      <p class="ai-premium-hero-subtitle-aztc1thhwsytmntrqnaigenblock8de0d41rpkhxv">Mobile vehicle detailing at the highest caliber – directly at your location, deep-cleaned and perfected down to the finest detail.</p>
     
 
     
@@ -3027,7 +3027,7 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
         href="#pakete"
         class="ai-premium-hero-button-aztc1thhwsytmntrqnaigenblock8de0d41rpkhxv"
       >
-        ZU DEN PAKETEN
+        VIEW PACKAGES
       </a>
     
   </div>
@@ -3041,7 +3041,7 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
     >
       
         <span class="ai-premium-hero-scroll-text-aztc1thhwsytmntrqnaigenblock8de0d41rpkhxv">
-          Mehr Infos
+          More Info
         </span>
       
 
@@ -3527,7 +3527,7 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
           </svg>
         </div>
         <h3 class="ai-how-it-works-card-title-ak3zjyxq3tupqanb3zaigenblock5a7b2efen77y7">We Come to You.</h3>
-        <p class="ai-how-it-works-card-text-ak3zjyxq3tupqanb3zaigenblock5a7b2efen77y7">Our fully equipped mobile service studio arrives directly at your location.</p>
+        <p class="ai-how-it-works-card-text-ak3zjyxq3tupqanb3zaigenblock5a7b2efen77y7">Our fully equipped mobile studio arrives directly at your location.</p>
       </div>
 
       <div class="ai-how-it-works-card-ak3zjyxq3tupqanb3zaigenblock5a7b2efen77y7">
@@ -3546,8 +3546,8 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
             <line x1="15" y1="6" x2="15" y2="7" stroke-width="2"></line>
           </svg>
         </div>
-        <h3 class="ai-how-it-works-card-title-ak3zjyxq3tupqanb3zaigenblock5a7b2efen77y7">Enjoy Your Spotless Vehicle.</h3>
-        <p class="ai-how-it-works-card-text-ak3zjyxq3tupqanb3zaigenblock5a7b2efen77y7">Relax – we take care of every detail.</p>
+        <h3 class="ai-how-it-works-card-title-ak3zjyxq3tupqanb3zaigenblock5a7b2efen77y7">Enjoy Your Pristine Vehicle.</h3>
+        <p class="ai-how-it-works-card-text-ak3zjyxq3tupqanb3zaigenblock5a7b2efen77y7">Relax – we take care of every microscopic detail.</p>
       </div>
     </div>
   </div>
@@ -3713,7 +3713,7 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
 
     <div class="pov-slider-wrap-template--28044026478939mobiledetailingpovhgm4wb">
       <button class="pov-mobile-arrow-template--28044026478939mobiledetailingpovhgm4wb pov-mobile-arrow-left-template--28044026478939mobiledetailingpovhgm4wb" type="button" data-pov-prev aria-label="Beforeiges Video">‹</button>
-      <button class="pov-mobile-arrow-template--28044026478939mobiledetailingpovhgm4wb pov-mobile-arrow-right-template--28044026478939mobiledetailingpovhgm4wb" type="button" data-pov-next aria-label="Nächstes Video">›</button>
+      <button class="pov-mobile-arrow-template--28044026478939mobiledetailingpovhgm4wb pov-mobile-arrow-right-template--28044026478939mobiledetailingpovhgm4wb" type="button" data-pov-next aria-label="Next Video">›</button>
 
       <div class="pov-grid-template--28044026478939mobiledetailingpovhgm4wb">
         
@@ -3745,7 +3745,7 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
 
               
                 <p class="pov-text-template--28044026478939mobiledetailingpovhgm4wb">
-                  Precise work down to the smallest spaces
+                  Precise craftsmanship down to the tightest seams
                 </p>
               
             </div>
@@ -3762,7 +3762,7 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
 
               
                 <p class="pov-text-template--28044026478939mobiledetailingpovhgm4wb">
-                  Professional cleaning directly at your location
+                  Professional Detailing at Your Location
                 </p>
               
             </div>
@@ -4583,7 +4583,7 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
         Before
       </h3>
       <div class="ai-before-after-text-content-av0llmfriswrhcg83taigenblock9f67001ukqlnc" data-left-text>
-        Alltagsspuren, Staub und eingetragener Schmutz lassen den Innenraum ungepflegt wirken.
+        Everyday wear, dust, and accumulated grime leave your interior looking worn.
       </div>
     </div>
 
@@ -4655,7 +4655,7 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
         After
       </h3>
       <div class="ai-before-after-text-content-av0llmfriswrhcg83taigenblock9f67001ukqlnc" data-right-text>
-        Tiefengereinigt, aufgefrischt und sichtbar gepflegter bis ins Detail.
+        Deep-cleansed, rejuvenated, and noticeably pristine down to the finest seam.
       </div>
     </div>
   </div>
@@ -4672,10 +4672,10 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
           this.startPosition = 50;
           this.slideTexts = [
             { leftHeading: "Before", leftText: "Alltagsspuren, Staub und eingetragener Schmutz lassen den Innenraum ungepflegt wirken.", rightHeading: "After", rightText: "Tiefengereinigt, aufgefrischt und sichtbar gepflegter bis ins Detail." },
-            { leftHeading: "Before", leftText: "Staub, Schmutz und Rückstände sammeln sich tief in Teppichen und Kofferraumflächen.", rightHeading: "After", rightText: "Saubere Fasern und präzise Reinigung bringen den gepflegten Look zurück" },
-            { leftHeading: "Before", leftText: "Verschmutzte Türverkleidungen und matte Oberflächen lassen den Innenraum ungepflegt wirken.", rightHeading: "After", rightText: "Gründlich gereinigte Oberflächen sorgen für einen sichtbar frischeren Innenraum." },
+            { leftHeading: "Before", leftText: "Dust, grime, and debris accumulate deep inside carpets and trunk upholstery.", rightHeading: "After", rightText: "Decontaminated fibers and deep steam extraction restore the original factory look." },
+            { leftHeading: "Before", leftText: "Soiled door panels and faded surfaces make the interior feel tired and worn.", rightHeading: "After", rightText: "Thoroughly sanitized and dressed surfaces create a visibly cleaner, showroom-fresh interior." },
             { leftHeading: "Before", leftText: "Ablagerungen und Schmutz sammeln sich tief in engen Kanten und schwer erreichbaren Bereichen.", rightHeading: "After", rightText: "Detailliert gereinigt bis in die engsten Stellen — selbst versteckte Bereiche wirken wieder gepflegt." },
-            { leftHeading: "Before", leftText: "Alltag, Wetter und Waschanlagen hinterlassen sichtbare Spuren.", rightHeading: "After", rightText: "Mehr Glanz, mehr Schutz und ein Ergebnis, das sofort auffällt." }
+            { leftHeading: "Before", leftText: "Everyday driving, weather, and automated car washes leave visible micro-scratches.", rightHeading: "After", rightText: "Greater gloss, impenetrable protection, and a showroom transformation that turns heads." }
           ];
         }
 
@@ -4899,7 +4899,7 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
     <div class="social-premium-header-template--28044026478939socialmediapremiume3maar">
       <p>Premium Car Detailing</p>
       <h2>Follow Us on Social Media</h2>
-      <span>Mehr Einblicke, Before-After Results und aktuelle Arbeiten direkt auf Instagram und TikTok.</span>
+      <span>More behind-the-scenes insights, before-and-after results, and recent transformations on Instagram and TikTok.</span>
     </div>
 
     <div class="social-premium-grid-template--28044026478939socialmediapremiume3maar">
@@ -4908,7 +4908,7 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
         href="https://www.instagram.com/premiumcardetailing.ch?igsh=N2E5MWtoajdzamQx&utm_source=qr"
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="Instagram öffnen"
+        aria-label="Open Instagram"
       >
         <div class="social-premium-icon-template--28044026478939socialmediapremiume3maar">
           <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -4918,7 +4918,7 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
 
         <div>
           <strong>Instagram</strong>
-          <small>Before-After Bilder, Fahrzeugdetails und Premium Results.</small>
+          <small>Before-and-after imagery, vehicle highlights, and showroom results.</small>
         </div>
       </a>
 
@@ -4927,7 +4927,7 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
         href="https://www.tiktok.com/@premiumcardetailing.ch?_r=1&_t=ZN-92R38WCFDXS"
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="TikTok öffnen"
+        aria-label="Open TikTok"
       >
         <div class="social-premium-icon-template--28044026478939socialmediapremiume3maar">
           <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -4937,7 +4937,7 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
 
         <div>
           <strong>TikTok</strong>
-          <small>Kurze Clips, Transformationen und echte Einblicke in unsere Arbeit.</small>
+          <small>Short clips, transformations, and authentic insights into our craft.</small>
         </div>
       </a>
     </div>
@@ -5708,7 +5708,7 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
 
     <div class="ai-detailing-services-content-column-av0nianyrnevqck9ldaigenblockace78falegj9j">
       
-        <h2 class="ai-detailing-services-heading-av0nianyrnevqck9ldaigenblockace78falegj9j">Unsere Mobile Vehicle Detailing</h2>
+        <h2 class="ai-detailing-services-heading-av0nianyrnevqck9ldaigenblockace78falegj9j">Our Mobile Detailing Packages</h2>
       
 
       
@@ -5730,7 +5730,7 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
               </div>
 
               <div class="ai-detailing-service-text-av0nianyrnevqck9ldaigenblockace78falegj9j">
-                <h3 class="ai-detailing-service-title-av0nianyrnevqck9ldaigenblockace78falegj9j">Schonende Handwäsche</h3>
+                <h3 class="ai-detailing-service-title-av0nianyrnevqck9ldaigenblockace78falegj9j">Gentle Two-Bucket Hand Wash</h3>
                 
               </div>
             </div>
@@ -5750,7 +5750,7 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
               </div>
 
               <div class="ai-detailing-service-text-av0nianyrnevqck9ldaigenblockace78falegj9j">
-                <h3 class="ai-detailing-service-title-av0nianyrnevqck9ldaigenblockace78falegj9j">Innenraumreinigung</h3>
+                <h3 class="ai-detailing-service-title-av0nianyrnevqck9ldaigenblockace78falegj9j">Interior Deep Clean</h3>
                 
               </div>
             </div>
@@ -5771,7 +5771,7 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
               </div>
 
               <div class="ai-detailing-service-text-av0nianyrnevqck9ldaigenblockace78falegj9j">
-                <h3 class="ai-detailing-service-title-av0nianyrnevqck9ldaigenblockace78falegj9j">Felgen & Reifen</h3>
+                <h3 class="ai-detailing-service-title-av0nianyrnevqck9ldaigenblockace78falegj9j">Wheels & Tires</h3>
                 
               </div>
             </div>
@@ -5791,7 +5791,7 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
               </div>
 
               <div class="ai-detailing-service-text-av0nianyrnevqck9ldaigenblockace78falegj9j">
-                <h3 class="ai-detailing-service-title-av0nianyrnevqck9ldaigenblockace78falegj9j">Motorraumreinigung</h3>
+                <h3 class="ai-detailing-service-title-av0nianyrnevqck9ldaigenblockace78falegj9j">Engine Bay Detail</h3>
                 
               </div>
             </div>
@@ -6756,8 +6756,8 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
 <pricing-packages-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp id="pakete" class="ai-pricing-packages-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp" >
   <div class="ai-pricing-packages__container-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp">
     <div class="ai-pricing-packages__header-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp">
-      <h2 class="ai-pricing-packages__title-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp">Preise</h2>
-      <p class="ai-pricing-packages__subtitle-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp">Wählen Sie das passende Paket für Ihr Fahrzeug.</p>
+      <h2 class="ai-pricing-packages__title-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp">Pricing</h2>
+      <p class="ai-pricing-packages__subtitle-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp">Choose the ideal detailing package for your vehicle.</p>
     </div>
 
     <div class="ai-pricing-packages__grid-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp">
@@ -6787,10 +6787,10 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
         </div>
 
         <div class="ai-pricing-card__includes-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp">
-          <div class="ai-pricing-card__include-item-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp"><svg class="ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp--basic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Schonende Handwäsche</span></div>
-          <div class="ai-pricing-card__include-item-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp"><svg class="ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp--basic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Innenraum Absaugung</span></div>
-          <div class="ai-pricing-card__include-item-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp"><svg class="ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp--basic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Feuchtbehandlung der Oberflächen</span></div>
-          <div class="ai-pricing-card__include-item-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp"><svg class="ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp--basic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Glasreinigung Innen & Aussen</span></div>
+          <div class="ai-pricing-card__include-item-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp"><svg class="ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp--basic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Gentle Two-Bucket Hand Wash</span></div>
+          <div class="ai-pricing-card__include-item-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp"><svg class="ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp--basic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Deep Interior Vacuuming</span></div>
+          <div class="ai-pricing-card__include-item-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp"><svg class="ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp--basic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Damp Surface Treatment & Sanitization</span></div>
+          <div class="ai-pricing-card__include-item-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp"><svg class="ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp--basic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Interior & Exterior Glass Cleaning</span></div>
           
           
           
@@ -6799,18 +6799,18 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
           
         </div>
 
-        <p class="ai-pricing-card__duration-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp" data-duration-display="basic">2.5 Stunden</p>
+        <p class="ai-pricing-card__duration-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp" data-duration-display="basic">~2.5 Hours</p>
 
         <div class="ai-pricing-card__price-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp">
           <p class="ai-pricing-card__price-label-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp"></p>
           <div>
             <span class="ai-pricing-card__price-amount-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp" data-price-display="basic">200</span>
-            <span class="ai-pricing-card__price-currency-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp">CHF</span>
+            <span class="ai-pricing-card__price-currency-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp">USD ($)</span>
           </div>
         </div>
 
         <a href="tel:+41 79 311 83 82" class="ai-pricing-card__button-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp ai-pricing-card__button-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp--basic">
-          Buche Jetzt
+          Book Now
         </a>
       </div>
 
@@ -6840,30 +6840,30 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
         </div>
 
         <div class="ai-pricing-card__includes-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp">
-          <div class="ai-pricing-card__include-item-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp"><svg class="ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp--premium" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Schonende Handwäsche</span></div>
-          <div class="ai-pricing-card__include-item-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp"><svg class="ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp--premium" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Reifenglanz</span></div>
-          <div class="ai-pricing-card__include-item-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp"><svg class="ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp--premium" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Lackbehandlung mit Sprühversieglung</span></div>
-          <div class="ai-pricing-card__include-item-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp"><svg class="ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp--premium" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Türfalz & Tankdeckelreinigung</span></div>
-          <div class="ai-pricing-card__include-item-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp"><svg class="ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp--premium" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Fussmattenreinigung</span></div>
-          <div class="ai-pricing-card__include-item-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp"><svg class="ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp--premium" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Fusspedalenreinigung</span></div>
-          <div class="ai-pricing-card__include-item-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp"><svg class="ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp--premium" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Teppichbehandlung mit Tornador & Saugen</span></div>
-          <div class="ai-pricing-card__include-item-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp"><svg class="ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp--premium" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Polsterreinigung & Pflege</span></div>
-          <div class="ai-pricing-card__include-item-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp"><svg class="ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp--premium" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Lederreinigung & Pflege</span></div>
+          <div class="ai-pricing-card__include-item-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp"><svg class="ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp--premium" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Gentle Two-Bucket Hand Wash</span></div>
+          <div class="ai-pricing-card__include-item-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp"><svg class="ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp--premium" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Satin Tire Dressing</span></div>
+          <div class="ai-pricing-card__include-item-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp"><svg class="ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp--premium" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Paint Finish with Spray Ceramic Sealant</span></div>
+          <div class="ai-pricing-card__include-item-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp"><svg class="ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp--premium" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Door Jamb & Fuel Flap Decontamination</span></div>
+          <div class="ai-pricing-card__include-item-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp"><svg class="ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp--premium" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Floor Mat Deep Shampoo</span></div>
+          <div class="ai-pricing-card__include-item-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp"><svg class="ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp--premium" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Foot Pedal Decontamination</span></div>
+          <div class="ai-pricing-card__include-item-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp"><svg class="ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp--premium" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Tornador Pneumatic Carpet Extraction & Vacuuming</span></div>
+          <div class="ai-pricing-card__include-item-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp"><svg class="ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp--premium" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Upholstery Deep Extraction & Care</span></div>
+          <div class="ai-pricing-card__include-item-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp"><svg class="ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp--premium" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Leather Cleansing & Deep Conditioning</span></div>
           
         </div>
 
-        <p class="ai-pricing-card__duration-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp" data-duration-display="premium">4.5 Stunden</p>
+        <p class="ai-pricing-card__duration-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp" data-duration-display="premium">~4.5 Hours</p>
 
         <div class="ai-pricing-card__price-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp">
           <p class="ai-pricing-card__price-label-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp"></p>
           <div>
             <span class="ai-pricing-card__price-amount-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp" data-price-display="premium">470</span>
-            <span class="ai-pricing-card__price-currency-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp">CHF</span>
+            <span class="ai-pricing-card__price-currency-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp">USD ($)</span>
           </div>
         </div>
 
         <a href="tel:+41 79 311 83 82" class="ai-pricing-card__button-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp ai-pricing-card__button-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp--premium">
-          Buche Jetzt
+          Book Now
         </a>
       </div>
 
@@ -6896,30 +6896,30 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
         </div>
 
         <div class="ai-pricing-card__includes-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp">
-          <div class="ai-pricing-card__include-item-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp"><svg class="ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp--elite" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Schonende Handwäsche</span></div>
-          <div class="ai-pricing-card__include-item-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp"><svg class="ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp--elite" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Innenraum Absaugung</span></div>
-          <div class="ai-pricing-card__include-item-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp"><svg class="ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp--elite" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Fussmattenreinigung</span></div>
-          <div class="ai-pricing-card__include-item-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp"><svg class="ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp--elite" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Lackbehandlung mit Sprühversieglung</span></div>
-          <div class="ai-pricing-card__include-item-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp"><svg class="ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp--elite" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Polsterreinigung & Pflege</span></div>
-          <div class="ai-pricing-card__include-item-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp"><svg class="ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp--elite" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Lederreinigung & Pflege</span></div>
-          <div class="ai-pricing-card__include-item-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp"><svg class="ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp--elite" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Kunststoffreinigung & Pflege</span></div>
-          <div class="ai-pricing-card__include-item-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp"><svg class="ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp--elite" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Glassreinigung Innen & Aussen</span></div>
+          <div class="ai-pricing-card__include-item-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp"><svg class="ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp--elite" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Gentle Two-Bucket Hand Wash</span></div>
+          <div class="ai-pricing-card__include-item-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp"><svg class="ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp--elite" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Deep Interior Vacuuming</span></div>
+          <div class="ai-pricing-card__include-item-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp"><svg class="ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp--elite" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Floor Mat Deep Shampoo</span></div>
+          <div class="ai-pricing-card__include-item-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp"><svg class="ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp--elite" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Paint Finish with Spray Ceramic Sealant</span></div>
+          <div class="ai-pricing-card__include-item-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp"><svg class="ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp--elite" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Upholstery Deep Extraction & Care</span></div>
+          <div class="ai-pricing-card__include-item-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp"><svg class="ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp--elite" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Leather Cleansing & Deep Conditioning</span></div>
+          <div class="ai-pricing-card__include-item-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp"><svg class="ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp--elite" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Plastics Cleaning & UV Conditioning</span></div>
+          <div class="ai-pricing-card__include-item-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp"><svg class="ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp ai-pricing-card__check-icon-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp--elite" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Interior & Exterior Glass Cleaning</span></div>
           
           
         </div>
 
-        <p class="ai-pricing-card__duration-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp" data-duration-display="elite">3 Stunden</p>
+        <p class="ai-pricing-card__duration-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp" data-duration-display="elite">~3 Hours</p>
 
         <div class="ai-pricing-card__price-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp">
           <p class="ai-pricing-card__price-label-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp"></p>
           <div>
-            <span class="ai-pricing-card__price-amount-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp" data-price-display="elite">ab 370</span>
-            <span class="ai-pricing-card__price-currency-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp">CHF</span>
+            <span class="ai-pricing-card__price-amount-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp" data-price-display="elite">from $370</span>
+            <span class="ai-pricing-card__price-currency-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp">USD ($)</span>
           </div>
         </div>
 
         <a href="tel:+41 79 311 83 82" class="ai-pricing-card__button-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp ai-pricing-card__button-as3zrouovzza4l0rwnaigenblock3e7f4fcxbqgpp--elite">
-          Buche Jetzt
+          Book Now
         </a>
       </div>
     </div>
@@ -6969,9 +6969,9 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
         };
 
         this.packageNames = {
-          basic: 'BRONZE Refresh Package',
-          premium: 'GOLD Full Concierge Package',
-          elite: 'SILVER Detail Package'
+          basic: 'BRONZE Refresh Paket',
+          premium: 'GOLD Full Paket',
+          elite: 'SILVER Detail Paket'
         };
 
         this.sizeNames = {
@@ -7031,8 +7031,8 @@ const sizeShortName = size.toUpperCase();
 
 const message =
   'Hallo Premium Car Detailing 👋\n\n' +
-  'Ich interessiere mich für:\n\n' +
-  'Paket: ' + packageShortName + ' - Größe ' + sizeShortName + '\n' +
+  'I am interested in:\n\n' +
+  'Package: ' + packageShortName + ' - Size ' + sizeShortName + '\n' +
   'Preis: CHF ' + price + '\n' +
   'Dauer: ' + duration + '\n\n' +
   'Fahrzeug:\n' +
@@ -7434,11 +7434,11 @@ const message =
       class="floating-whatsapp-main-template--28044026478939floatingwhatsappctayl4ggm"
       type="button"
       data-whatsapp-main
-      aria-label="WhatsApp Anfrage öffnen"
+      aria-label="Open WhatsApp Inquiry"
       data-phone="+41 79 311 83 82"
       data-message="Hallo Premium Car Detailing 👋
 
-Ich hätte kurz eine Frage zur mobilen Fahrzeugaufbereitung."
+I have a quick question regarding your mobile vehicle detailing service."
     >
       <span class="floating-whatsapp-icon-template--28044026478939floatingwhatsappctayl4ggm" data-whatsapp-icon>
         <svg viewBox="0 0 32 32" aria-hidden="true">
@@ -7447,7 +7447,7 @@ Ich hätte kurz eine Frage zur mobilen Fahrzeugaufbereitung."
       </span>
 
       <span class="floating-whatsapp-text-template--28044026478939floatingwhatsappctayl4ggm" data-whatsapp-rotating-text>
-        Fragen?
+        Questions?
       </span>
     </button>
   </div>
@@ -8112,7 +8112,7 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
             </a>
           
           
-            <a href="gallery.html" class="ai-footer-link-aq1nmnctpbnu3tgrgraigenblockdb846c94map9q">
+            <a href="gallery-before-after.html" class="ai-footer-link-aq1nmnctpbnu3tgrgraigenblockdb846c94map9q">
               Gallery
             </a>
           
@@ -8126,7 +8126,7 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
 
       <div class="ai-footer-column-aq1nmnctpbnu3tgrgraigenblockdb846c94map9q">
         
-          <h4 class="ai-footer-heading-aq1nmnctpbnu3tgrgraigenblockdb846c94map9q">Legal & Info</h4>
+          <h4 class="ai-footer-heading-aq1nmnctpbnu3tgrgraigenblockdb846c94map9q">Legal & Information</h4>
         
         <nav class="ai-footer-links-aq1nmnctpbnu3tgrgraigenblockdb846c94map9q">
           
@@ -8163,7 +8163,7 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
               <svg class="ai-footer-contact-icon-aq1nmnctpbnu3tgrgraigenblockdb846c94map9q" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
               </svg>
-              <span>info@premiumcardetailing.ch</span>
+              <span>info@premiumcardetailing.com</span>
             </div>
           
           
@@ -8182,7 +8182,7 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
               </svg>
-              <span>Rothrist</span>
+              <span>Mobile Headquarters</span>
             </div>
           
         </div>
@@ -8214,7 +8214,7 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
         </div>
         
         
-          <p class="ai-footer-trust-aq1nmnctpbnu3tgrgraigenblockdb846c94map9q">Premium certified detailing studio</p>
+          <p class="ai-footer-trust-aq1nmnctpbnu3tgrgraigenblockdb846c94map9q">Certified Mobile Detailing Studio</p>
         
       </div>
     </div>
@@ -8223,7 +8223,7 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
 
     <div class="ai-footer-bottom-aq1nmnctpbnu3tgrgraigenblockdb846c94map9q">
       <p class="ai-footer-copyright-aq1nmnctpbnu3tgrgraigenblockdb846c94map9q">
-        © 2025 Premium Car Detailing
+        © 2026 Premium Car Detailing
       </p>
       <p class="ai-footer-copyright-aq1nmnctpbnu3tgrgraigenblockdb846c94map9q">
         All rights reserved
@@ -8319,7 +8319,7 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
 >
   <span class="footer-utilities__text">
     &copy; 2026
-    <a href="/" title="">Premium Car Detailing</a>, <a target="_blank" rel="nofollow" href="https://www.shopify.com?utm_campaign=poweredby&amp;utm_medium=shopify&amp;utm_source=onlinestore">Powered by Shopify</a>
+    <a href="/" title="">Premium Car Detailing</a>, <a target="_blank" rel="nofollow" href="https://www.shopify.com?utm_campaign=poweredby&amp;utm_medium=shopify&amp;utm_source=onlinestore">Powered by Cloudflare</a>
 </span>
 </div>
 
@@ -8595,7 +8595,7 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
         
         
           <div class="predictive-search-results__no-results">
-            <p>No products found.</p>
+            <p>No services found.</p>
           </div>
         
       

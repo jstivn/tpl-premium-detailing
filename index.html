@@ -1540,7 +1540,7 @@ Shopify.SignInWithShop.User.recognized = false;</script>
 </script>
 <script>(()=>{var d="shopify:webmcp_adapter_loaded",n=Symbol.for("shopify.webmcp_adapter_loading");function s(c,a,{win:r=window,doc:o=document}={}){function p(){try{return r.localStorage.getItem(d)==="true"}catch{return!1}}function l(){try{r.localStorage.setItem(d,"true")}catch{}}function u(){return typeof(o.modelContext||r.navigator?.modelContext)?.registerTool=="function"}function f(){if(r[n]||!u())return;let t=o.head||o.getElementsByTagName("head")[0];if(!t)return;let e=o.createElement("script");e.type="module",e.crossOrigin="anonymous",a&&(e.integrity=a),e.src=c,e.addEventListener("load",l,{once:!0}),e.addEventListener("error",()=>{r[n]=!1},{once:!0}),t.appendChild(e),r[n]=!0}function _(t){let e=o.getElementById("shopify-origin-trials");if(!e||r.__shopifyOriginTrialsDone){t();return}e.addEventListener("load",t,{once:!0}),e.addEventListener("error",t,{once:!0})}function i(){_(()=>r.setTimeout(f,0))}function m(){o.addEventListener("DOMContentLoaded",i,{once:!0})}p()?i():m()}s("\/\/premiumcardetailing.ch\/cdn\/shopifycloud\/storefront\/assets\/storefront\/webmcp-f427de6a.js","sha256-ypGF+5vIq4Psw4WG7nsVtdd\/TCfsJWnrNuACdqLCElY=");})();
 </script>
-<script data-source-attribution="shopify.dynamic_checkout.dynamic.init">var Shopify=Shopify||{};Shopify.PaymentButton=Shopify.PaymentButton||{isStorefrontPortableWallets:!0,init:function(){window.Shopify.PaymentButton.init=function(){};var t=document.createElement("script");t.src="./assets/js/shopify-perf-kit-3.11.0.min.js",t.type="module",document.head.appendChild(t)}};
+<script data-source-attribution="shopify.dynamic_checkout.dynamic.init">var Shopify=Shopify||{};Shopify.PaymentButton=Shopify.PaymentButton||{isStorefrontPortableWallets:!0,init:function(){window.Shopify.PaymentButton.init=function(){};var t=document.createElement("script");t.src="https://premiumcardetailing.ch/cdn/shopifycloud/portable-wallets/latest/portable-wallets.en.js",t.type="module",document.head.appendChild(t)}};
 </script>
 <script data-source-attribution="shopify.dynamic_checkout.buyer_consent">
   function portableWalletsHideBuyerConsent(e){var t=document.getElementById("shopify-buyer-consent"),n=document.getElementById("shopify-subscription-policy-button");t&&n&&(t.classList.add("hidden"),t.setAttribute("aria-hidden","true"),n.removeEventListener("click",e))}function portableWalletsShowBuyerConsent(e){var t=document.getElementById("shopify-buyer-consent"),n=document.getElementById("shopify-subscription-policy-button");t&&n&&(t.classList.remove("hidden"),t.removeAttribute("aria-hidden"),n.addEventListener("click",e))}window.Shopify?.PaymentButton&&(window.Shopify.PaymentButton.hideBuyerConsent=portableWalletsHideBuyerConsent,window.Shopify.PaymentButton.showBuyerConsent=portableWalletsShowBuyerConsent);
@@ -1622,23 +1622,23 @@ Shopify.SignInWithShop.User.recognized = false;</script>
 
 
 
-  <script src='assets/js/pagefly-helper.js' defer='defer'></script>
+  <script src='./assets/js/pagefly-helper.js' defer='defer'></script>
 
-  <script src='assets/js/pagefly-general-helper.js' defer='defer'></script>
+  <script src='./assets/js/pagefly-general-helper.js' defer='defer'></script>
 
-  <script src='assets/js/pagefly-snap-slider.js' defer='defer'></script>
+  <script src='./assets/js/pagefly-snap-slider.js' defer='defer'></script>
 
-  <script src='assets/js/pagefly-slideshow-v3.js' defer='defer'></script>
+  <script src='./assets/js/pagefly-slideshow-v3.js' defer='defer'></script>
 
-  <script src='assets/js/pagefly-slideshow-v4.js' defer='defer'></script>
+  <script src='./assets/js/pagefly-slideshow-v4.js' defer='defer'></script>
 
-  <script src='assets/js/pagefly-glider.js' defer='defer'></script>
+  <script src='./assets/js/pagefly-glider.js' defer='defer'></script>
 
-  <script src='assets/js/pagefly-slideshow-v1-v2.js' defer='defer'></script>
+  <script src='./assets/js/pagefly-slideshow-v1-v2.js' defer='defer'></script>
 
-  <script src='assets/js/pagefly-product-media.js' defer='defer'></script>
+  <script src='./assets/js/pagefly-product-media.js' defer='defer'></script>
 
-  <script src='assets/js/pagefly-product.js' defer='defer'></script>
+  <script src='./assets/js/pagefly-product.js' defer='defer'></script>
 
 
 <script id='pagefly-helper-data' type='application/json'>
@@ -1736,7 +1736,7 @@ Shopify.SignInWithShop.User.recognized = false;</script>
 <script>
   window.__TREKKIE_SHIM_QUEUE = window.__TREKKIE_SHIM_QUEUE || [];
 </script>
-<script>(function(){var wpmLoader=function(){"use strict";var e=/Googlebot|Storebot-Google|bingbot|Baiduspider|YandexBot|DuckDuckBot|Slurp|facebookexternalhit|Twitterbot|LinkedInBot|Applebot|AdsBot-Google|Mediapartners-Google|APIs-Google|PetalBot|SemrushBot|AhrefsBot|MJ12bot|DotBot|Acunetix|PerplexityBot|Perplexity-User/i,t=/bytedance/i;function i(){try{var e=document.cookie;if(!e||"string"!=typeof e)return;for(var t=0,i=e.split(";");t<i.length;t++){var n=i[t],r=n.indexOf("=");if(-1!==r){var o=n.slice(0,r).trim();if(o){var a=void 0;try{a=decodeURIComponent(o)}catch(e){a=o}if("_shopify_s"===a){var d=n.slice(r+1).trim();try{return decodeURIComponent(d)}catch(e){return d}}}}}return}catch(e){return}}function n(e){try{"undefined"!=typeof console&&"function"==typeof console.warn&&console.warn(e)}catch(e){}}function r(e,t){return"string"==typeof e&&e.length>0&&e.length<=t?e:void 0}function o(e){var t;switch(null==(t=null==e?void 0:e.navigation)?void 0:t.type){case 0:return"navigate";case 1:return"reload";case 2:return"back_forward";default:return}}function a(){var e,t,i;try{var n=null==(i=null==(t=null==(e=self.ShopifyAnalytics)?void 0:e.lib)?void 0:t.trekkie)?void 0:i.state;return"awaiting-consent"===n||"initialized"===n?n:void 0}catch(e){return}}return function(d,s,u,l){var c=arguments.length>4&&void 0!==arguments[4]?arguments[4]:{};try{var p=c.trekkieShim;!0!==p&&"true"!==p||null!=window.__TREKKIE_SHIM_QUEUE||(window.__TREKKIE_SHIM_QUEUE=[])}catch(e){}var f,v,h,y,g=(v=(f={modern:/Edge?\/(1{2}[4-9]|1[2-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Firefox\/(1{2}[4-9]|1[2-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Chrom(ium|e)\/(9{2}|\d{3,})\.\d+(\.\d+|)|(Maci|X1{2}).+ Version\/(15\.\d+|(1[6-9]|[2-9]\d|\d{3,})\.\d+)([,.]\d+|)( \(\w+\)|)( Mobile\/\w+|) Safari\/|Chrome.+OPR\/(9{2}|\d{3,})\.\d+\.\d+|(CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS|CPU iPad OS)[ +]+(15[._]\d+|(1[6-9]|[2-9]\d|\d{3,})[._]\d+)([._]\d+|)|Android:?[ /-](14[89]|1[5-9]\d|[2-9]\d{2}|\d{4,})(\.\d+|)(\.\d+|)|Android.+Firefox\/(15\d|1[6-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+Chrom(ium|e)\/(14[89]|1[5-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|SamsungBrowser\/([2-9]\d|\d{3,})\.\d+/,legacy:/Edge?\/(1[6-9]|[2-9]\d|\d{3,})\.\d+(\.\d+|)|Firefox\/(5[4-9]|[6-9]\d|\d{3,})\.\d+(\.\d+|)|Chrom(ium|e)\/(5[1-9]|[6-9]\d|\d{3,})\.\d+(\.\d+|)([\d.]+$|.*Safari\/(?![\d.]+ Edge\/[\d.]+$))|(Maci|X1{2}).+ Version\/(10\.\d+|(1[1-9]|[2-9]\d|\d{3,})\.\d+)([,.]\d+|)( \(\w+\)|)( Mobile\/\w+|) Safari\/|Chrome.+OPR\/(3[89]|[4-9]\d|\d{3,})\.\d+\.\d+|(CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS|CPU iPad OS)[ +]+(10[._]\d+|(1[1-9]|[2-9]\d|\d{3,})[._]\d+)([._]\d+|)|Android:?[ /-](14[89]|1[5-9]\d|[2-9]\d{2}|\d{4,})(\.\d+|)(\.\d+|)|Mobile Safari.+OPR\/([89]\d|\d{3,})\.\d+\.\d+|Android.+Firefox\/(15\d|1[6-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+Chrom(ium|e)\/(14[89]|1[5-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+(UC? ?Browser|UCWEB|U3)[ /]?(15\.([5-9]|\d{2,})|(1[6-9]|[2-9]\d|\d{3,})\.\d+)\.\d+|SamsungBrowser\/(5\.\d+|([6-9]|\d{2,})\.\d+)|Android.+MQ{2}Browser\/(14(\.(9|\d{2,})|)|(1[5-9]|[2-9]\d|\d{3,})(\.\d+|))(\.\d+|)|K[Aa][Ii]OS\/(3\.\d+|([4-9]|\d{2,})\.\d+)(\.\d+|)/}).modern,h=f.legacy,(y=navigator.userAgent).match(e)?"bot":y.match(v)?"modern":y.match(h)?"legacy":y.match(t)?"bot":"unknown"),m=function(e){var t,i,n=r(e,128);try{var a=window.performance,d=null==(t=null==a?void 0:a.getEntriesByType)?void 0:t.call(a,"navigation")[0];if(!d)return{requestId:n,navigationType:o(a)};var s="type"in d?r(d.type,64):void 0,u="serverTiming"in d&&Array.isArray(d.serverTiming)?d.serverTiming:[];return{requestId:null!=n?n:r(null==(i=u.find(function(e){return"requestID"===e.name}))?void 0:i.description,128),navigationType:s}}catch(e){return{requestId:n}}}(c.requestId),w=function(e){var t=e.version,r=e.browserTarget,o=e.surface,a=e.shopId,d=e.monorailEndpoint,s=window.location.href;return{emit:function(e){var u=e.status,l=e.errorMsg,c=e.failureReason,p=e.useKeepaliveFallback,f=void 0!==p&&p,v=e.navigationType,h=e.pagehidePersisted,y=e.requestId,g=e.trekkieState;if(d){var m,w;try{var b=(new Date).getTime();m=JSON.stringify({metadata:{event_sent_at_ms:b},events:[{schema_id:"web_pixels_manager_load/3.3",payload:{version:t,bundle_target:r,page_url:s,status:u,surface:o,error_msg:l,failure_reason:c,navigation_type:v,pagehide_persisted:h,request_id:y,trekkie_state:g,shop_id:a,visit_token:i()},metadata:{event_created_at_ms:b}}]})}catch(e){return}try{if("function"==typeof window.navigator.sendBeacon&&-1===(w=window.navigator.userAgent).indexOf("iPhone; CPU iPhone OS 12_")&&-1===w.indexOf("iPad; CPU OS 12_")&&-1===w.indexOf("iPod touch; CPU iPhone OS 12_")&&window.navigator.sendBeacon.bind(window.navigator)(d,m))return}catch(e){}if(f)try{"function"==typeof window.fetch&&window.fetch(d,{method:"POST",headers:{"Content-Type":"text/plain"},body:m,keepalive:!0}).catch(function(){})}catch(e){}else try{var _=new XMLHttpRequest;_.open("POST",d,!0),_.setRequestHeader("Content-Type","text/plain"),_.send(m)}catch(e){n("[Web Pixels Manager] Got an unhandled error while logging to Monorail.")}}else n("[Web Pixels Manager] No Monorail endpoint provided, skipping logging.")}}}({version:u,browserTarget:g,surface:d.surface,shopId:d.shopId,monorailEndpoint:d.monorailEndpoint});if(Boolean(null==(_=null==(b=window.Shopify)?void 0:b.analytics)?void 0:_.replayQueue))w.emit({status:"setup-skipped",errorMsg:"replay queue already initialized."});else{var b,_;w.emit({status:"setup-started"}),window.Shopify=window.Shopify||{};var S=window.Shopify;S.analytics=S.analytics||{};var P=S.analytics;P.replayQueue=[],P.publish=function(e,t,i){return P.replayQueue.push([e,t,i]),!0};try{self.performance.mark("wpm:start")}catch(e){}var k,C="modern"===g?"modern":"legacy",E=(null!=l?l:{modern:"",legacy:""})[C],I=[(k={baseUrl:s,hashVersion:u,buildTarget:C}).baseUrl,"/wpm","/b",k.hashVersion,"modern"===k.buildTarget?"m":"l",".js"].join(""),O=!1,T=!1;try{c.browserTarget=g,function(){O=!0;try{window.addEventListener("pagehide",M)}catch(e){O=!1}}(),R(function(){try{R(x)}catch(e){D(e)}}),w.emit({status:"loading",requestId:m.requestId,navigationType:m.navigationType,trekkieState:a()})}catch(e){D(e)}}function U(){var e;if(q(),!function(){var e,t;return Boolean(null==(t=null==(e=window.Shopify)?void 0:e.analytics)?void 0:t.initialized)}()){var t,i,n;try{if("function"!=typeof(null==(e=window.webPixelsManager)?void 0:e.init))return void A();if(!(null!==(n=i=t=window.webPixelsManager.init(d))&&"function"!=typeof n&&Object(n)===n&&"publish"in i&&"function"==typeof i.publish&&"publishCustomEvent"in i&&"function"==typeof i.publishCustomEvent&&"visitor"in i&&"function"==typeof i.visitor))return void A()}catch(e){return void A(e)}var r=window.Shopify.analytics;r.replayQueue.forEach(function(e){var i=e[0],n=e[1],r=e[2];t.publishCustomEvent(i,n,r)}),r.replayQueue=[],r.publish=t.publishCustomEvent,r.visitor=t.visitor,r.initialized=!0}}function A(e){B("manager_api_unavailable",void 0===e?void 0:Q(e))}function x(){B("script_load_failed","".concat(I," has failed to load"))}function B(e,t){T||(T=!0,q(),w.emit({status:"failed",errorMsg:t,failureReason:e,requestId:m.requestId,navigationType:m.navigationType,trekkieState:a()}))}function M(e){O&&(q(),w.emit({status:"pagehide-while-loading",useKeepaliveFallback:!0,pagehidePersisted:e.persisted,requestId:m.requestId,navigationType:m.navigationType,trekkieState:a()}))}function q(){O=!1;try{window.removeEventListener("pagehide",M)}catch(e){}}function R(e){var t;!function(e){var t=e.src,i=e.async,n=void 0===i||i,r=e.onload,o=e.onerror,a=e.sri,d=e.scriptDataAttributes,s=void 0===d?{}:d,u=document.createElement("script"),l=document.querySelector("head"),c=document.querySelector("body");if(u.async=n,u.src=t,a&&(u.integrity=a,u.crossOrigin="anonymous"),s)for(var p in s)if(Object.prototype.hasOwnProperty.call(s,p))try{u.dataset[p]=String(s[p])}catch(e){}if(r&&u.addEventListener("load",r),o&&u.addEventListener("error",o),l)l.appendChild(u);else{if(!c)throw new Error("Did not find a head or body element to append the script");c.appendChild(u)}}({src:I,async:!0,onload:U,onerror:e,sri:(t=E,"string"==typeof t&&/^sha384-[A-Za-z0-9+/=]+$/.test(t)?E:""),scriptDataAttributes:c})}function D(e){B("script_append_failed",Q(e))}function Q(e){return e instanceof Error?e.message:"Unknown error"}}}();wpmLoader({shopId: 97663517019,storefrontBaseUrl: "https://premiumcardetailing.ch",extensionsBaseUrl: "https://extensions.shopifycdn.com/cdn/shopifycloud/web-pixels-manager",monorailEndpoint: "https://premiumcardetailing.ch/.well-known/shopify/monorail/unstable/produce_batch",surface: "storefront-renderer",enabledBetaFlags: ["4c64608a","16072cab"],webPixelsConfigList: [{"id":"shopify-app-pixel","configuration":"{}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"0530","apiClientId":"shopify-pixel","type":"APP","privacyPurposes":["ANALYTICS","MARKETING"]},{"id":"shopify-custom-pixel","eventPayloadVersion":"v1","runtimeContext":"LAX","scriptVersion":"0530","apiClientId":"shopify-pixel","type":"CUSTOM","privacyPurposes":["ANALYTICS","MARKETING"]}],isMerchantRequest: false,initData: {"shop":{"name":"Premium Car Detailing","paymentSettings":{"currencyCode":"CHF"},"myshopifyDomain":"scewz0-vu.myshopify.com","countryCode":"CH","storefrontUrl":"https:\/\/premiumcardetailing.ch"},"customer":null,"cart":null,"checkout":null,"productVariants":[],"products":[],"purchasingCompany":null},},"https://premiumcardetailing.ch/cdn","9f5e2762wb720532ap19708c42m93b2bec3",{"modern":"","legacy":""},{"trekkieShim":true,"agentContext":true,"apiClientId":"580111","facebookCapiEnabled":"false","themeId":"192995164507","themeStoreId":"2481","themePublished":"true","eventMetadataId":"c0a85fe0-a53a-4f89-a992-26b4d597133f","pageType":"home","shopId":"97663517019","storefrontBaseUrl":"https:\/\/premiumcardetailing.ch","extensionBaseUrl":"https:\/\/extensions.shopifycdn.com\/cdn\/shopifycloud\/web-pixels-manager","surface":"storefront-renderer","enabledBetaFlags":"[\"4c64608a\", \"16072cab\"]","isMerchantRequest":"false","hashVersion":"9f5e2762wb720532ap19708c42m93b2bec3","publish":"custom","events":"[[\"page_viewed\",{}]]"});})();</script><script>
+<script>(function(){var wpmLoader=function(){"use strict";var e=/Googlebot|Storebot-Google|bingbot|Baiduspider|YandexBot|DuckDuckBot|Slurp|facebookexternalhit|Twitterbot|LinkedInBot|Applebot|AdsBot-Google|Mediapartners-Google|APIs-Google|PetalBot|SemrushBot|AhrefsBot|MJ12bot|DotBot|Acunetix|PerplexityBot|Perplexity-User/i,t=/bytedance/i;function i(){try{var e=document.cookie;if(!e||"string"!=typeof e)return;for(var t=0,i=e.split(";");t<i.length;t++){var n=i[t],r=n.indexOf("=");if(-1!==r){var o=n.slice(0,r).trim();if(o){var a=void 0;try{a=decodeURIComponent(o)}catch(e){a=o}if("_shopify_s"===a){var d=n.slice(r+1).trim();try{return decodeURIComponent(d)}catch(e){return d}}}}}return}catch(e){return}}function n(e){try{"undefined"!=typeof console&&"function"==typeof console.warn&&console.warn(e)}catch(e){}}function r(e,t){return"string"==typeof e&&e.length>0&&e.length<=t?e:void 0}function o(e){var t;switch(null==(t=null==e?void 0:e.navigation)?void 0:t.type){case 0:return"navigate";case 1:return"reload";case 2:return"back_forward";default:return}}function a(){var e,t,i;try{var n=null==(i=null==(t=null==(e=self.ShopifyAnalytics)?void 0:e.lib)?void 0:t.trekkie)?void 0:i.state;return"awaiting-consent"===n||"initialized"===n?n:void 0}catch(e){return}}return function(d,s,u,l){var c=arguments.length>4&&void 0!==arguments[4]?arguments[4]:{};try{var p=c.trekkieShim;!0!==p&&"true"!==p||null!=window.__TREKKIE_SHIM_QUEUE||(window.__TREKKIE_SHIM_QUEUE=[])}catch(e){}var f,v,h,y,g=(v=(f={modern:/Edge?\/(1{2}[4-9]|1[2-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Firefox\/(1{2}[4-9]|1[2-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Chrom(ium|e)\/(9{2}|\d{3,})\.\d+(\.\d+|)|(Maci|X1{2}).+ Version\/(15\.\d+|(1[6-9]|[2-9]\d|\d{3,})\.\d+)([,.]\d+|)( \(\w+\)|)( Mobile\/\w+|) Safari\/|Chrome.+OPR\/(9{2}|\d{3,})\.\d+\.\d+|(CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS|CPU iPad OS)[ +]+(15[._]\d+|(1[6-9]|[2-9]\d|\d{3,})[._]\d+)([._]\d+|)|Android:?[ /-](14[89]|1[5-9]\d|[2-9]\d{2}|\d{4,})(\.\d+|)(\.\d+|)|Android.+Firefox\/(15\d|1[6-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+Chrom(ium|e)\/(14[89]|1[5-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|SamsungBrowser\/([2-9]\d|\d{3,})\.\d+/,legacy:/Edge?\/(1[6-9]|[2-9]\d|\d{3,})\.\d+(\.\d+|)|Firefox\/(5[4-9]|[6-9]\d|\d{3,})\.\d+(\.\d+|)|Chrom(ium|e)\/(5[1-9]|[6-9]\d|\d{3,})\.\d+(\.\d+|)([\d.]+$|.*Safari\/(?![\d.]+ Edge\/[\d.]+$))|(Maci|X1{2}).+ Version\/(10\.\d+|(1[1-9]|[2-9]\d|\d{3,})\.\d+)([,.]\d+|)( \(\w+\)|)( Mobile\/\w+|) Safari\/|Chrome.+OPR\/(3[89]|[4-9]\d|\d{3,})\.\d+\.\d+|(CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS|CPU iPad OS)[ +]+(10[._]\d+|(1[1-9]|[2-9]\d|\d{3,})[._]\d+)([._]\d+|)|Android:?[ /-](14[89]|1[5-9]\d|[2-9]\d{2}|\d{4,})(\.\d+|)(\.\d+|)|Mobile Safari.+OPR\/([89]\d|\d{3,})\.\d+\.\d+|Android.+Firefox\/(15\d|1[6-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+Chrom(ium|e)\/(14[89]|1[5-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+(UC? ?Browser|UCWEB|U3)[ /]?(15\.([5-9]|\d{2,})|(1[6-9]|[2-9]\d|\d{3,})\.\d+)\.\d+|SamsungBrowser\/(5\.\d+|([6-9]|\d{2,})\.\d+)|Android.+MQ{2}Browser\/(14(\.(9|\d{2,})|)|(1[5-9]|[2-9]\d|\d{3,})(\.\d+|))(\.\d+|)|K[Aa][Ii]OS\/(3\.\d+|([4-9]|\d{2,})\.\d+)(\.\d+|)/}).modern,h=f.legacy,(y=navigator.userAgent).match(e)?"bot":y.match(v)?"modern":y.match(h)?"legacy":y.match(t)?"bot":"unknown"),m=function(e){var t,i,n=r(e,128);try{var a=window.performance,d=null==(t=null==a?void 0:a.getEntriesByType)?void 0:t.call(a,"navigation")[0];if(!d)return{requestId:n,navigationType:o(a)};var s="type"in d?r(d.type,64):void 0,u="serverTiming"in d&&Array.isArray(d.serverTiming)?d.serverTiming:[];return{requestId:null!=n?n:r(null==(i=u.find(function(e){return"requestID"===e.name}))?void 0:i.description,128),navigationType:s}}catch(e){return{requestId:n}}}(c.requestId),w=function(e){var t=e.version,r=e.browserTarget,o=e.surface,a=e.shopId,d=e.monorailEndpoint,s=window.location.href;return{emit:function(e){var u=e.status,l=e.errorMsg,c=e.failureReason,p=e.useKeepaliveFallback,f=void 0!==p&&p,v=e.navigationType,h=e.pagehidePersisted,y=e.requestId,g=e.trekkieState;if(d){var m,w;try{var b=(new Date).getTime();m=JSON.stringify({metadata:{event_sent_at_ms:b},events:[{schema_id:"web_pixels_manager_load/3.3",payload:{version:t,bundle_target:r,page_url:s,status:u,surface:o,error_msg:l,failure_reason:c,navigation_type:v,pagehide_persisted:h,request_id:y,trekkie_state:g,shop_id:a,visit_token:i()},metadata:{event_created_at_ms:b}}]})}catch(e){return}try{if("function"==typeof window.navigator.sendBeacon&&-1===(w=window.navigator.userAgent).indexOf("iPhone; CPU iPhone OS 12_")&&-1===w.indexOf("iPad; CPU OS 12_")&&-1===w.indexOf("iPod touch; CPU iPhone OS 12_")&&window.navigator.sendBeacon.bind(window.navigator)(d,m))return}catch(e){}if(f)try{"function"==typeof window.fetch&&window.fetch(d,{method:"POST",headers:{"Content-Type":"text/plain"},body:m,keepalive:!0}).catch(function(){})}catch(e){}else try{var _=new XMLHttpRequest;_.open("POST",d,!0),_.setRequestHeader("Content-Type","text/plain"),_.send(m)}catch(e){n("[Web Pixels Manager] Got an unhandled error while logging to Monorail.")}}else n("[Web Pixels Manager] No Monorail endpoint provided, skipping logging.")}}}({version:u,browserTarget:g,surface:d.surface,shopId:d.shopId,monorailEndpoint:d.monorailEndpoint});if(Boolean(null==(_=null==(b=window.Shopify)?void 0:b.analytics)?void 0:_.replayQueue))w.emit({status:"setup-skipped",errorMsg:"replay queue already initialized."});else{var b,_;w.emit({status:"setup-started"}),window.Shopify=window.Shopify||{};var S=window.Shopify;S.analytics=S.analytics||{};var P=S.analytics;P.replayQueue=[],P.publish=function(e,t,i){return P.replayQueue.push([e,t,i]),!0};try{self.performance.mark("wpm:start")}catch(e){}var k,C="modern"===g?"modern":"legacy",E=(null!=l?l:{modern:"",legacy:""})[C],I=[(k={baseUrl:s,hashVersion:u,buildTarget:C}).baseUrl,"/wpm","/b",k.hashVersion,"modern"===k.buildTarget?"m":"l",".js"].join(""),O=!1,T=!1;try{c.browserTarget=g,function(){O=!0;try{window.addEventListener("pagehide",M)}catch(e){O=!1}}(),R(function(){try{R(x)}catch(e){D(e)}}),w.emit({status:"loading",requestId:m.requestId,navigationType:m.navigationType,trekkieState:a()})}catch(e){D(e)}}function U(){var e;if(q(),!function(){var e,t;return Boolean(null==(t=null==(e=window.Shopify)?void 0:e.analytics)?void 0:t.initialized)}()){var t,i,n;try{if("function"!=typeof(null==(e=window.webPixelsManager)?void 0:e.init))return void A();if(!(null!==(n=i=t=window.webPixelsManager.init(d))&&"function"!=typeof n&&Object(n)===n&&"publish"in i&&"function"==typeof i.publish&&"publishCustomEvent"in i&&"function"==typeof i.publishCustomEvent&&"visitor"in i&&"function"==typeof i.visitor))return void A()}catch(e){return void A(e)}var r=window.Shopify.analytics;r.replayQueue.forEach(function(e){var i=e[0],n=e[1],r=e[2];t.publishCustomEvent(i,n,r)}),r.replayQueue=[],r.publish=t.publishCustomEvent,r.visitor=t.visitor,r.initialized=!0}}function A(e){B("manager_api_unavailable",void 0===e?void 0:Q(e))}function x(){B("script_load_failed","".concat(I," has failed to load"))}function B(e,t){T||(T=!0,q(),w.emit({status:"failed",errorMsg:t,failureReason:e,requestId:m.requestId,navigationType:m.navigationType,trekkieState:a()}))}function M(e){O&&(q(),w.emit({status:"pagehide-while-loading",useKeepaliveFallback:!0,pagehidePersisted:e.persisted,requestId:m.requestId,navigationType:m.navigationType,trekkieState:a()}))}function q(){O=!1;try{window.removeEventListener("pagehide",M)}catch(e){}}function R(e){var t;!function(e){var t=e.src,i=e.async,n=void 0===i||i,r=e.onload,o=e.onerror,a=e.sri,d=e.scriptDataAttributes,s=void 0===d?{}:d,u=document.createElement("script"),l=document.querySelector("head"),c=document.querySelector("body");if(u.async=n,u.src=t,a&&(u.integrity=a,u.crossOrigin="anonymous"),s)for(var p in s)if(Object.prototype.hasOwnProperty.call(s,p))try{u.dataset[p]=String(s[p])}catch(e){}if(r&&u.addEventListener("load",r),o&&u.addEventListener("error",o),l)l.appendChild(u);else{if(!c)throw new Error("Did not find a head or body element to append the script");c.appendChild(u)}}({src:I,async:!0,onload:U,onerror:e,sri:(t=E,"string"==typeof t&&/^sha384-[A-Za-z0-9+/=]+$/.test(t)?E:""),scriptDataAttributes:c})}function D(e){B("script_append_failed",Q(e))}function Q(e){return e instanceof Error?e.message:"Unknown error"}}}();wpmLoader({shopId: 97663517019,storefrontBaseUrl: "https://premiumcardetailing.ch",extensionsBaseUrl: "https://extensions.shopifycdn.com/cdn/shopifycloud/web-pixels-manager",monorailEndpoint: "#",surface: "storefront-renderer",enabledBetaFlags: ["4c64608a","16072cab"],webPixelsConfigList: [{"id":"shopify-app-pixel","configuration":"{}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"0530","apiClientId":"shopify-pixel","type":"APP","privacyPurposes":["ANALYTICS","MARKETING"]},{"id":"shopify-custom-pixel","eventPayloadVersion":"v1","runtimeContext":"LAX","scriptVersion":"0530","apiClientId":"shopify-pixel","type":"CUSTOM","privacyPurposes":["ANALYTICS","MARKETING"]}],isMerchantRequest: false,initData: {"shop":{"name":"Premium Car Detailing","paymentSettings":{"currencyCode":"CHF"},"myshopifyDomain":"scewz0-vu.myshopify.com","countryCode":"CH","storefrontUrl":"https:\/\/premiumcardetailing.ch"},"customer":null,"cart":null,"checkout":null,"productVariants":[],"products":[],"purchasingCompany":null},},"https://premiumcardetailing.ch/cdn","9f5e2762wb720532ap19708c42m93b2bec3",{"modern":"","legacy":""},{"trekkieShim":true,"agentContext":true,"apiClientId":"580111","facebookCapiEnabled":"false","themeId":"192995164507","themeStoreId":"2481","themePublished":"true","eventMetadataId":"c0a85fe0-a53a-4f89-a992-26b4d597133f","pageType":"home","shopId":"97663517019","storefrontBaseUrl":"https:\/\/premiumcardetailing.ch","extensionBaseUrl":"https:\/\/extensions.shopifycdn.com\/cdn\/shopifycloud\/web-pixels-manager","surface":"storefront-renderer","enabledBetaFlags":"[\"4c64608a\", \"16072cab\"]","isMerchantRequest":"false","hashVersion":"9f5e2762wb720532ap19708c42m93b2bec3","publish":"custom","events":"[[\"page_viewed\",{}]]"});})();</script><script>
   window.ShopifyAnalytics = window.ShopifyAnalytics || {};
   window.ShopifyAnalytics.meta = window.ShopifyAnalytics.meta || {};
   window.ShopifyAnalytics.meta.currency = 'CHF';
@@ -1945,7 +1945,7 @@ first.parentNode.insertBefore(script, first);
   data-shs-beacon="true"
   data-shs-export-with-fetch="true"
   data-shs-logs-sample-rate="1"
-  data-shs-beacon-endpoint="https://premiumcardetailing.ch/api/collect"
+  data-shs-beacon-endpoint="#"
 ></script>
 <meta name="shopify-y" content="8546fd71-7d3c-40b1-b2ec-2356ad17de7f" data-expiration="1823885611000"><meta name="shopify-s" content="b65c56ee-36a2-4c2b-8043-fd589ea729c7" data-expiration="1792329811000">
 </head>
@@ -3171,10 +3171,10 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
             href="#"
             class="ai-premium-hero-scroll-hint-atdfly2e5mdhdk2e0daigenblock0233fb3madzwa"
             data-hero-scroll-hint
-            aria-label="Our Services"
+            aria-label="Our Signature Services"
           >
             <span class="ai-premium-hero-scroll-label-atdfly2e5mdhdk2e0daigenblock0233fb3madzwa">
-              Our Services
+              Our Signature Services
             </span>
 
             <svg class="ai-premium-hero-scroll-icon-atdfly2e5mdhdk2e0daigenblock0233fb3madzwa" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 166 118" fill="none">
@@ -3208,11 +3208,11 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
                   
 
                   
-                    <div class="ai-premium-hero-card-text-atdfly2e5mdhdk2e0daigenblock0233fb3madzwa">Professionelle Aufbereitung direkt bei Ihnen vor Ort – für neuen Glanz, geschützte Oberflächen und ein sichtbar gepflegtes Fahrzeug ohne Umwege.</div>
+                    <div class="ai-premium-hero-card-text-atdfly2e5mdhdk2e0daigenblock0233fb3madzwa">Professional detailing directly at your location – for showroom gloss, shielded surfaces, and an immaculate vehicle with zero logistical hassle.</div>
                   
 
                   
-                    <span class="ai-premium-hero-card-cta-atdfly2e5mdhdk2e0daigenblock0233fb3madzwa">Mehr erfahren</span>
+                    <span class="ai-premium-hero-card-cta-atdfly2e5mdhdk2e0daigenblock0233fb3madzwa">Learn More</span>
                   
                 </div>
 
@@ -3241,11 +3241,11 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
                   
 
                   
-                    <div class="ai-premium-hero-card-text-atdfly2e5mdhdk2e0daigenblock0233fb3madzwa">Mehrstufige Lackveredelung mit maximaler Tiefenwirkung und dauerhaftem Schutz – für ein edles Finish, weniger Pflegeaufwand und langanhaltenden Werterhal.</div>
+                    <div class="ai-premium-hero-card-text-atdfly2e5mdhdk2e0daigenblock0233fb3madzwa">Multi-stage paint refinement with maximum optical depth and lasting ceramic defense – for a bespoke finish, easier maintenance, and long-term value.</div>
                   
 
                   
-                    <span class="ai-premium-hero-card-cta-atdfly2e5mdhdk2e0daigenblock0233fb3madzwa">Mehr erfahren</span>
+                    <span class="ai-premium-hero-card-cta-atdfly2e5mdhdk2e0daigenblock0233fb3madzwa">Learn More</span>
                   
                 </div>
 
@@ -3274,11 +3274,11 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
                   
 
                   
-                    <div class="ai-premium-hero-card-text-atdfly2e5mdhdk2e0daigenblock0233fb3madzwa">Präziser Austausch mit sauberer Verarbeitung und hochwertigem Ergebnis – für klare Sicht, sichere Funktion und einen professionellen Gesamtzustand Ihres Fahrzeugs.</div>
+                    <div class="ai-premium-hero-card-text-atdfly2e5mdhdk2e0daigenblock0233fb3madzwa">Precise windshield replacement with immaculate workmanship – for clear visibility, factory safety sensor function, and complete peace of mind.</div>
                   
 
                   
-                    <span class="ai-premium-hero-card-cta-atdfly2e5mdhdk2e0daigenblock0233fb3madzwa">Mehr erfahren</span>
+                    <span class="ai-premium-hero-card-cta-atdfly2e5mdhdk2e0daigenblock0233fb3madzwa">Learn More</span>
                   
                 </div>
 
@@ -3295,10 +3295,10 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
               href="#"
               class="ai-premium-hero-bottom-scroll-hint-atdfly2e5mdhdk2e0daigenblock0233fb3madzwa"
               data-hero-bottom-scroll
-              aria-label="More Info"
+              aria-label="More Details"
             >
               <span class="ai-premium-hero-bottom-scroll-label-atdfly2e5mdhdk2e0daigenblock0233fb3madzwa">
-                More Info
+                More Details
               </span>
 
               <svg class="ai-premium-hero-bottom-scroll-icon-atdfly2e5mdhdk2e0daigenblock0233fb3madzwa" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 166 118" fill="none">
@@ -3922,7 +3922,7 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
 
     <div class="pov-slider-wrap-template--28044024349019mobiledetailingpovcand6p">
       <button class="pov-mobile-arrow-template--28044024349019mobiledetailingpovcand6p pov-mobile-arrow-left-template--28044024349019mobiledetailingpovcand6p" type="button" data-pov-prev aria-label="Beforeiges Video">‹</button>
-      <button class="pov-mobile-arrow-template--28044024349019mobiledetailingpovcand6p pov-mobile-arrow-right-template--28044024349019mobiledetailingpovcand6p" type="button" data-pov-next aria-label="Nächstes Video">›</button>
+      <button class="pov-mobile-arrow-template--28044024349019mobiledetailingpovcand6p pov-mobile-arrow-right-template--28044024349019mobiledetailingpovcand6p" type="button" data-pov-next aria-label="Next Video">›</button>
 
       <div class="pov-grid-template--28044024349019mobiledetailingpovcand6p">
         
@@ -3937,7 +3937,7 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
 
               
                 <p class="pov-text-template--28044024349019mobiledetailingpovcand6p">
-                  Professional detailing with a focus on quality, cleanliness, and perfection.
+                  Professional detailing with an uncompromising focus on quality, cleanliness, and precision.
                 </p>
               
             </div>
@@ -4792,7 +4792,7 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
         Before
       </h3>
       <div class="ai-before-after-text-content-anhpwwe53udkvwmuwnaigenblock9f67001bfkxrj" data-left-text>
-        Matt. Müde. Alltagsspuren. Schmutz, Wasserflecken und feine Kratzer nehmen dem Lack die Tiefe. Das Auto wirkt älter, als es ist.
+        Dull. Hazy. Everyday wear. Grime, water spots, and micro-scratches rob the clear coat of its optical depth, making the car look older than it is.
       </div>
     </div>
 
@@ -4855,7 +4855,7 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
         After
       </h3>
       <div class="ai-before-after-text-content-anhpwwe53udkvwmuwnaigenblock9f67001bfkxrj" data-right-text>
-        Spiegelnde Oberfläche. Tiefer Glanz. Perfekt aufbereitet, präzise veredelt und dauerhaft geschützt – jedes Detail sichtbar.
+        Mirror-like finish. Deep liquid gloss. Meticulously compounded, refined, and sealed with long-lasting ceramic defense.
       </div>
     </div>
   </div>
@@ -4871,11 +4871,11 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
           this.currentIndex = 0;
           this.startPosition = 50;
           this.slideTexts = [
-            { leftHeading: "Before", leftText: "Matt. Müde. Alltagsspuren. Schmutz, Wasserflecken und feine Kratzer nehmen dem Lack die Tiefe. Das Auto wirkt älter, als es ist.", rightHeading: "After", rightText: "Spiegelnde Oberfläche. Tiefer Glanz. Perfekt aufbereitet, präzise veredelt und dauerhaft geschützt – jedes Detail sichtbar." },
+            { leftHeading: "Before", leftText: "Dull. Hazy. Everyday wear. Grime, water spots, and micro-scratches rob the clear coat of its optical depth, making the car look older than it is.", rightHeading: "After", rightText: "Mirror-like surface. Deep liquid gloss. Perfectly compounded, meticulously refined, and shielded with lasting ceramic protection." },
             { leftHeading: "Before", leftText: "Alltagsspuren, Staub und eingetragener Schmutz lassen den Innenraum ungepflegt wirken.", rightHeading: "After", rightText: "Tiefengereinigt, aufgefrischt und sichtbar gepflegter bis ins Detail." },
-            { leftHeading: "Before", leftText: "Matte und verwitterte Scheinwerfer reduzieren die klare Optik des Fahrzeugs.", rightHeading: "After", rightText: "Aufbereitete Scheinwerfer wirken klarer, frischer und deutlich hochwertiger." },
-            { leftHeading: "Before", leftText: "Der Lack wirkt flach, unruhig und weniger gepflegt.", rightHeading: "After", rightText: "Tiefere Farbe, sauberer Glanz und ein spürbar edleres Erscheinungsbild." },
-            { leftHeading: "Before", leftText: "Alltag, Wetter und Waschanlagen hinterlassen sichtbare Spuren.", rightHeading: "After", rightText: "Mehr Glanz, mehr Schutz und ein Ergebnis, das sofort auffällt." }
+            { leftHeading: "Before", leftText: "Matte und verwitterte Headlight Restoration reduzieren die klare Optik des Fahrzeugs.", rightHeading: "After", rightText: "Aufbereitete Headlight Restoration wirken klarer, frischer und deutlich hochwertiger." },
+            { leftHeading: "Before", leftText: "The clear coat appears flat, hazy, and weathered.", rightHeading: "After", rightText: "Deeper optical color, mirror clarity, and a noticeably refined appearance." },
+            { leftHeading: "Before", leftText: "Everyday driving, weather, and automated car washes leave visible micro-scratches.", rightHeading: "After", rightText: "Greater gloss, impenetrable protection, and a showroom transformation that turns heads." }
           ];
         }
 
@@ -5597,7 +5597,7 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
     <div class="ai-detailing-services__section-avedkchhszws1mhiytaigenblock0b935f4cgbgwe">
       
         <h2 class="ai-detailing-services__section-title-avedkchhszws1mhiytaigenblock0b935f4cgbgwe">
-          Our Services
+          Our Signature Services
         </h2>
       
       <div class="ai-detailing-services__grid-avedkchhszws1mhiytaigenblock0b935f4cgbgwe">
@@ -5618,7 +5618,7 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
               Paint Correction & Ceramic Protection
             </h3>
             <p class="ai-detailing-services__card-description-avedkchhszws1mhiytaigenblock0b935f4cgbgwe">
-              Feine Lackkorrektur und hochwertiger Schutz für langanhaltende Results.
+              Precision paint correction and durable ceramic defense for long-lasting results.
             </p>
           </div>
         
@@ -5629,7 +5629,7 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
               Auto Glass Replacement
             </h3>
             <p class="ai-detailing-services__card-description-avedkchhszws1mhiytaigenblock0b935f4cgbgwe">
-              Professional replacement with exact fitting and modern sensor calibration.
+              Expert replacement with OEM precision fitting and digital sensor recalibration.
             </p>
           </div>
         
@@ -5653,10 +5653,10 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
               </svg>
             </div>
             <h3 class="ai-detailing-services__feature-title-avedkchhszws1mhiytaigenblock0b935f4cgbgwe">
-              Professional-Grade Products
+              Professional-Grade Chemistry
             </h3>
             <p class="ai-detailing-services__feature-text-avedkchhszws1mhiytaigenblock0b935f4cgbgwe">
-              We exclusively use premium products that have proven themselves in professional use.
+              We exclusively use proven, high-end laboratory chemistry certified for professional detailing.
             </p>
           </div>
         
@@ -5672,7 +5672,7 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
               Certified Detailing Protocols
             </h3>
             <p class="ai-detailing-services__feature-text-avedkchhszws1mhiytaigenblock0b935f4cgbgwe">
-              Our team works according to industry-leading standards and proven procedures.
+              Our technicians work according to industry-leading standards and clinically proven detailing protocols.
             </p>
           </div>
         
@@ -5686,7 +5686,7 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
               </svg>
             </div>
             <h3 class="ai-detailing-services__feature-title-avedkchhszws1mhiytaigenblock0b935f4cgbgwe">
-              Maximum Attention to Detail
+              Extreme Attention to Detail
             </h3>
             <p class="ai-detailing-services__feature-text-avedkchhszws1mhiytaigenblock0b935f4cgbgwe">
               Every surface is meticulously cleaned, conditioned, and protected.
@@ -5702,10 +5702,10 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
               </svg>
             </div>
             <h3 class="ai-detailing-services__feature-title-avedkchhszws1mhiytaigenblock0b935f4cgbgwe">
-              Results auf Premium-Niveau
+              Showroom-Level Results
             </h3>
             <p class="ai-detailing-services__feature-text-avedkchhszws1mhiytaigenblock0b935f4cgbgwe">
-              Showroom quality that not only meets the highest expectations, but exceeds them.
+              Showroom quality that doesn't just meet the highest expectations, but exceeds them.
             </p>
           </div>
         
@@ -5833,7 +5833,7 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
     <div class="social-premium-header-template--28044024349019socialmediapremiumh8nym7">
       <p>Premium Car Detailing</p>
       <h2>Follow Us on Social Media</h2>
-      <span>Mehr Einblicke, Before-After Results und aktuelle Arbeiten direkt auf Instagram und TikTok.</span>
+      <span>More behind-the-scenes insights, before-and-after results, and recent transformations on Instagram and TikTok.</span>
     </div>
 
     <div class="social-premium-grid-template--28044024349019socialmediapremiumh8nym7">
@@ -5842,7 +5842,7 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
         href="https://www.instagram.com/premiumcardetailing.ch?igsh=N2E5MWtoajdzamQx&utm_source=qr"
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="Instagram öffnen"
+        aria-label="Open Instagram"
       >
         <div class="social-premium-icon-template--28044024349019socialmediapremiumh8nym7">
           <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -5852,7 +5852,7 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
 
         <div>
           <strong>Instagram</strong>
-          <small>Before-After Bilder, Fahrzeugdetails und Premium Results.</small>
+          <small>Before-and-after imagery, vehicle highlights, and showroom results.</small>
         </div>
       </a>
 
@@ -5861,7 +5861,7 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
         href="https://www.tiktok.com/@premiumcardetailing.ch?_r=1&_t=ZN-92R38WCFDXS"
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="TikTok öffnen"
+        aria-label="Open TikTok"
       >
         <div class="social-premium-icon-template--28044024349019socialmediapremiumh8nym7">
           <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -5871,7 +5871,7 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
 
         <div>
           <strong>TikTok</strong>
-          <small>Kurze Clips, Transformationen und echte Einblicke in unsere Arbeit.</small>
+          <small>Short clips, transformations, and authentic insights into our craft.</small>
         </div>
       </a>
     </div>
@@ -7001,10 +7001,10 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
 
             <div class="ai-trust-bar-content-avy9xuktnetvcwmuxtaigenblockc17054djp9ing">
               
-                <div class="ai-trust-bar-headline-avy9xuktnetvcwmuxtaigenblockc17054djp9ing" data-trust-headline>5.0 ★ Bewertung</div>
+                <div class="ai-trust-bar-headline-avy9xuktnetvcwmuxtaigenblockc17054djp9ing" data-trust-headline>5.0 ★ Rating</div>
               
               
-                <div class="ai-trust-bar-subtext-avy9xuktnetvcwmuxtaigenblockc17054djp9ing">Verifizierte Kundenbewertungen</div>
+                <div class="ai-trust-bar-subtext-avy9xuktnetvcwmuxtaigenblockc17054djp9ing">Verified Client Reviews</div>
               
             </div>
           </div>
@@ -7027,10 +7027,10 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
 
             <div class="ai-trust-bar-content-avy9xuktnetvcwmuxtaigenblockc17054djp9ing">
               
-                <div class="ai-trust-bar-headline-avy9xuktnetvcwmuxtaigenblockc17054djp9ing" data-trust-headline>120+ zufriedene Kunden</div>
+                <div class="ai-trust-bar-headline-avy9xuktnetvcwmuxtaigenblockc17054djp9ing" data-trust-headline>120+ Satisfied Clients</div>
               
               
-                <div class="ai-trust-bar-subtext-avy9xuktnetvcwmuxtaigenblockc17054djp9ing">Schweizweit vertraut</div>
+                <div class="ai-trust-bar-subtext-avy9xuktnetvcwmuxtaigenblockc17054djp9ing">Nationally Trusted</div>
               
             </div>
           </div>
@@ -7051,10 +7051,10 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
 
             <div class="ai-trust-bar-content-avy9xuktnetvcwmuxtaigenblockc17054djp9ing">
               
-                <div class="ai-trust-bar-headline-avy9xuktnetvcwmuxtaigenblockc17054djp9ing" data-trust-headline>Premium Fahrzeugaufbereitung</div>
+                <div class="ai-trust-bar-headline-avy9xuktnetvcwmuxtaigenblockc17054djp9ing" data-trust-headline>Premium Vehicle Detailing</div>
               
               
-                <div class="ai-trust-bar-subtext-avy9xuktnetvcwmuxtaigenblockc17054djp9ing">Professionelle Detailarbeit</div>
+                <div class="ai-trust-bar-subtext-avy9xuktnetvcwmuxtaigenblockc17054djp9ing">Master Craftsmanship</div>
               
             </div>
           </div>
@@ -7077,10 +7077,10 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
 
             <div class="ai-trust-bar-content-avy9xuktnetvcwmuxtaigenblockc17054djp9ing">
               
-                <div class="ai-trust-bar-headline-avy9xuktnetvcwmuxtaigenblockc17054djp9ing" data-trust-headline>Mobile Service vor Ort</div>
+                <div class="ai-trust-bar-headline-avy9xuktnetvcwmuxtaigenblockc17054djp9ing" data-trust-headline>Mobile On-Site Service</div>
               
               
-                <div class="ai-trust-bar-subtext-avy9xuktnetvcwmuxtaigenblockc17054djp9ing">Bequem zu Ihnen</div>
+                <div class="ai-trust-bar-subtext-avy9xuktnetvcwmuxtaigenblockc17054djp9ing">Conveniently to You</div>
               
             </div>
           </div>
@@ -7627,15 +7627,15 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
   <div class="google-trust-container-template--28044024349019premiumgoogletrustv6xumg">
 
     <div class="google-trust-eyebrow-template--28044024349019premiumgoogletrustv6xumg">
-      Google Bewertungen
+      Google Reviews
     </div>
 
     <h2 class="google-trust-title-template--28044024349019premiumgoogletrustv6xumg">
-      Echte Stimmen. Echter Glanz.
+      Real Voices. Genuine Gloss.
     </h2>
 
     <p class="google-trust-text-template--28044024349019premiumgoogletrustv6xumg">
-      Unsere Kundenbewertungen sprechen für sich. Sehen Sie echte Erfahrungen direkt auf Google und gewinnen Sie einen transparenten Eindruck von unserer Arbeit.
+      Our client reviews speak for themselves. Read genuine feedback directly on Google and get a transparent look into our craftsmanship.
     </p>
 
     <div class="google-trust-stars-template--28044024349019premiumgoogletrustv6xumg" aria-label="5 Sterne Bewertung">
@@ -7686,12 +7686,12 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
 
             
               <div class="google-trust-preview-template--28044024349019premiumgoogletrustv6xumg">
-                Bewertung ansehen
+                View Review
               </div>
 
               <div class="google-trust-card-comment-template--28044024349019premiumgoogletrustv6xumg">
                 
-                  <p>“I believe the following pictures say more than many words. I can only recommend them to everyone. A company that understands its craft in every respect and is very friendly and courteous. A true role model that others should measure themselves against. Please keep it up.”</p>
+                  <p>“I believe the following pictures say more than many words. I can only recommend them to everyone. A company that understands its craft in every respect and is very friendly and courteous. A true benchmark that others should measure themselves against. Please keep it up.”</p>
                 
                 
                   <span class="google-trust-card-name-template--28044024349019premiumgoogletrustv6xumg">— HANS OESCH</span>
@@ -7739,7 +7739,7 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
 
             
               <div class="google-trust-preview-template--28044024349019premiumgoogletrustv6xumg">
-                Bewertung ansehen
+                View Review
               </div>
 
               <div class="google-trust-card-comment-template--28044024349019premiumgoogletrustv6xumg">
@@ -7792,15 +7792,15 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
 
             
               <div class="google-trust-preview-template--28044024349019premiumgoogletrustv6xumg">
-                Bewertung ansehen
+                View Review
               </div>
 
               <div class="google-trust-card-comment-template--28044024349019premiumgoogletrustv6xumg">
                 
-                  <p>“Fast and excellent windshield replacement.”</p>
+                  <p>“Fast and excellent windshield replacement on site.”</p>
                 
                 
-                  <span class="google-trust-card-name-template--28044024349019premiumgoogletrustv6xumg">— Google Kunde</span>
+                  <span class="google-trust-card-name-template--28044024349019premiumgoogletrustv6xumg">— Verified Google Client</span>
                 
               </div>
             
@@ -7845,15 +7845,15 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
 
             
               <div class="google-trust-preview-template--28044024349019premiumgoogletrustv6xumg">
-                Bewertung ansehen
+                View Review
               </div>
 
               <div class="google-trust-card-comment-template--28044024349019premiumgoogletrustv6xumg">
                 
-                  <p>“I had the pleasure of having my vehicle ceramic coated and double polished at Premium Car Detailing. The work was carried out with the highest precision and care. My car looks better than ever – the gloss and flawless finish are breathtaking. A true professional who has mastered his craft to perfection.”</p>
+                  <p>“I had the pleasure of having my vehicle ceramic coated and double polished at Premium Car Detailing. The work was carried out with the highest precision and care. My car looks better than ever – the gloss and flawless finish are breathtaking. A true master of his craft.”</p>
                 
                 
-                  <span class="google-trust-card-name-template--28044024349019premiumgoogletrustv6xumg">— Google Kunde</span>
+                  <span class="google-trust-card-name-template--28044024349019premiumgoogletrustv6xumg">— Verified Google Client</span>
                 
               </div>
             
@@ -7864,7 +7864,7 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
 
     
       <a
-        href="https://www.google.com/search?sca_esv=ae527b0439108df1&sxsrf=ANbL-n7jTdqxPY3glkgGHMNtqWEpsz_Dgw:1776603690984&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qOVS64WCCa8aBdKo9fiPyMwHoly51LDzV1-iUJ_F8NbqyZuYbTWgI6SU5HA8kzlz-ouAWxAn5EZ-OnQhmP3xO1yMK_ISR9JLufpsuUPSSBfNlD5MWDA%3D%3D&q=Premium+Car+Detailing+Reviews&sa=X&ved=2ahUKEwjznKG__PmTAxUo2wIHHRMGE7AQ0bkNegQIJBAH&biw=1523&bih=1270&dpr=1"
+        href="https://www.google.com/search?sca_esv=ae527b0439108df1&sxsrf=ANbL-n7jTdqxPY3glkgGHMNtqWEpsz_Dgw:1776603690984&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qOVS64WCCa8aBdKo9fiPyMwHoly51LDzV1-iUJ_F8NbqyZuYbTWgI6SU5HA8kzlz-ouAWxAn5EZ-OnQhmP3xO1yMK_ISR9JLufpsuUPSSBfNlD5MWDA%3D%3D&q=Premium+Car+Detailing+Rezensionen&sa=X&ved=2ahUKEwjznKG__PmTAxUo2wIHHRMGE7AQ0bkNegQIJBAH&biw=1523&bih=1270&dpr=1"
         class="google-trust-button-template--28044024349019premiumgoogletrustv6xumg"
         target="_blank"
         rel="noopener"
@@ -8296,7 +8296,7 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
           <h2 class="ai-faq-title-awwlxekrzu21tadvnaaigenblocke1ab6ca6qeywk">Frequently Asked Questions</h2>
         
         
-          <div class="ai-faq-subtitle-awwlxekrzu21tadvnaaigenblocke1ab6ca6qeywk">Alles, was Sie über unsere mobile Premium-Fahrzeugaufbereitung wissen müssen</div>
+          <div class="ai-faq-subtitle-awwlxekrzu21tadvnaaigenblocke1ab6ca6qeywk">Everything you need to know about our premium mobile vehicle detailing</div>
         
       </div>
     
@@ -8315,7 +8315,7 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
               aria-expanded="false"
               data-faq-button
             >
-              <span class="ai-faq-question-text-awwlxekrzu21tadvnaaigenblocke1ab6ca6qeywk">Wie funktioniert die mobile Fahrzeugaufbereitung?</span>
+              <span class="ai-faq-question-text-awwlxekrzu21tadvnaaigenblocke1ab6ca6qeywk">How does mobile vehicle detailing work?</span>
               <span class="ai-faq-icon-awwlxekrzu21tadvnaaigenblocke1ab6ca6qeywk">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                   <polyline points="6 9 12 15 18 9"></polyline>
@@ -8324,7 +8324,7 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
             </button>
             <div class="ai-faq-answer-wrapper-awwlxekrzu21tadvnaaigenblocke1ab6ca6qeywk" data-faq-answer>
               <div class="ai-faq-answer-awwlxekrzu21tadvnaaigenblocke1ab6ca6qeywk">
-                <p>We come directly to you – whether at home, at the office, or another location of your choice. Our fully equipped mobile unit brings everything: water, power, and professional equipment. You do not need to prepare anything.</p>
+                <p>We come directly to you – home, office, or private garage. Our self-contained mobile lab brings everything: deionized water, electric power, and professional studio gear. You need to prepare nothing.</p>
               </div>
             </div>
           </div>
@@ -8342,7 +8342,7 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
               aria-expanded="false"
               data-faq-button
             >
-              <span class="ai-faq-question-text-awwlxekrzu21tadvnaaigenblocke1ab6ca6qeywk">Muss ich Wasser oder Strom bereitstellen?</span>
+              <span class="ai-faq-question-text-awwlxekrzu21tadvnaaigenblocke1ab6ca6qeywk">Do I need to provide water or electricity?</span>
               <span class="ai-faq-icon-awwlxekrzu21tadvnaaigenblocke1ab6ca6qeywk">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                   <polyline points="6 9 12 15 18 9"></polyline>
@@ -8351,7 +8351,7 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
             </button>
             <div class="ai-faq-answer-wrapper-awwlxekrzu21tadvnaaigenblocke1ab6ca6qeywk" data-faq-answer>
               <div class="ai-faq-answer-awwlxekrzu21tadvnaaigenblocke1ab6ca6qeywk">
-                <p>No, that is not necessary. Our mobile setup is completely self-sufficient. We bring our own water supply and power source, allowing us to work anywhere – even without external hookups.</p>
+                <p>No, that is not necessary at all. Our mobile setup is 100% autonomous. We bring our own purified water reservoir and silent power generators, enabling us to work anywhere without external utility connections.</p>
               </div>
             </div>
           </div>
@@ -8369,7 +8369,7 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
               aria-expanded="false"
               data-faq-button
             >
-              <span class="ai-faq-question-text-awwlxekrzu21tadvnaaigenblocke1ab6ca6qeywk">Wie lange dauert eine Aufbereitung?</span>
+              <span class="ai-faq-question-text-awwlxekrzu21tadvnaaigenblocke1ab6ca6qeywk">How long does a detailing appointment take?</span>
               <span class="ai-faq-icon-awwlxekrzu21tadvnaaigenblocke1ab6ca6qeywk">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                   <polyline points="6 9 12 15 18 9"></polyline>
@@ -8378,7 +8378,7 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
             </button>
             <div class="ai-faq-answer-wrapper-awwlxekrzu21tadvnaaigenblocke1ab6ca6qeywk" data-faq-answer>
               <div class="ai-faq-answer-awwlxekrzu21tadvnaaigenblocke1ab6ca6qeywk">
-                <p>The duration depends on the selected service. A basic exterior detail takes approx. 2–3 hours; a full interior and exterior reconditioning with machine polish takes 4–6 hours. Ceramic coatings require additional time for preparation and curing.</p>
+                <p>Duration depends on the selected service. A basic exterior wash takes approx. 2–3 hours; a full interior and exterior reconditioning with machine polish takes 4–6 hours. Ceramic coatings require additional time for preparation and curing.</p>
               </div>
             </div>
           </div>
@@ -8396,7 +8396,7 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
               aria-expanded="false"
               data-faq-button
             >
-              <span class="ai-faq-question-text-awwlxekrzu21tadvnaaigenblocke1ab6ca6qeywk">Was ist der Unterschied zwischen Politur und Keramikversiegelung?</span>
+              <span class="ai-faq-question-text-awwlxekrzu21tadvnaaigenblocke1ab6ca6qeywk">What is the difference between polish and ceramic coating?</span>
               <span class="ai-faq-icon-awwlxekrzu21tadvnaaigenblocke1ab6ca6qeywk">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                   <polyline points="6 9 12 15 18 9"></polyline>
@@ -8405,7 +8405,7 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
             </button>
             <div class="ai-faq-answer-wrapper-awwlxekrzu21tadvnaaigenblocke1ab6ca6qeywk" data-faq-answer>
               <div class="ai-faq-answer-awwlxekrzu21tadvnaaigenblocke1ab6ca6qeywk">
-                <p>A machine polish removes scratches, holograms, and oxidation to bring the paint to a high gloss. A ceramic coating protects the paint long-term against environmental fallout, UV rays, and grime – creating a hard, hydrophobic shield for up to 5 years.</p>
+                <p>Machine polishing removes scratches, holograms, and oxidation to bring the paint to a mirror finish. A ceramic coating shields the paint long-term against environmental fallout, UV rays, and grime – creating a durable, hydrophobic protective layer for up to 5 years.</p>
               </div>
             </div>
           </div>
@@ -8423,7 +8423,7 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
               aria-expanded="false"
               data-faq-button
             >
-              <span class="ai-faq-question-text-awwlxekrzu21tadvnaaigenblocke1ab6ca6qeywk">Wird der Service bei mir vor Ort durchgeführt?</span>
+              <span class="ai-faq-question-text-awwlxekrzu21tadvnaaigenblocke1ab6ca6qeywk">Is the entire service performed on-site at my location?</span>
               <span class="ai-faq-icon-awwlxekrzu21tadvnaaigenblocke1ab6ca6qeywk">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                   <polyline points="6 9 12 15 18 9"></polyline>
@@ -8432,7 +8432,7 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
             </button>
             <div class="ai-faq-answer-wrapper-awwlxekrzu21tadvnaaigenblocke1ab6ca6qeywk" data-faq-answer>
               <div class="ai-faq-answer-awwlxekrzu21tadvnaaigenblocke1ab6ca6qeywk">
-                <p>Yes, that is exactly our concept. We travel to your desired location – whether a private residence, corporate parking, or another agreed site. You save time and can carry on with your day uninterrupted.</p>
+                <p>Yes, exactly. That is our entire philosophy. We arrive at your preferred location – private residence, corporate parking, or country club. You save travel time and continue your day uninterrupted.</p>
               </div>
             </div>
           </div>
@@ -8450,7 +8450,7 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
               aria-expanded="false"
               data-faq-button
             >
-              <span class="ai-faq-question-text-awwlxekrzu21tadvnaaigenblocke1ab6ca6qeywk">Für welche Fahrzeuge bieten Sie den Service an?</span>
+              <span class="ai-faq-question-text-awwlxekrzu21tadvnaaigenblocke1ab6ca6qeywk">What types of vehicles do you service?</span>
               <span class="ai-faq-icon-awwlxekrzu21tadvnaaigenblocke1ab6ca6qeywk">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                   <polyline points="6 9 12 15 18 9"></polyline>
@@ -8459,7 +8459,7 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
             </button>
             <div class="ai-faq-answer-wrapper-awwlxekrzu21tadvnaaigenblocke1ab6ca6qeywk" data-faq-answer>
               <div class="ai-faq-answer-awwlxekrzu21tadvnaaigenblocke1ab6ca6qeywk">
-                <p>We work on all vehicle types: sedans, SUVs, sports cars, classics, vans, and motorcycles. Every vehicle is treated individually – with tailored products and techniques suited to its paint, materials, and condition.</p>
+                <p>We service all vehicle types: sedans, SUVs, sports exotics, collector classics, vans, and motorcycles. Each vehicle is individually treated with bespoke products and safe techniques suited to its specific paint and materials.</p>
               </div>
             </div>
           </div>
@@ -8477,7 +8477,7 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
               aria-expanded="false"
               data-faq-button
             >
-              <span class="ai-faq-question-text-awwlxekrzu21tadvnaaigenblocke1ab6ca6qeywk">Wie läuft die Terminvereinbarung ab?</span>
+              <span class="ai-faq-question-text-awwlxekrzu21tadvnaaigenblocke1ab6ca6qeywk">How does scheduling an appointment work?</span>
               <span class="ai-faq-icon-awwlxekrzu21tadvnaaigenblocke1ab6ca6qeywk">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                   <polyline points="6 9 12 15 18 9"></polyline>
@@ -8486,7 +8486,7 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
             </button>
             <div class="ai-faq-answer-wrapper-awwlxekrzu21tadvnaaigenblocke1ab6ca6qeywk" data-faq-answer>
               <div class="ai-faq-answer-awwlxekrzu21tadvnaaigenblocke1ab6ca6qeywk">
-                <p>Contactieren Sie uns per Telefon, WhatsApp oder E-Mail. Wir besprechen Ihre Wünsche, erstellen ein individuelles Angebot und vereinbaren einen passenden Termin – flexibel nach Ihrem Zeitplan.</p>
+                <p>Reach out via phone, WhatsApp, or email. We review your requirements, create an individualized quote, and schedule an appointment – flexibly around your calendar.</p>
               </div>
             </div>
           </div>
@@ -8504,7 +8504,7 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
               aria-expanded="false"
               data-faq-button
             >
-              <span class="ai-faq-question-text-awwlxekrzu21tadvnaaigenblocke1ab6ca6qeywk">Wie lange hält eine Versiegelung?</span>
+              <span class="ai-faq-question-text-awwlxekrzu21tadvnaaigenblocke1ab6ca6qeywk">How long does a coating last?</span>
               <span class="ai-faq-icon-awwlxekrzu21tadvnaaigenblocke1ab6ca6qeywk">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                   <polyline points="6 9 12 15 18 9"></polyline>
@@ -8513,7 +8513,7 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
             </button>
             <div class="ai-faq-answer-wrapper-awwlxekrzu21tadvnaaigenblocke1ab6ca6qeywk" data-faq-answer>
               <div class="ai-faq-answer-awwlxekrzu21tadvnaaigenblocke1ab6ca6qeywk">
-                <p>A high-end ceramic coating lasts 3–5 years with proper care. Wax coatings provide 3–6 months of protection. We gladly advise you on the best solution for your vehicle and usage.</p>
+                <p>A professional ceramic coating lasts 3–5 years with proper maintenance. Wax coatings provide 3–6 months of protection. We gladly advise you on the best solution for your vehicle and driving habits.</p>
               </div>
             </div>
           </div>
@@ -8531,7 +8531,7 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
               aria-expanded="false"
               data-faq-button
             >
-              <span class="ai-faq-question-text-awwlxekrzu21tadvnaaigenblocke1ab6ca6qeywk">Was kostet eine Aufbereitung?</span>
+              <span class="ai-faq-question-text-awwlxekrzu21tadvnaaigenblocke1ab6ca6qeywk">How much does a detailing service cost?</span>
               <span class="ai-faq-icon-awwlxekrzu21tadvnaaigenblocke1ab6ca6qeywk">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                   <polyline points="6 9 12 15 18 9"></polyline>
@@ -8540,7 +8540,7 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
             </button>
             <div class="ai-faq-answer-wrapper-awwlxekrzu21tadvnaaigenblocke1ab6ca6qeywk" data-faq-answer>
               <div class="ai-faq-answer-awwlxekrzu21tadvnaaigenblocke1ab6ca6qeywk">
-                <p>Costs vary depending on vehicle size, condition, and service package. Basic exterior details start at $160; complete packages with machine polishing and ceramic coating start at $650. We gladly provide an individual estimate.</p>
+                <p>Costs vary depending on vehicle size, condition, and service package. Basic exterior detailing starts at $160; complete packages with machine polishing and ceramic coating start at $650. We gladly provide an individual estimate.</p>
               </div>
             </div>
           </div>
@@ -8558,7 +8558,7 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
               aria-expanded="false"
               data-faq-button
             >
-              <span class="ai-faq-question-text-awwlxekrzu21tadvnaaigenblocke1ab6ca6qeywk">In welchen Regionen bieten Sie Ihren Service an?</span>
+              <span class="ai-faq-question-text-awwlxekrzu21tadvnaaigenblocke1ab6ca6qeywk">Which regions do you service?</span>
               <span class="ai-faq-icon-awwlxekrzu21tadvnaaigenblocke1ab6ca6qeywk">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                   <polyline points="6 9 12 15 18 9"></polyline>
@@ -8567,7 +8567,7 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
             </button>
             <div class="ai-faq-answer-wrapper-awwlxekrzu21tadvnaaigenblocke1ab6ca6qeywk" data-faq-answer>
               <div class="ai-faq-answer-awwlxekrzu21tadvnaaigenblocke1ab6ca6qeywk">
-                <p>Our mobile units deploy across the entire region. Contact us for custom appointments – we always find the ideal solution.</p>
+                <p>Our mobile units deploy across the entire regional metropolitan area. Contact us for custom locations – we always make it happen.</p>
               </div>
             </div>
           </div>
@@ -8891,12 +8891,12 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
       class="floating-service-router-main-template--28044024349019floatingservicectaymfkgb"
       type="button"
       data-service-main
-      aria-label="Services öffnen"
+      aria-label="Open Services"
     >
       
         <img
           src="./assets/images/62_Design_ohne_Titel_3e4f2ac4-8ae3-4e4d-94e6-1461069cf932.png?v=1776468415&width=220"
-          alt="Services öffnen"
+          alt="Open Services"
           loading="lazy"
           width="220"
           height="220"
@@ -9475,7 +9475,7 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
             </a>
           
           
-            <a href="gallery.html" class="ai-footer-link-aq1nmnctpbnu3tgrgraigenblockdb846c94map9q">
+            <a href="gallery-before-after.html" class="ai-footer-link-aq1nmnctpbnu3tgrgraigenblockdb846c94map9q">
               Gallery
             </a>
           
@@ -9489,7 +9489,7 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
 
       <div class="ai-footer-column-aq1nmnctpbnu3tgrgraigenblockdb846c94map9q">
         
-          <h4 class="ai-footer-heading-aq1nmnctpbnu3tgrgraigenblockdb846c94map9q">Legal & Info</h4>
+          <h4 class="ai-footer-heading-aq1nmnctpbnu3tgrgraigenblockdb846c94map9q">Legal & Information</h4>
         
         <nav class="ai-footer-links-aq1nmnctpbnu3tgrgraigenblockdb846c94map9q">
           
@@ -9526,7 +9526,7 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
               <svg class="ai-footer-contact-icon-aq1nmnctpbnu3tgrgraigenblockdb846c94map9q" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
               </svg>
-              <span>info@premiumcardetailing.ch</span>
+              <span>info@premiumcardetailing.com</span>
             </div>
           
           
@@ -9545,7 +9545,7 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
               </svg>
-              <span>Rothrist</span>
+              <span>Mobile Headquarters</span>
             </div>
           
         </div>
@@ -9577,7 +9577,7 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
         </div>
         
         
-          <p class="ai-footer-trust-aq1nmnctpbnu3tgrgraigenblockdb846c94map9q">Premium certified detailing studio</p>
+          <p class="ai-footer-trust-aq1nmnctpbnu3tgrgraigenblockdb846c94map9q">Certified Mobile Detailing Studio</p>
         
       </div>
     </div>
@@ -9586,7 +9586,7 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
 
     <div class="ai-footer-bottom-aq1nmnctpbnu3tgrgraigenblockdb846c94map9q">
       <p class="ai-footer-copyright-aq1nmnctpbnu3tgrgraigenblockdb846c94map9q">
-        © 2025 Premium Car Detailing
+        © 2026 Premium Car Detailing
       </p>
       <p class="ai-footer-copyright-aq1nmnctpbnu3tgrgraigenblockdb846c94map9q">
         All rights reserved
@@ -9682,7 +9682,7 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
 >
   <span class="footer-utilities__text">
     &copy; 2026
-    <a href="/" title="">Premium Car Detailing</a>, <a target="_blank" rel="nofollow" href="https://www.shopify.com?utm_campaign=poweredby&amp;utm_medium=shopify&amp;utm_source=onlinestore">Powered by Shopify</a>
+    <a href="/" title="">Premium Car Detailing</a>, <a target="_blank" rel="nofollow" href="https://www.shopify.com?utm_campaign=poweredby&amp;utm_medium=shopify&amp;utm_source=onlinestore">Powered by Cloudflare</a>
 </span>
 </div>
 
@@ -9958,7 +9958,7 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
         
         
           <div class="predictive-search-results__no-results">
-            <p>No products found.</p>
+            <p>No services found.</p>
           </div>
         
       
