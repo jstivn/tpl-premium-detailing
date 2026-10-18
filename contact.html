@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Contact & Booking | Premium Car Detailing</title>
+  <meta name="description" content="Contact Premium Car Detailing for instant mobile appointments, custom quotes, or fleet inquiries. Available 6 days a week.">
+  <link rel="icon" type="image/png" href="assets/images/1_PremiumCarDetailing_Logo.png">
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              black: '#000000',
+              cyan: '#00bcff',
+              gold: '#eab308'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            heading: ['Plus Jakarta Sans', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { background: #000000; color: #f4f4f5; font-family: 'Inter', sans-serif; }
+    h1, h2, h3, h4 { font-family: 'Plus Jakarta Sans', sans-serif; }
+    .glass-panel { background: rgba(18, 18, 21, 0.75); backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.08); }
+    .neon-border { border: 1px solid rgba(0, 188, 255, 0.4); box-shadow: 0 0 25px rgba(0, 188, 255, 0.15); }
+  </style>
+</head>
+<body class="bg-black text-zinc-100">
+
+  <!-- HEADER -->
+  <header class="sticky top-0 z-50 glass-panel border-b border-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="assets/images/1_PremiumCarDetailing_Logo.png" alt="Premium Car Detailing" class="h-9 w-auto">
+        <span class="font-heading font-black text-lg text-white">PREMIUM CAR DETAILING</span>
+      </a>
+      <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-zinc-300">
+        <a href="index.html" class="hover:text-brand-cyan">Home</a>
+        <a href="mobile-detailing.html" class="hover:text-brand-cyan">Mobile Detailing</a>
+        <a href="paint-ceramic.html" class="hover:text-brand-cyan">Paint & Ceramic</a>
+        <a href="auto-glass.html" class="hover:text-brand-cyan">Auto Glass</a>
+        <a href="gallery.html" class="hover:text-brand-cyan">Gallery</a>
+        <a href="about.html" class="hover:text-brand-cyan">About Us</a>
+        <a href="faq.html" class="hover:text-brand-cyan">FAQ</a>
+        <a href="contact.html" class="text-brand-cyan font-bold">Contact</a>
+      </nav>
+      <a href="tel:+18005550199" class="bg-brand-cyan hover:bg-sky-400 text-black font-heading font-extrabold px-5 py-2.5 rounded-full text-xs transition-all">
+        Call (800) 555-0199
+      </a>
+    </div>
+  </header>
+
+  <!-- HERO & CONTACT FORM -->
+  <section class="py-20 bg-gradient-to-b from-zinc-950 to-black">
+    <div class="max-w-4xl mx-auto px-4">
+      <div class="text-center mb-12">
+        <span class="text-brand-cyan text-xs font-bold uppercase tracking-widest bg-brand-cyan/10 px-3 py-1 rounded-full border border-brand-cyan/20">
+          GET IN TOUCH
+        </span>
+        <h1 class="font-heading text-4xl sm:text-5xl font-extrabold text-white mt-4 mb-3">
+          Contact & Dispatch Hub
+        </h1>
+        <p class="text-zinc-400 text-sm max-w-xl mx-auto">
+          Need an immediate appointment, custom multi-vehicle estimate, or auto glass inspection? Reach out directly.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+        <div class="glass-panel p-6 rounded-2xl text-center">
+          <i class="fa-solid fa-phone text-2xl text-brand-cyan mb-3"></i>
+          <h4 class="font-bold text-white text-sm">Direct Phone</h4>
+          <a href="tel:+18005550199" class="text-xs text-brand-cyan hover:underline mt-1 block font-semibold">+1 (800) 555-0199</a>
+        </div>
+        <div class="glass-panel p-6 rounded-2xl text-center">
+          <i class="fa-brands fa-whatsapp text-2xl text-emerald-400 mb-3"></i>
+          <h4 class="font-bold text-white text-sm">WhatsApp</h4>
+          <a href="https://wa.me/18005550199" class="text-xs text-emerald-400 hover:underline mt-1 block font-semibold">Start Chat Online</a>
+        </div>
+        <div class="glass-panel p-6 rounded-2xl text-center">
+          <i class="fa-solid fa-envelope text-2xl text-brand-cyan mb-3"></i>
+          <h4 class="font-bold text-white text-sm">Direct Email</h4>
+          <a href="mailto:info@premiumcardetailing.com" class="text-xs text-brand-cyan hover:underline mt-1 block font-semibold">info@premiumcardetailing.com</a>
+        </div>
+      </div>
+
+      <!-- Quick Message Form -->
+      <div class="glass-panel neon-border p-8 rounded-3xl">
+        <h3 class="font-heading font-bold text-xl text-white mb-6 text-center">Send Us a Direct Inquiry</h3>
+        <form onsubmit="alert('Thank you! Your inquiry has been sent to dispatch. We will reply within 15 minutes.'); return false;" class="space-y-4">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-bold text-zinc-300 uppercase mb-1">Name</label>
+              <input type="text" required placeholder="Your name" class="w-full bg-zinc-900 border border-white/10 rounded-xl px-4 py-3 text-xs text-white focus:outline-none focus:border-brand-cyan">
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-zinc-300 uppercase mb-1">Phone</label>
+              <input type="tel" required placeholder="Your phone number" class="w-full bg-zinc-900 border border-white/10 rounded-xl px-4 py-3 text-xs text-white focus:outline-none focus:border-brand-cyan">
+            </div>
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-zinc-300 uppercase mb-1">Vehicle Make / Model / Year</label>
+            <input type="text" placeholder="e.g. 2024 Porsche 911 GT3" class="w-full bg-zinc-900 border border-white/10 rounded-xl px-4 py-3 text-xs text-white focus:outline-none focus:border-brand-cyan">
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-zinc-300 uppercase mb-1">Desired Service / Message</label>
+            <textarea rows="4" placeholder="Tell us about the services you're interested in..." class="w-full bg-zinc-900 border border-white/10 rounded-xl px-4 py-3 text-xs text-white focus:outline-none focus:border-brand-cyan"></textarea>
+          </div>
+          <button type="submit" class="w-full py-3.5 rounded-xl bg-brand-cyan hover:bg-sky-400 text-black font-heading font-extrabold text-sm transition-all shadow-lg shadow-brand-cyan/20">
+            Submit Inquiry
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-zinc-950 border-t border-white/5 py-8 text-center text-xs text-zinc-500">
+    <p>© 2026 Premium Car Detailing LLC. 24/7 Dispatch Coordination.</p>
+  </footer>
+
+</body>
+</html>

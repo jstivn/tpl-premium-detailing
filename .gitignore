@@ -1,0 +1,10 @@
+# Logs and temporary files
+.DS_Store
+Thumbs.db
+*.log
+npm-debug.log*
+
+# Node / Build
+node_modules/
+dist/
+.cache/

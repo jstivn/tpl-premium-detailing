@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Gallery & Transformations | Premium Car Detailing</title>
+  <meta name="description" content="View our portfolio of luxury detailing transformations, before and after comparisons, and high-definition video reels.">
+  <link rel="icon" type="image/png" href="assets/images/1_PremiumCarDetailing_Logo.png">
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              black: '#000000',
+              cyan: '#00bcff',
+              gold: '#eab308'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            heading: ['Plus Jakarta Sans', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { background: #000000; color: #f4f4f5; font-family: 'Inter', sans-serif; }
+    h1, h2, h3, h4 { font-family: 'Plus Jakarta Sans', sans-serif; }
+    .glass-panel { background: rgba(18, 18, 21, 0.75); backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.08); }
+  </style>
+</head>
+<body class="bg-black text-zinc-100">
+
+  <!-- HEADER -->
+  <header class="sticky top-0 z-50 glass-panel border-b border-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="assets/images/1_PremiumCarDetailing_Logo.png" alt="Premium Car Detailing" class="h-9 w-auto">
+        <span class="font-heading font-black text-lg text-white">PREMIUM CAR DETAILING</span>
+      </a>
+      <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-zinc-300">
+        <a href="index.html" class="hover:text-brand-cyan">Home</a>
+        <a href="mobile-detailing.html" class="hover:text-brand-cyan">Mobile Detailing</a>
+        <a href="paint-ceramic.html" class="hover:text-brand-cyan">Paint & Ceramic</a>
+        <a href="auto-glass.html" class="hover:text-brand-cyan">Auto Glass</a>
+        <a href="gallery.html" class="text-brand-cyan font-bold">Gallery</a>
+        <a href="about.html" class="hover:text-brand-cyan">About Us</a>
+        <a href="faq.html" class="hover:text-brand-cyan">FAQ</a>
+        <a href="contact.html" class="hover:text-brand-cyan">Contact</a>
+      </nav>
+      <a href="contact.html" class="bg-brand-cyan hover:bg-sky-400 text-black font-heading font-extrabold px-5 py-2.5 rounded-full text-xs transition-all">
+        Book Appointment
+      </a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="py-20 bg-gradient-to-b from-zinc-950 to-black text-center">
+    <div class="max-w-4xl mx-auto px-4">
+      <span class="text-brand-cyan text-xs font-bold uppercase tracking-widest bg-brand-cyan/10 px-3 py-1 rounded-full border border-brand-cyan/20">
+        VISUAL PORTFOLIO
+      </span>
+      <h1 class="font-heading text-4xl sm:text-6xl font-extrabold text-white mt-4 mb-4">
+        Transformation Gallery
+      </h1>
+      <p class="text-zinc-400 text-sm sm:text-base max-w-xl mx-auto">
+        High-definition proof of our work. Swipe through real transformations on exotics, daily drivers, and classic vehicles.
+      </p>
+    </div>
+  </section>
+
+  <!-- GALLERY GRID -->
+  <section class="py-12 bg-black">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <div class="glass-panel p-4 rounded-3xl">
+          <img src="assets/images/65_vorher_kratzer.png" alt="Scratches Before" class="rounded-2xl w-full aspect-[4/3] object-cover mb-3">
+          <span class="text-[10px] font-bold text-red-400 uppercase tracking-wider block">Before Polishing</span>
+          <h4 class="font-bold text-white text-sm">Deep Clearcoat Scratches</h4>
+        </div>
+
+        <div class="glass-panel p-4 rounded-3xl">
+          <img src="assets/images/66_nachher_poliert.png" alt="Polished After" class="rounded-2xl w-full aspect-[4/3] object-cover mb-3">
+          <span class="text-[10px] font-bold text-emerald-400 uppercase tracking-wider block">After Polishing</span>
+          <h4 class="font-bold text-white text-sm">Flawless Mirror Reflection</h4>
+        </div>
+
+        <div class="glass-panel p-4 rounded-3xl">
+          <img src="assets/images/13_3_vorher.png" alt="Interior Before" class="rounded-2xl w-full aspect-[4/3] object-cover mb-3">
+          <span class="text-[10px] font-bold text-red-400 uppercase tracking-wider block">Before Interior Clean</span>
+          <h4 class="font-bold text-white text-sm">Soiled Leather & High Traffic Grime</h4>
+        </div>
+
+        <div class="glass-panel p-4 rounded-3xl">
+          <img src="assets/images/14_3_nachher.png" alt="Interior After" class="rounded-2xl w-full aspect-[4/3] object-cover mb-3">
+          <span class="text-[10px] font-bold text-emerald-400 uppercase tracking-wider block">After Interior Clean</span>
+          <h4 class="font-bold text-white text-sm">Restored Factory Matte Texture</h4>
+        </div>
+
+        <div class="glass-panel p-4 rounded-3xl">
+          <img src="assets/images/35_B_Saule_Vorher_Nachher.png" alt="B-Pillars" class="rounded-2xl w-full aspect-[4/3] object-cover mb-3">
+          <span class="text-[10px] font-bold text-brand-cyan uppercase tracking-wider block">Trim Correction</span>
+          <h4 class="font-bold text-white text-sm">Gloss Piano Black B-Pillar Rejuvenation</h4>
+        </div>
+
+        <div class="glass-panel p-4 rounded-3xl">
+          <img src="assets/images/38_Endtopfe_Politur.png" alt="Exhaust Tips" class="rounded-2xl w-full aspect-[4/3] object-cover mb-3">
+          <span class="text-[10px] font-bold text-brand-cyan uppercase tracking-wider block">Metal Restoration</span>
+          <h4 class="font-bold text-white text-sm">Exhaust Carbon Dissolved & Polished</h4>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-zinc-950 border-t border-white/5 py-8 text-center text-xs text-zinc-500">
+    <p>© 2026 Premium Car Detailing LLC. Precision Visual Portfolio.</p>
+  </footer>
+
+</body>
+</html>

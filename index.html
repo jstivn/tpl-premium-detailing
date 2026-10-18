@@ -1,0 +1,1849 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Premium Car Detailing | Precision Vehicle Care & Ceramic Protection</title>
+  <meta name="description" content="Showroom-grade mobile auto detailing, certified multi-stage paint correction, and long-lasting 9H ceramic coatings delivered directly to your doorstep. Fully self-contained mobile unit.">
+  <meta name="theme-color" content="#000000">
+
+  <!-- OpenGraph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Premium Car Detailing | Precision Vehicle Care & Protection">
+  <meta property="og:description" content="Experience high-end mobile detailing, paint correction, and ceramic protection. We come directly to you with our fully autonomous service unit.">
+  <meta property="og:image" content="assets/images/12_1_nachher.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/1_PremiumCarDetailing_Logo.png">
+
+  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              black: '#000000',
+              dark: '#09090b',
+              surface: '#121215',
+              surfaceElevated: '#1a1a1f',
+              border: 'rgba(255, 255, 255, 0.08)',
+              borderHover: 'rgba(255, 255, 255, 0.2)',
+              cyan: '#00bcff',
+              cyanGlow: 'rgba(0, 188, 255, 0.25)',
+              gold: '#eab308'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            heading: ['Plus Jakarta Sans', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background-color: #000000;
+      color: #f4f4f5;
+      font-family: 'Inter', sans-serif;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+    h1, h2, h3, h4, h5, h6, .font-heading {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      letter-spacing: -0.025em;
+    }
+
+    /* Glassmorphism */
+    .glass-panel {
+      background: rgba(18, 18, 21, 0.75);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .glass-panel-elevated {
+      background: rgba(26, 26, 31, 0.85);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+    }
+    .neon-border {
+      border: 1px solid rgba(0, 188, 255, 0.4);
+      box-shadow: 0 0 25px rgba(0, 188, 255, 0.15);
+    }
+
+    /* Comparison Slider Styles */
+    .comparison-container {
+      position: relative;
+      overflow: hidden;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+    .comparison-after-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+    .comparison-before-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 50%;
+      overflow: hidden;
+      z-index: 10;
+    }
+    .comparison-before-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      max-width: none;
+      object-fit: cover;
+    }
+    .comparison-handle {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      width: 3px;
+      background: #00bcff;
+      z-index: 20;
+      cursor: ew-resize;
+      transform: translateX(-50%);
+      box-shadow: 0 0 15px rgba(0, 188, 255, 0.8);
+    }
+    .comparison-button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: #000000;
+      border: 2px solid #00bcff;
+      box-shadow: 0 0 20px rgba(0, 188, 255, 0.6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      font-size: 14px;
+    }
+
+    /* Video Reel Aspect Ratio */
+    .reel-container {
+      aspect-ratio: 9/16;
+    }
+    @media (min-width: 768px) {
+      .reel-container {
+        aspect-ratio: 9/15;
+      }
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #000000;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #27272a;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #3f3f46;
+    }
+
+    /* Pulse animation */
+    @keyframes subtlePulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.85; transform: scale(1.02); }
+    }
+    .pulse-glow {
+      animation: subtlePulse 3s infinite ease-in-out;
+    }
+  </style>
+</head>
+<body class="bg-black text-zinc-100 selection:bg-brand-cyan selection:text-black">
+
+  <!-- TOP ANNOUNCEMENT BAR -->
+  <div class="bg-gradient-to-r from-zinc-900 via-zinc-800 to-zinc-900 border-b border-zinc-800 py-2 px-4 text-xs font-medium text-center text-zinc-300 flex items-center justify-center gap-3">
+    <span class="inline-flex items-center gap-1.5 bg-brand-cyan/10 text-brand-cyan border border-brand-cyan/20 px-2 py-0.5 rounded-full font-semibold">
+      <span class="w-1.5 h-1.5 rounded-full bg-brand-cyan animate-ping"></span>
+      MOBILE UNITS ACTIVE
+    </span>
+    <span class="hidden sm:inline text-zinc-400">|</span>
+    <span>100% Autonomous Service — We bring water, power & certified studio chemistry directly to you</span>
+    <a href="#booking" class="hidden md:inline-flex items-center gap-1 text-brand-cyan hover:underline font-semibold ml-2">
+      Book Online <i class="fa-solid fa-arrow-right text-[10px]"></i>
+    </a>
+  </div>
+
+  <!-- NAVIGATION HEADER -->
+  <header class="sticky top-0 z-50 glass-panel border-b border-white/5 transition-all duration-300" id="mainHeader">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center gap-3 group">
+        <img src="assets/images/1_PremiumCarDetailing_Logo.png" alt="Premium Car Detailing" class="h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-105">
+        <div class="flex flex-col">
+          <span class="font-heading font-black tracking-wider text-lg sm:text-xl text-white group-hover:text-brand-cyan transition-colors">
+            PREMIUM CAR DETAILING
+          </span>
+          <span class="text-[10px] tracking-widest text-zinc-400 uppercase font-medium">Precision Vehicle Care & Protection</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-zinc-300">
+        <a href="#services" class="hover:text-brand-cyan transition-colors">Services</a>
+        <a href="#before-after" class="hover:text-brand-cyan transition-colors">Before & After</a>
+        <a href="#packages" class="hover:text-brand-cyan transition-colors">Packages & Pricing</a>
+        <a href="#process" class="hover:text-brand-cyan transition-colors">How It Works</a>
+        <a href="#reels" class="hover:text-brand-cyan transition-colors">Video Showcase</a>
+        <a href="#reviews" class="hover:text-brand-cyan transition-colors">Reviews</a>
+        <a href="#faq" class="hover:text-brand-cyan transition-colors">FAQ</a>
+        <a href="#contact" class="hover:text-brand-cyan transition-colors">Contact</a>
+      </nav>
+
+      <!-- Header Action Buttons -->
+      <div class="hidden sm:flex items-center gap-4">
+        <a href="tel:+18005550199" class="inline-flex items-center gap-2 text-zinc-300 hover:text-white px-3 py-2 text-sm font-semibold transition-colors">
+          <i class="fa-solid fa-phone text-brand-cyan text-xs"></i>
+          <span>(800) 555-0199</span>
+        </a>
+        <a href="#booking" class="inline-flex items-center gap-2 bg-gradient-to-r from-brand-cyan to-sky-400 hover:from-sky-400 hover:to-brand-cyan text-black font-heading font-bold px-5 py-2.5 rounded-full text-sm shadow-lg shadow-brand-cyan/20 transition-all duration-300 hover:shadow-brand-cyan/40 hover:scale-[1.02] active:scale-[0.98]">
+          <i class="fa-solid fa-calendar-check text-xs"></i>
+          <span>Book Appointment</span>
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Toggle -->
+      <button id="mobileMenuBtn" aria-label="Toggle menu" class="lg:hidden p-2 text-zinc-400 hover:text-white focus:outline-none">
+        <i class="fa-solid fa-bars text-xl" id="menuIcon"></i>
+      </button>
+
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div id="mobileDrawer" class="hidden lg:hidden glass-panel-elevated border-b border-white/10 px-6 py-6 transition-all duration-300">
+      <div class="flex flex-col gap-4 text-base font-medium">
+        <a href="#services" class="mobile-nav-link text-zinc-200 hover:text-brand-cyan py-2 border-b border-white/5">Services</a>
+        <a href="#before-after" class="mobile-nav-link text-zinc-200 hover:text-brand-cyan py-2 border-b border-white/5">Before & After</a>
+        <a href="#packages" class="mobile-nav-link text-zinc-200 hover:text-brand-cyan py-2 border-b border-white/5">Packages & Pricing</a>
+        <a href="#process" class="mobile-nav-link text-zinc-200 hover:text-brand-cyan py-2 border-b border-white/5">How It Works</a>
+        <a href="#reels" class="mobile-nav-link text-zinc-200 hover:text-brand-cyan py-2 border-b border-white/5">Video Showcase</a>
+        <a href="#reviews" class="mobile-nav-link text-zinc-200 hover:text-brand-cyan py-2 border-b border-white/5">Client Reviews</a>
+        <a href="#faq" class="mobile-nav-link text-zinc-200 hover:text-brand-cyan py-2 border-b border-white/5">FAQ</a>
+        <a href="#contact" class="mobile-nav-link text-zinc-200 hover:text-brand-cyan py-2">Contact & Hours</a>
+
+        <div class="pt-4 flex flex-col gap-3">
+          <a href="tel:+18005550199" class="w-full inline-flex items-center justify-center gap-2 bg-zinc-800 hover:bg-zinc-700 text-white font-semibold py-3 rounded-xl border border-white/10">
+            <i class="fa-solid fa-phone text-brand-cyan"></i>
+            <span>Call (800) 555-0199</span>
+          </a>
+          <a href="#booking" class="w-full inline-flex items-center justify-center gap-2 bg-brand-cyan text-black font-heading font-bold py-3 rounded-xl shadow-lg shadow-brand-cyan/20">
+            <i class="fa-solid fa-calendar-check"></i>
+            <span>Book Appointment</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION WITH FULLSCREEN VIDEO LOOP -->
+  <section class="relative min-h-[90vh] lg:min-h-[94vh] flex items-center justify-center overflow-hidden">
+    <!-- Video Background -->
+    <div class="absolute inset-0 z-0">
+      <video autoplay muted loop playsinline class="w-full h-full object-cover object-center filter brightness-[0.45] contrast-[1.1]">
+        <source src="assets/videos/video_4_22008a422cf547128c876a443de0e781.HD-1080p-2.5Mbps-81258375.mp4" type="video/mp4">
+      </video>
+      <!-- Gradient Overlays for depth and readability -->
+      <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-black/70"></div>
+      <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,rgba(0,0,0,0.8)_100%)]"></div>
+    </div>
+
+    <!-- Hero Content -->
+    <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
+      
+      <!-- Top Badge / Rating -->
+      <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full glass-panel border border-brand-cyan/30 text-xs sm:text-sm font-medium text-zinc-200 mb-8 animate-fade-in shadow-lg shadow-brand-cyan/10">
+        <span class="flex items-center text-brand-gold gap-0.5">
+          <i class="fa-solid fa-star text-xs"></i>
+          <i class="fa-solid fa-star text-xs"></i>
+          <i class="fa-solid fa-star text-xs"></i>
+          <i class="fa-solid fa-star text-xs"></i>
+          <i class="fa-solid fa-star text-xs"></i>
+        </span>
+        <span class="font-bold text-white">5.0 Star Rating</span>
+        <span class="text-zinc-500">•</span>
+        <span class="text-brand-cyan">Verified Client Reviews</span>
+      </div>
+
+      <!-- Main Headline -->
+      <h1 class="font-heading text-4xl sm:text-6xl lg:text-7xl font-extrabold text-white tracking-tight leading-[1.08] mb-6">
+        Precision Vehicle Care <br class="hidden sm:inline">
+        <span class="bg-gradient-to-r from-brand-cyan via-white to-sky-300 bg-clip-text text-transparent">
+          & Ceramic Protection
+        </span>
+      </h1>
+
+      <!-- Subtitle -->
+      <p class="max-w-2xl mx-auto text-base sm:text-lg lg:text-xl text-zinc-300 font-normal leading-relaxed mb-10">
+        Experience showroom-grade mobile auto detailing, multi-stage paint correction, and certified 9H ceramic coatings. Delivered directly to your home or office with our fully autonomous mobile studio.
+      </p>
+
+      <!-- Action CTAs -->
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-md mx-auto mb-14">
+        <a href="#booking" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-brand-cyan hover:bg-sky-400 text-black font-heading font-extrabold px-8 py-4 rounded-full text-base shadow-xl shadow-brand-cyan/25 hover:shadow-brand-cyan/40 transition-all duration-300 hover:scale-105 active:scale-95">
+          <i class="fa-solid fa-calendar-check"></i>
+          <span>Book Appointment</span>
+        </a>
+        <a href="#services" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 glass-panel hover:bg-white/10 text-white font-heading font-semibold px-8 py-4 rounded-full text-base border border-white/15 transition-all duration-300 hover:border-brand-cyan/50">
+          <i class="fa-solid fa-sliders"></i>
+          <span>Explore Services</span>
+        </a>
+      </div>
+
+      <!-- Feature Pill Highlights -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-3 max-w-4xl mx-auto pt-6 border-t border-white/10 text-left">
+        <div class="glass-panel p-3.5 rounded-2xl flex items-center gap-3 border border-white/5">
+          <div class="w-10 h-10 rounded-xl bg-brand-cyan/10 border border-brand-cyan/20 flex items-center justify-center text-brand-cyan shrink-0">
+            <i class="fa-solid fa-van-shuttle text-sm"></i>
+          </div>
+          <div>
+            <h4 class="text-xs font-bold text-white uppercase tracking-wider">100% Mobile</h4>
+            <p class="text-[11px] text-zinc-400">We come directly to you</p>
+          </div>
+        </div>
+
+        <div class="glass-panel p-3.5 rounded-2xl flex items-center gap-3 border border-white/5">
+          <div class="w-10 h-10 rounded-xl bg-brand-cyan/10 border border-brand-cyan/20 flex items-center justify-center text-brand-cyan shrink-0">
+            <i class="fa-solid fa-bolt text-sm"></i>
+          </div>
+          <div>
+            <h4 class="text-xs font-bold text-white uppercase tracking-wider">Self-Sufficient</h4>
+            <p class="text-[11px] text-zinc-400">Onboard water & power</p>
+          </div>
+        </div>
+
+        <div class="glass-panel p-3.5 rounded-2xl flex items-center gap-3 border border-white/5">
+          <div class="w-10 h-10 rounded-xl bg-brand-cyan/10 border border-brand-cyan/20 flex items-center justify-center text-brand-cyan shrink-0">
+            <i class="fa-solid fa-shield-halved text-sm"></i>
+          </div>
+          <div>
+            <h4 class="text-xs font-bold text-white uppercase tracking-wider">9H Ceramic</h4>
+            <p class="text-[11px] text-zinc-400">Up to 5 years warranty</p>
+          </div>
+        </div>
+
+        <div class="glass-panel p-3.5 rounded-2xl flex items-center gap-3 border border-white/5">
+          <div class="w-10 h-10 rounded-xl bg-brand-cyan/10 border border-brand-cyan/20 flex items-center justify-center text-brand-cyan shrink-0">
+            <i class="fa-solid fa-medal text-sm"></i>
+          </div>
+          <div>
+            <h4 class="text-xs font-bold text-white uppercase tracking-wider">Swiss Standard</h4>
+            <p class="text-[11px] text-zinc-400">Master craft perfection</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- INTERACTIVE BEFORE & AFTER COMPARISON SLIDER -->
+  <section id="before-after" class="py-24 bg-gradient-to-b from-black via-zinc-950 to-black relative border-t border-zinc-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="text-brand-cyan font-bold text-xs uppercase tracking-widest bg-brand-cyan/10 px-3 py-1 rounded-full border border-brand-cyan/20">
+          PROVEN RESULTS
+        </span>
+        <h2 class="font-heading text-3xl sm:text-5xl font-extrabold text-white mt-4 mb-4">
+          Visible Perfection in Every Detail
+        </h2>
+        <p class="text-zinc-400 text-sm sm:text-base">
+          Drag the interactive slider below to witness real paint correction and interior restoration results. Zero fillers, zero filters — pure flawless craftsmanship.
+        </p>
+
+        <!-- Slider Scenario Switcher Tabs -->
+        <div class="flex flex-wrap items-center justify-center gap-2 mt-8">
+          <button class="slider-tab-btn active px-4 py-2 rounded-full text-xs font-semibold bg-brand-cyan text-black transition-all" data-case="scratches">
+            Severe Scratches vs Polished
+          </button>
+          <button class="slider-tab-btn px-4 py-2 rounded-full text-xs font-semibold glass-panel text-zinc-300 hover:text-white transition-all" data-case="interior">
+            Interior Leather Rejuvenation
+          </button>
+          <button class="slider-tab-btn px-4 py-2 rounded-full text-xs font-semibold glass-panel text-zinc-300 hover:text-white transition-all" data-case="swirls">
+            Paint Swirl Removal
+          </button>
+          <button class="slider-tab-btn px-4 py-2 rounded-full text-xs font-semibold glass-panel text-zinc-300 hover:text-white transition-all" data-case="hood">
+            Hood Reflection Revival
+          </button>
+        </div>
+      </div>
+
+      <!-- Main Slider Wrapper -->
+      <div class="max-w-5xl mx-auto rounded-3xl overflow-hidden neon-border relative shadow-2xl bg-zinc-900">
+        
+        <div id="comparisonBox" class="comparison-container aspect-[16/10] sm:aspect-[16/9] w-full">
+          <!-- AFTER (Background Image) -->
+          <img id="afterImg" src="assets/images/66_nachher_poliert.png" alt="Detailing After Result" class="comparison-after-image">
+
+          <!-- BEFORE (Clipped Image) -->
+          <div id="beforeWrapper" class="comparison-before-wrapper">
+            <img id="beforeImg" src="assets/images/65_vorher_kratzer.png" alt="Detailing Before Result" class="comparison-before-image">
+          </div>
+
+          <!-- Divider Handle -->
+          <div id="sliderHandle" class="comparison-handle">
+            <div class="comparison-button">
+              <i class="fa-solid fa-arrows-left-right text-xs"></i>
+            </div>
+          </div>
+
+          <!-- Labels -->
+          <div class="absolute top-5 left-5 z-30 pointer-events-none">
+            <span class="bg-black/80 backdrop-blur-md text-red-400 font-heading font-black text-xs uppercase px-3 py-1.5 rounded-lg border border-red-500/30 shadow-lg tracking-wider">
+              <i class="fa-solid fa-circle-exclamation mr-1"></i> BEFORE
+            </span>
+          </div>
+          <div class="absolute top-5 right-5 z-30 pointer-events-none">
+            <span class="bg-black/80 backdrop-blur-md text-emerald-400 font-heading font-black text-xs uppercase px-3 py-1.5 rounded-lg border border-emerald-500/30 shadow-lg tracking-wider">
+              <i class="fa-solid fa-circle-check mr-1"></i> AFTER (MIRROR FINISH)
+            </span>
+          </div>
+
+          <!-- Hint Pill -->
+          <div class="absolute bottom-5 left-1/2 -translate-x-1/2 z-30 pointer-events-none">
+            <span class="bg-black/70 backdrop-blur-md text-zinc-300 text-[11px] font-medium px-4 py-1.5 rounded-full border border-white/10 shadow-lg flex items-center gap-1.5">
+              <i class="fa-solid fa-hand-pointer text-brand-cyan text-xs"></i>
+              Drag slider left / right to compare
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Quick Facts Below Slider -->
+      <div class="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-6 mt-12 text-center">
+        <div class="glass-panel p-5 rounded-2xl">
+          <p class="font-heading text-2xl font-black text-brand-cyan">95%+</p>
+          <p class="text-xs text-zinc-400 mt-1 uppercase tracking-wider font-semibold">Swirl & Defect Removal</p>
+          <p class="text-xs text-zinc-500 mt-1">Multi-stage rotary and dual-action compounding</p>
+        </div>
+        <div class="glass-panel p-5 rounded-2xl">
+          <p class="font-heading text-2xl font-black text-brand-cyan">0.0 Fillers</p>
+          <p class="text-xs text-zinc-400 mt-1 uppercase tracking-wider font-semibold">True Permanent Correction</p>
+          <p class="text-xs text-zinc-500 mt-1">Defects removed, not masked by temporary glazes</p>
+        </div>
+        <div class="glass-panel p-5 rounded-2xl">
+          <p class="font-heading text-2xl font-black text-brand-cyan">5-Year</p>
+          <p class="text-xs text-zinc-400 mt-1 uppercase tracking-wider font-semibold">Ceramic Warranty Seal</p>
+          <p class="text-xs text-zinc-500 mt-1">Extreme hydrophobicity, UV defense & gloss lock</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 3 CORE SIGNATURE SERVICES (BENTO GRID) -->
+  <section id="services" class="py-24 bg-black relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-brand-cyan font-bold text-xs uppercase tracking-widest bg-brand-cyan/10 px-3 py-1 rounded-full border border-brand-cyan/20">
+          OUR EXPERTISE
+        </span>
+        <h2 class="font-heading text-3xl sm:text-5xl font-extrabold text-white mt-4 mb-4">
+          World-Class Services at Your Location
+        </h2>
+        <p class="text-zinc-400 text-sm sm:text-base">
+          From intensive interior deep-cleansing to multi-stage paint correction and certified auto glass replacement, we deliver uncompromised luxury detailing anywhere in the region.
+        </p>
+      </div>
+
+      <!-- Bento Grid of Services -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        
+        <!-- CARD 1: Mobile Vehicle Detailing -->
+        <div class="glass-panel rounded-3xl p-8 flex flex-col justify-between hover:border-brand-cyan/40 transition-all duration-300 group relative overflow-hidden">
+          <div class="absolute -top-24 -right-24 w-48 h-48 bg-brand-cyan/10 rounded-full blur-3xl pointer-events-none"></div>
+
+          <div>
+            <!-- Video Thumbnail Header -->
+            <div class="relative rounded-2xl overflow-hidden aspect-[16/10] mb-6 border border-white/10">
+              <video muted loop playsinline class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <source src="assets/videos/video_8_9f602f409bca4413a07baa3708cb85e5.HD-720p-1.6Mbps-83344288.mp4" type="video/mp4">
+              </video>
+              <div class="absolute top-3 left-3 bg-black/80 backdrop-blur-md px-3 py-1 rounded-full text-[11px] font-bold text-brand-cyan border border-brand-cyan/30">
+                SERVICE 01
+              </div>
+            </div>
+
+            <h3 class="font-heading text-2xl font-bold text-white mb-3 group-hover:text-brand-cyan transition-colors">
+              Mobile Auto Detailing
+            </h3>
+            <p class="text-zinc-400 text-sm leading-relaxed mb-6">
+              Complete interior and exterior reconditioning directly at your location. We bring spot-free deionized water, specialized steam extraction, and pH-neutral foam cleansers.
+            </p>
+
+            <!-- Checklist -->
+            <ul class="space-y-2.5 text-xs text-zinc-300 mb-8">
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-check text-brand-cyan"></i>
+                <span>Gentle two-bucket hand wash & foam pre-soak</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-check text-brand-cyan"></i>
+                <span>Hot water extraction shampoo for carpets & upholstery</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-check text-brand-cyan"></i>
+                <span>Deep leather cleaning, conditioning & matte UV defense</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-check text-brand-cyan"></i>
+                <span>Door jambs, trunk seals, and exhaust tip polish</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="pt-6 border-t border-white/10 flex items-center justify-between">
+            <div>
+              <span class="text-xs text-zinc-500 block uppercase font-medium">Starting from</span>
+              <span class="font-heading text-xl font-extrabold text-white">$160</span>
+            </div>
+            <a href="#booking" class="inline-flex items-center gap-2 bg-white/10 hover:bg-brand-cyan hover:text-black text-white text-xs font-heading font-bold px-4 py-2.5 rounded-full transition-all">
+              <span>Book Detailing</span>
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- CARD 2: Paint Correction & Ceramic Coating (FEATURED) -->
+        <div class="glass-panel-elevated neon-border rounded-3xl p-8 flex flex-col justify-between hover:border-brand-cyan transition-all duration-300 group relative overflow-hidden lg:-translate-y-2 shadow-2xl">
+          <div class="absolute top-0 right-0 bg-gradient-to-l from-brand-cyan to-sky-400 text-black text-[11px] font-black uppercase tracking-wider px-4 py-1.5 rounded-bl-2xl">
+            MOST REQUESTED
+          </div>
+          <div class="absolute -bottom-24 -left-24 w-48 h-48 bg-brand-cyan/20 rounded-full blur-3xl pointer-events-none"></div>
+
+          <div>
+            <!-- Video Thumbnail Header -->
+            <div class="relative rounded-2xl overflow-hidden aspect-[16/10] mb-6 border border-white/10">
+              <video muted loop playsinline class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <source src="assets/videos/video_7_11ad0160b59743adbfa0ada303408c63.HD-1080p-7.2Mbps-83342709.mp4" type="video/mp4">
+              </video>
+              <div class="absolute top-3 left-3 bg-black/80 backdrop-blur-md px-3 py-1 rounded-full text-[11px] font-bold text-brand-cyan border border-brand-cyan/30">
+                SERVICE 02
+              </div>
+            </div>
+
+            <h3 class="font-heading text-2xl font-bold text-white mb-3 group-hover:text-brand-cyan transition-colors">
+              Paint Correction & Ceramic
+            </h3>
+            <p class="text-zinc-300 text-sm leading-relaxed mb-6">
+              Precision machine compounding to permanently eliminate swirls, micro-scratches, and oxidation, sealed under an impenetrable 9H ceramic shield.
+            </p>
+
+            <!-- Checklist -->
+            <ul class="space-y-2.5 text-xs text-zinc-300 mb-8">
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-check text-brand-cyan"></i>
+                <span>Chemical & clay bar surface decontamination</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-check text-brand-cyan"></i>
+                <span>Multi-stage compounding with electronic paint depth gauge</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-check text-brand-cyan"></i>
+                <span>Up to 95% scratch and hologram elimination</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-check text-brand-cyan"></i>
+                <span>3 to 5-year high-gloss 9H hydrophobic ceramic warranty</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="pt-6 border-t border-white/10 flex items-center justify-between">
+            <div>
+              <span class="text-xs text-zinc-400 block uppercase font-medium">Starting from</span>
+              <span class="font-heading text-2xl font-extrabold text-brand-cyan">$650</span>
+            </div>
+            <a href="#booking" class="inline-flex items-center gap-2 bg-brand-cyan hover:bg-sky-400 text-black text-xs font-heading font-extrabold px-5 py-2.5 rounded-full transition-all shadow-lg shadow-brand-cyan/20">
+              <span>Reserve Ceramic</span>
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- CARD 3: Mobile Auto Glass Replacement -->
+        <div class="glass-panel rounded-3xl p-8 flex flex-col justify-between hover:border-brand-cyan/40 transition-all duration-300 group relative overflow-hidden">
+          <div class="absolute -top-24 -right-24 w-48 h-48 bg-brand-cyan/10 rounded-full blur-3xl pointer-events-none"></div>
+
+          <div>
+            <!-- Video Thumbnail Header -->
+            <div class="relative rounded-2xl overflow-hidden aspect-[16/10] mb-6 border border-white/10">
+              <video muted loop playsinline class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <source src="assets/videos/video_9_e123fa9e72164c459b6b09fc4fccf680.HD-1080p-7.2Mbps-83345619.mp4" type="video/mp4">
+              </video>
+              <div class="absolute top-3 left-3 bg-black/80 backdrop-blur-md px-3 py-1 rounded-full text-[11px] font-bold text-brand-cyan border border-brand-cyan/30">
+                SERVICE 03
+              </div>
+            </div>
+
+            <h3 class="font-heading text-2xl font-bold text-white mb-3 group-hover:text-brand-cyan transition-colors">
+              Mobile Auto Glass Replacement
+            </h3>
+            <p class="text-zinc-400 text-sm leading-relaxed mb-6">
+              Expert windshield, side, and rear glass replacement executed directly at your driveway or corporate parking. Full insurance coverage coordination included.
+            </p>
+
+            <!-- Checklist -->
+            <ul class="space-y-2.5 text-xs text-zinc-300 mb-8">
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-check text-brand-cyan"></i>
+                <span>OEM-certified windshield & tempered glass fitting</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-check text-brand-cyan"></i>
+                <span>Direct insurance claim handling & zero deductible assistance</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-check text-brand-cyan"></i>
+                <span>Corrosion-inhibiting pinchweld frame preparation</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-check text-brand-cyan"></i>
+                <span>Digital ADAS lane assist & safety sensor recalibration</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="pt-6 border-t border-white/10 flex items-center justify-between">
+            <div>
+              <span class="text-xs text-zinc-500 block uppercase font-medium">Direct billing to</span>
+              <span class="font-heading text-xl font-extrabold text-white">Insurance / $0</span>
+            </div>
+            <a href="#booking" class="inline-flex items-center gap-2 bg-white/10 hover:bg-brand-cyan hover:text-black text-white text-xs font-heading font-bold px-4 py-2.5 rounded-full transition-all">
+              <span>Book Glass</span>
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TRANSPARENT PACKAGES & PRICING -->
+  <section id="packages" class="py-24 bg-gradient-to-b from-black via-zinc-950 to-black relative border-t border-zinc-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-brand-cyan font-bold text-xs uppercase tracking-widest bg-brand-cyan/10 px-3 py-1 rounded-full border border-brand-cyan/20">
+          CLEAR & TRANSPARENT
+        </span>
+        <h2 class="font-heading text-3xl sm:text-5xl font-extrabold text-white mt-4 mb-4">
+          Detailing Packages Tailored to You
+        </h2>
+        <p class="text-zinc-400 text-sm sm:text-base">
+          All packages are executed on-site with our self-powered mobile studio. No hidden fees, no required utilities.
+        </p>
+      </div>
+
+      <!-- Pricing Tier Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        
+        <!-- PACKAGE 1: Refresh -->
+        <div class="glass-panel rounded-3xl p-8 flex flex-col justify-between border border-white/5 hover:border-white/20 transition-all">
+          <div>
+            <div class="flex justify-between items-start mb-4">
+              <div>
+                <h3 class="font-heading text-xl font-bold text-white">Refresh Package</h3>
+                <p class="text-xs text-zinc-400">Essential maintenance & sanitization</p>
+              </div>
+              <span class="bg-zinc-800 text-zinc-300 text-xs font-semibold px-2.5 py-1 rounded-lg">
+                ~2.5 Hours
+              </span>
+            </div>
+
+            <div class="mb-6">
+              <span class="font-heading text-4xl font-extrabold text-white">$160</span>
+              <span class="text-xs text-zinc-500"> / sedan</span>
+            </div>
+
+            <ul class="space-y-3 text-xs text-zinc-300 mb-8">
+              <li class="flex items-start gap-2">
+                <i class="fa-solid fa-circle-check text-brand-cyan text-sm shrink-0 mt-0.5"></i>
+                <span>Gentle pH-neutral exterior hand wash & rinse</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i class="fa-solid fa-circle-check text-brand-cyan text-sm shrink-0 mt-0.5"></i>
+                <span>Deep interior vacuuming (cabin & trunk)</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i class="fa-solid fa-circle-check text-brand-cyan text-sm shrink-0 mt-0.5"></i>
+                <span>Microfiber damp wipe of dashboard & consoles</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i class="fa-solid fa-circle-check text-brand-cyan text-sm shrink-0 mt-0.5"></i>
+                <span>Streak-free interior & exterior glass clarity</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i class="fa-solid fa-circle-check text-brand-cyan text-sm shrink-0 mt-0.5"></i>
+                <span>Wheel face cleaning & satin tire shine</span>
+              </li>
+            </ul>
+          </div>
+
+          <a href="#booking" onclick="preselectPackage('refresh')" class="w-full text-center py-3 rounded-xl bg-zinc-800 hover:bg-zinc-700 text-white font-heading font-semibold text-xs transition-colors">
+            Select Refresh
+          </a>
+        </div>
+
+        <!-- PACKAGE 2: Detail (POPULAR) -->
+        <div class="glass-panel-elevated neon-border rounded-3xl p-8 flex flex-col justify-between relative shadow-xl">
+          <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-brand-cyan text-black text-[11px] font-black uppercase px-4 py-1 rounded-full shadow-md">
+            RECOMMENDED
+          </div>
+
+          <div>
+            <div class="flex justify-between items-start mb-4">
+              <div>
+                <h3 class="font-heading text-xl font-bold text-white">Detail Package</h3>
+                <p class="text-xs text-zinc-300">Comprehensive deep restorative clean</p>
+              </div>
+              <span class="bg-brand-cyan/20 text-brand-cyan text-xs font-semibold px-2.5 py-1 rounded-lg">
+                ~3.5 Hours
+              </span>
+            </div>
+
+            <div class="mb-6">
+              <span class="font-heading text-4xl font-extrabold text-brand-cyan">$290</span>
+              <span class="text-xs text-zinc-400"> / sedan</span>
+            </div>
+
+            <ul class="space-y-3 text-xs text-zinc-200 mb-8">
+              <li class="flex items-start gap-2">
+                <i class="fa-solid fa-circle-check text-brand-cyan text-sm shrink-0 mt-0.5"></i>
+                <span>All Refresh Package deliverables included</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i class="fa-solid fa-circle-check text-brand-cyan text-sm shrink-0 mt-0.5"></i>
+                <span>Tornador pneumatic deep carpet decontamination</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i class="fa-solid fa-circle-check text-brand-cyan text-sm shrink-0 mt-0.5"></i>
+                <span>Leather cleaner & deep conditioning moisture treatment</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i class="fa-solid fa-circle-check text-brand-cyan text-sm shrink-0 mt-0.5"></i>
+                <span>Door jambs, fuel flap & gas cap detailing</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i class="fa-solid fa-circle-check text-brand-cyan text-sm shrink-0 mt-0.5"></i>
+                <span>3-month spray ceramic gloss seal protection</span>
+              </li>
+            </ul>
+          </div>
+
+          <a href="#booking" onclick="preselectPackage('detail')" class="w-full text-center py-3 rounded-xl bg-brand-cyan hover:bg-sky-400 text-black font-heading font-extrabold text-xs shadow-lg shadow-brand-cyan/20 transition-all">
+            Select Detail Package
+          </a>
+        </div>
+
+        <!-- PACKAGE 3: Full Concierge -->
+        <div class="glass-panel rounded-3xl p-8 flex flex-col justify-between border border-white/5 hover:border-white/20 transition-all">
+          <div>
+            <div class="flex justify-between items-start mb-4">
+              <div>
+                <h3 class="font-heading text-xl font-bold text-white">Full Concierge</h3>
+                <p class="text-xs text-zinc-400">Showroom perfection & multi-stage care</p>
+              </div>
+              <span class="bg-zinc-800 text-zinc-300 text-xs font-semibold px-2.5 py-1 rounded-lg">
+                ~5.0 Hours
+              </span>
+            </div>
+
+            <div class="mb-6">
+              <span class="font-heading text-4xl font-extrabold text-white">$490</span>
+              <span class="text-xs text-zinc-500"> / sedan</span>
+            </div>
+
+            <ul class="space-y-3 text-xs text-zinc-300 mb-8">
+              <li class="flex items-start gap-2">
+                <i class="fa-solid fa-circle-check text-brand-cyan text-sm shrink-0 mt-0.5"></i>
+                <span>Complete interior steam sanitization & stain removal</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i class="fa-solid fa-circle-check text-brand-cyan text-sm shrink-0 mt-0.5"></i>
+                <span>1-stage gloss enhancement machine polish</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i class="fa-solid fa-circle-check text-brand-cyan text-sm shrink-0 mt-0.5"></i>
+                <span>Exhaust tips carbon removal & chrome polish</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i class="fa-solid fa-circle-check text-brand-cyan text-sm shrink-0 mt-0.5"></i>
+                <span>Engine bay steam clean & anti-static dressing</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i class="fa-solid fa-circle-check text-brand-cyan text-sm shrink-0 mt-0.5"></i>
+                <span>Ozone treatment for complete odor eradication</span>
+              </li>
+            </ul>
+          </div>
+
+          <a href="#booking" onclick="preselectPackage('full')" class="w-full text-center py-3 rounded-xl bg-zinc-800 hover:bg-zinc-700 text-white font-heading font-semibold text-xs transition-colors">
+            Select Concierge
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 4-STEP DETAILED PROCESS ("HOW IT WORKS") -->
+  <section id="process" class="py-24 bg-black relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-brand-cyan font-bold text-xs uppercase tracking-widest bg-brand-cyan/10 px-3 py-1 rounded-full border border-brand-cyan/20">
+          SWISS PRECISION WORKFLOW
+        </span>
+        <h2 class="font-heading text-3xl sm:text-5xl font-extrabold text-white mt-4 mb-4">
+          How Our Mobile Studio Operates
+        </h2>
+        <p class="text-zinc-400 text-sm sm:text-base">
+          Effortless for you. We handle everything from power to wastewater, delivering high-end studio results at your doorstep.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        
+        <div class="glass-panel p-6 rounded-3xl relative border border-white/5 hover:border-brand-cyan/30 transition-all">
+          <div class="w-12 h-12 rounded-2xl bg-brand-cyan/10 border border-brand-cyan/30 text-brand-cyan font-heading font-black text-lg flex items-center justify-center mb-6">
+            01
+          </div>
+          <h3 class="font-heading text-lg font-bold text-white mb-2">Book in 60 Seconds</h3>
+          <p class="text-xs text-zinc-400 leading-relaxed">
+            Choose your service and select a convenient date and location online or via WhatsApp. Instant booking confirmation.
+          </p>
+        </div>
+
+        <div class="glass-panel p-6 rounded-3xl relative border border-white/5 hover:border-brand-cyan/30 transition-all">
+          <div class="w-12 h-12 rounded-2xl bg-brand-cyan/10 border border-brand-cyan/30 text-brand-cyan font-heading font-black text-lg flex items-center justify-center mb-6">
+            02
+          </div>
+          <h3 class="font-heading text-lg font-bold text-white mb-2">Autonomous Arrival</h3>
+          <p class="text-xs text-zinc-400 leading-relaxed">
+            Our self-contained Mercedes Sprinter mobile lab arrives on schedule with spot-free water, electricity, and clean tools.
+          </p>
+        </div>
+
+        <div class="glass-panel p-6 rounded-3xl relative border border-white/5 hover:border-brand-cyan/30 transition-all">
+          <div class="w-12 h-12 rounded-2xl bg-brand-cyan/10 border border-brand-cyan/30 text-brand-cyan font-heading font-black text-lg flex items-center justify-center mb-6">
+            03
+          </div>
+          <h3 class="font-heading text-lg font-bold text-white mb-2">Precision Detailing</h3>
+          <p class="text-xs text-zinc-400 leading-relaxed">
+            Multi-stage decontamination, high-extraction shampoo, orbital compounding, and ceramic application following clinical protocols.
+          </p>
+        </div>
+
+        <div class="glass-panel p-6 rounded-3xl relative border border-white/5 hover:border-brand-cyan/30 transition-all">
+          <div class="w-12 h-12 rounded-2xl bg-brand-cyan/10 border border-brand-cyan/30 text-brand-cyan font-heading font-black text-lg flex items-center justify-center mb-6">
+            04
+          </div>
+          <h3 class="font-heading text-lg font-bold text-white mb-2">Showroom Handover</h3>
+          <p class="text-xs text-zinc-400 leading-relaxed">
+            Walkaround quality check under high-CRI inspection lights. Sunglasses recommended — blinding mirror gloss guaranteed! 😎
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- LIVE VIDEO REELS SHOWCASE -->
+  <section id="reels" class="py-24 bg-gradient-to-b from-black via-zinc-950 to-black relative border-t border-zinc-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+        <div>
+          <span class="text-brand-cyan font-bold text-xs uppercase tracking-widest bg-brand-cyan/10 px-3 py-1 rounded-full border border-brand-cyan/20">
+            ACTION IN 4K
+          </span>
+          <h2 class="font-heading text-3xl sm:text-5xl font-extrabold text-white mt-4">
+            Live Detailing Showcase
+          </h2>
+          <p class="text-zinc-400 text-sm mt-2">
+            Real footage from our daily mobile appointments. Tap on any video to toggle sound and controls.
+          </p>
+        </div>
+
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-bold text-brand-cyan hover:underline tracking-wider uppercase">
+          <i class="fa-brands fa-instagram text-base"></i>
+          <span>Follow Us on Social Media</span>
+        </a>
+      </div>
+
+      <!-- 4 Video Reels Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Reel 1: Ceramic Shield & Gloss -->
+        <div class="glass-panel rounded-3xl overflow-hidden border border-white/10 group relative shadow-xl">
+          <div class="reel-container relative w-full overflow-hidden">
+            <video loop playsinline class="reel-video w-full h-full object-cover cursor-pointer">
+              <source src="assets/videos/video_6_5f5cab73e9e94969b38b3619576a33da.HD-1080p-2.5Mbps-81259205.mp4" type="video/mp4">
+            </video>
+            <!-- Overlay controls -->
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20 pointer-events-none"></div>
+            
+            <button class="reel-play-btn absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-14 h-14 rounded-full bg-brand-cyan/90 text-black flex items-center justify-center text-lg shadow-xl shadow-brand-cyan/30 transition-transform group-hover:scale-110">
+              <i class="fa-solid fa-play ml-1"></i>
+            </button>
+
+            <button class="reel-mute-btn absolute top-4 right-4 z-20 w-8 h-8 rounded-full bg-black/60 text-white flex items-center justify-center text-xs backdrop-blur-md">
+              <i class="fa-solid fa-volume-xmark"></i>
+            </button>
+
+            <div class="absolute bottom-4 left-4 right-4 z-10 pointer-events-none">
+              <span class="text-[11px] font-bold text-brand-cyan tracking-wider uppercase">Ceramic Coating</span>
+              <h4 class="text-sm font-bold text-white leading-tight">Hydrophobic Gloss Layer</h4>
+            </div>
+          </div>
+        </div>
+
+        <!-- Reel 2: Paint Correction -->
+        <div class="glass-panel rounded-3xl overflow-hidden border border-white/10 group relative shadow-xl">
+          <div class="reel-container relative w-full overflow-hidden">
+            <video loop playsinline class="reel-video w-full h-full object-cover cursor-pointer">
+              <source src="assets/videos/video_7_11ad0160b59743adbfa0ada303408c63.HD-1080p-7.2Mbps-83342709.mp4" type="video/mp4">
+            </video>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20 pointer-events-none"></div>
+
+            <button class="reel-play-btn absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-14 h-14 rounded-full bg-brand-cyan/90 text-black flex items-center justify-center text-lg shadow-xl shadow-brand-cyan/30 transition-transform group-hover:scale-110">
+              <i class="fa-solid fa-play ml-1"></i>
+            </button>
+
+            <button class="reel-mute-btn absolute top-4 right-4 z-20 w-8 h-8 rounded-full bg-black/60 text-white flex items-center justify-center text-xs backdrop-blur-md">
+              <i class="fa-solid fa-volume-xmark"></i>
+            </button>
+
+            <div class="absolute bottom-4 left-4 right-4 z-10 pointer-events-none">
+              <span class="text-[11px] font-bold text-brand-cyan tracking-wider uppercase">Machine Polishing</span>
+              <h4 class="text-sm font-bold text-white leading-tight">Rotary Swirl Eradication</h4>
+            </div>
+          </div>
+        </div>
+
+        <!-- Reel 3: Interior Tornador Extraction -->
+        <div class="glass-panel rounded-3xl overflow-hidden border border-white/10 group relative shadow-xl">
+          <div class="reel-container relative w-full overflow-hidden">
+            <video loop playsinline class="reel-video w-full h-full object-cover cursor-pointer">
+              <source src="assets/videos/video_8_9f602f409bca4413a07baa3708cb85e5.HD-720p-1.6Mbps-83344288.mp4" type="video/mp4">
+            </video>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20 pointer-events-none"></div>
+
+            <button class="reel-play-btn absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-14 h-14 rounded-full bg-brand-cyan/90 text-black flex items-center justify-center text-lg shadow-xl shadow-brand-cyan/30 transition-transform group-hover:scale-110">
+              <i class="fa-solid fa-play ml-1"></i>
+            </button>
+
+            <button class="reel-mute-btn absolute top-4 right-4 z-20 w-8 h-8 rounded-full bg-black/60 text-white flex items-center justify-center text-xs backdrop-blur-md">
+              <i class="fa-solid fa-volume-xmark"></i>
+            </button>
+
+            <div class="absolute bottom-4 left-4 right-4 z-10 pointer-events-none">
+              <span class="text-[11px] font-bold text-brand-cyan tracking-wider uppercase">Interior Detail</span>
+              <h4 class="text-sm font-bold text-white leading-tight">Pneumatic Deep Extraction</h4>
+            </div>
+          </div>
+        </div>
+
+        <!-- Reel 4: Auto Glass Calibration -->
+        <div class="glass-panel rounded-3xl overflow-hidden border border-white/10 group relative shadow-xl">
+          <div class="reel-container relative w-full overflow-hidden">
+            <video loop playsinline class="reel-video w-full h-full object-cover cursor-pointer">
+              <source src="assets/videos/video_9_e123fa9e72164c459b6b09fc4fccf680.HD-1080p-7.2Mbps-83345619.mp4" type="video/mp4">
+            </video>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20 pointer-events-none"></div>
+
+            <button class="reel-play-btn absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-14 h-14 rounded-full bg-brand-cyan/90 text-black flex items-center justify-center text-lg shadow-xl shadow-brand-cyan/30 transition-transform group-hover:scale-110">
+              <i class="fa-solid fa-play ml-1"></i>
+            </button>
+
+            <button class="reel-mute-btn absolute top-4 right-4 z-20 w-8 h-8 rounded-full bg-black/60 text-white flex items-center justify-center text-xs backdrop-blur-md">
+              <i class="fa-solid fa-volume-xmark"></i>
+            </button>
+
+            <div class="absolute bottom-4 left-4 right-4 z-10 pointer-events-none">
+              <span class="text-[11px] font-bold text-brand-cyan tracking-wider uppercase">Auto Glass Replacement</span>
+              <h4 class="text-sm font-bold text-white leading-tight">Precision Windshield Install</h4>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- DETAILED BEFORE & AFTER GALLERY GRID -->
+  <section class="py-24 bg-black relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-brand-cyan font-bold text-xs uppercase tracking-widest bg-brand-cyan/10 px-3 py-1 rounded-full border border-brand-cyan/20">
+          SURFACE TRANSFORMATIONS
+        </span>
+        <h2 class="font-heading text-3xl sm:text-5xl font-extrabold text-white mt-4 mb-4">
+          Micro-Detailing Gallery
+        </h2>
+        <p class="text-zinc-400 text-sm sm:text-base">
+          Every vehicle is treated as an individual piece of art. Here is how we restore high-wear surfaces back to factory pristine condition.
+        </p>
+      </div>
+
+      <!-- 6 Transformation Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- 1. B-Pillar Piano Black -->
+        <div class="glass-panel p-4 rounded-3xl border border-white/5 hover:border-brand-cyan/40 transition-all">
+          <div class="rounded-2xl overflow-hidden aspect-[4/3] mb-4 bg-zinc-900">
+            <img src="assets/images/35_B_Saule_Vorher_Nachher.png" alt="B-Pillar Polishing Before and After" class="w-full h-full object-cover">
+          </div>
+          <div class="px-2">
+            <h4 class="font-heading font-bold text-white text-base">Piano Black B-Pillar Polish</h4>
+            <p class="text-xs text-zinc-400 mt-1">Severe swirl removal on soft glossy trim panels.</p>
+          </div>
+        </div>
+
+        <!-- 2. Headlight Clarity Restoration -->
+        <div class="glass-panel p-4 rounded-3xl border border-white/5 hover:border-brand-cyan/40 transition-all">
+          <div class="rounded-2xl overflow-hidden aspect-[4/3] mb-4 bg-zinc-900">
+            <img src="assets/images/36_Scheinwerfer_Vorher_Nachher.png" alt="Headlight Restoration Before and After" class="w-full h-full object-cover">
+          </div>
+          <div class="px-2">
+            <h4 class="font-heading font-bold text-white text-base">Headlight UV Rejuvenation</h4>
+            <p class="text-xs text-zinc-400 mt-1">Oxidized yellowed lenses sanded, polished and ceramic sealed.</p>
+          </div>
+        </div>
+
+        <!-- 3. Exhaust Tips Decarbonization -->
+        <div class="glass-panel p-4 rounded-3xl border border-white/5 hover:border-brand-cyan/40 transition-all">
+          <div class="rounded-2xl overflow-hidden aspect-[4/3] mb-4 bg-zinc-900">
+            <img src="assets/images/38_Endtopfe_Politur.png" alt="Exhaust Tips Polished" class="w-full h-full object-cover">
+          </div>
+          <div class="px-2">
+            <h4 class="font-heading font-bold text-white text-base">Exhaust Tip Chrome Revival</h4>
+            <p class="text-xs text-zinc-400 mt-1">Baked-on carbon deposits chemically dissolved and metal-polished.</p>
+          </div>
+        </div>
+
+        <!-- 4. Luxury Interior Leather -->
+        <div class="glass-panel p-4 rounded-3xl border border-white/5 hover:border-brand-cyan/40 transition-all">
+          <div class="rounded-2xl overflow-hidden aspect-[4/3] mb-4 bg-zinc-900">
+            <img src="assets/images/40_Interieur_Vorher_Nachher.png" alt="Interior Leather Cleaning Before and After" class="w-full h-full object-cover">
+          </div>
+          <div class="px-2">
+            <h4 class="font-heading font-bold text-white text-base">Matte Leather Restoration</h4>
+            <p class="text-xs text-zinc-400 mt-1">Greasy oily shine removed, restoring genuine OEM factory matte texture.</p>
+          </div>
+        </div>
+
+        <!-- 5. Fuel Door & Jamb Cleaning -->
+        <div class="glass-panel p-4 rounded-3xl border border-white/5 hover:border-brand-cyan/40 transition-all">
+          <div class="rounded-2xl overflow-hidden aspect-[4/3] mb-4 bg-zinc-900">
+            <img src="assets/images/37_Tankdeckel_-_Vorher_-_Nachher.png" alt="Fuel Door Cleaning Before and After" class="w-full h-full object-cover">
+          </div>
+          <div class="px-2">
+            <h4 class="font-heading font-bold text-white text-base">Fuel Cavity Decontamination</h4>
+            <p class="text-xs text-zinc-400 mt-1">Years of fuel overflow grime and road dirt flushed clean.</p>
+          </div>
+        </div>
+
+        <!-- 6. Trunk & Cargo Deep Extraction -->
+        <div class="glass-panel p-4 rounded-3xl border border-white/5 hover:border-brand-cyan/40 transition-all">
+          <div class="rounded-2xl overflow-hidden aspect-[4/3] mb-4 bg-zinc-900">
+            <img src="assets/images/41_Kofferraum_Vorher_Nacher.png" alt="Trunk Extraction Before and After" class="w-full h-full object-cover">
+          </div>
+          <div class="px-2">
+            <h4 class="font-heading font-bold text-white text-base">Trunk Shampoo & Extraction</h4>
+            <p class="text-xs text-zinc-400 mt-1">Pet hair, soil and spilled liquids hot-water extracted.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- VERIFIED 5-STAR CLIENT REVIEWS (GOOGLE GBP) -->
+  <section id="reviews" class="py-24 bg-gradient-to-b from-black via-zinc-950 to-black relative border-t border-zinc-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-brand-cyan font-bold text-xs uppercase tracking-widest bg-brand-cyan/10 px-3 py-1 rounded-full border border-brand-cyan/20">
+          CLIENT SATISFACTION
+        </span>
+        <h2 class="font-heading text-3xl sm:text-5xl font-extrabold text-white mt-4 mb-4">
+          Trusted by Enthusiasts & Collectors
+        </h2>
+        <div class="flex items-center justify-center gap-2 mt-3">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" class="h-5 w-auto">
+          <span class="font-bold text-white">5.0 Star Rating</span>
+          <div class="flex text-brand-gold text-xs">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <span class="text-zinc-500 text-xs">(100% Recommended)</span>
+        </div>
+      </div>
+
+      <!-- Reviews Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Review 1 -->
+        <div class="glass-panel p-6 rounded-3xl flex flex-col justify-between border border-white/5 hover:border-brand-cyan/30 transition-all">
+          <div>
+            <div class="flex text-brand-gold text-xs mb-3">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-xs text-zinc-300 leading-relaxed italic mb-6">
+              "The results speak louder than any words could. A company that understands their craft down to every microscopic detail, while remaining super friendly and accommodating. A true benchmark in mobile detailing!"
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-white/10">
+            <div class="w-9 h-9 rounded-full bg-brand-cyan/20 text-brand-cyan font-bold text-xs flex items-center justify-center">
+              MR
+            </div>
+            <div>
+              <h5 class="text-xs font-bold text-white">Markus R.</h5>
+              <span class="text-[10px] text-zinc-500">Verified Client • BMW M4</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="glass-panel p-6 rounded-3xl flex flex-col justify-between border border-white/5 hover:border-brand-cyan/30 transition-all">
+          <div>
+            <div class="flex text-brand-gold text-xs mb-3">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-xs text-zinc-300 leading-relaxed italic mb-6">
+              "Had my car ceramic coated and two-stage polished. I am completely blown away! The work was executed with surgical precision. My car looks better than when I drove it out of the showroom. Absolute master of his trade!"
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-white/10">
+            <div class="w-9 h-9 rounded-full bg-brand-cyan/20 text-brand-cyan font-bold text-xs flex items-center justify-center">
+              SV
+            </div>
+            <div>
+              <h5 class="text-xs font-bold text-white">Stefan V.</h5>
+              <span class="text-[10px] text-zinc-500">Verified Client • Porsche 911</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="glass-panel p-6 rounded-3xl flex flex-col justify-between border border-white/5 hover:border-brand-cyan/30 transition-all">
+          <div>
+            <div class="flex text-brand-gold text-xs mb-3">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-xs text-zinc-300 leading-relaxed italic mb-6">
+              "Simply flawless work. I was extremely satisfied and will trust them with every future vehicle. Prompt mobile arrival, zero hassle with water or electricity, just pure showroom results. Keep it up! 👌"
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-white/10">
+            <div class="w-9 h-9 rounded-full bg-brand-cyan/20 text-brand-cyan font-bold text-xs flex items-center justify-center">
+              DL
+            </div>
+            <div>
+              <h5 class="text-xs font-bold text-white">David L.</h5>
+              <span class="text-[10px] text-zinc-500">Verified Client • Audi RS6</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 4 -->
+        <div class="glass-panel p-6 rounded-3xl flex flex-col justify-between border border-white/5 hover:border-brand-cyan/30 transition-all">
+          <div>
+            <div class="flex text-brand-gold text-xs mb-3">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-xs text-zinc-300 leading-relaxed italic mb-6">
+              "Quick, clean and outstanding replacement of my front windshield. Handled all paperwork directly with insurance and installed the OEM glass right in my driveway. Highly recommended!"
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-white/10">
+            <div class="w-9 h-9 rounded-full bg-brand-cyan/20 text-brand-cyan font-bold text-xs flex items-center justify-center">
+              TH
+            </div>
+            <div>
+              <h5 class="text-xs font-bold text-white">Thomas H.</h5>
+              <span class="text-[10px] text-zinc-500">Verified Client • Mercedes G-Class</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- INTERACTIVE BOOKING & INSTANT ESTIMATE FORM -->
+  <section id="booking" class="py-24 bg-black relative">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="glass-panel-elevated neon-border rounded-3xl p-8 sm:p-12 relative overflow-hidden shadow-2xl">
+        <div class="absolute -top-32 -right-32 w-64 h-64 bg-brand-cyan/15 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="text-center max-w-xl mx-auto mb-10">
+          <span class="text-brand-cyan font-bold text-xs uppercase tracking-widest bg-brand-cyan/10 px-3 py-1 rounded-full border border-brand-cyan/20">
+            SCHEDULE APPOINTMENT
+          </span>
+          <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-white mt-4 mb-2">
+            Book Your Mobile Detailing
+          </h2>
+          <p class="text-xs sm:text-sm text-zinc-400">
+            Select your vehicle size and package below for an instant price preview. Our team will confirm your slot within 15 minutes.
+          </p>
+        </div>
+
+        <form id="bookingForm" onsubmit="handleBookingSubmit(event)" class="space-y-6">
+          
+          <!-- Step 1: Vehicle Size -->
+          <div>
+            <label class="block text-xs font-bold uppercase tracking-wider text-zinc-300 mb-2.5">
+              1. Select Vehicle Size
+            </label>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+              <label class="cursor-pointer">
+                <input type="radio" name="vehicleSize" value="coupe" class="peer sr-only" checked onchange="calculateEstimate()">
+                <div class="p-3.5 rounded-xl border border-white/10 peer-checked:border-brand-cyan peer-checked:bg-brand-cyan/10 bg-zinc-900 text-center transition-all">
+                  <i class="fa-solid fa-car-side text-lg text-zinc-400 peer-checked:text-brand-cyan mb-1.5 block"></i>
+                  <span class="text-xs font-bold block text-white">Coupe / Sedan</span>
+                  <span class="text-[10px] text-zinc-500">Standard</span>
+                </div>
+              </label>
+
+              <label class="cursor-pointer">
+                <input type="radio" name="vehicleSize" value="suv" class="peer sr-only" onchange="calculateEstimate()">
+                <div class="p-3.5 rounded-xl border border-white/10 peer-checked:border-brand-cyan peer-checked:bg-brand-cyan/10 bg-zinc-900 text-center transition-all">
+                  <i class="fa-solid fa-truck-monster text-lg text-zinc-400 peer-checked:text-brand-cyan mb-1.5 block"></i>
+                  <span class="text-xs font-bold block text-white">Mid SUV / Crossover</span>
+                  <span class="text-[10px] text-zinc-500">+$30</span>
+                </div>
+              </label>
+
+              <label class="cursor-pointer">
+                <input type="radio" name="vehicleSize" value="large" class="peer sr-only" onchange="calculateEstimate()">
+                <div class="p-3.5 rounded-xl border border-white/10 peer-checked:border-brand-cyan peer-checked:bg-brand-cyan/10 bg-zinc-900 text-center transition-all">
+                  <i class="fa-solid fa-truck-pickup text-lg text-zinc-400 peer-checked:text-brand-cyan mb-1.5 block"></i>
+                  <span class="text-xs font-bold block text-white">Large SUV / Truck</span>
+                  <span class="text-[10px] text-zinc-500">+$60</span>
+                </div>
+              </label>
+
+              <label class="cursor-pointer">
+                <input type="radio" name="vehicleSize" value="exotic" class="peer sr-only" onchange="calculateEstimate()">
+                <div class="p-3.5 rounded-xl border border-white/10 peer-checked:border-brand-cyan peer-checked:bg-brand-cyan/10 bg-zinc-900 text-center transition-all">
+                  <i class="fa-solid fa-fire text-lg text-zinc-400 peer-checked:text-brand-cyan mb-1.5 block"></i>
+                  <span class="text-xs font-bold block text-white">Exotic / Supercar</span>
+                  <span class="text-[10px] text-zinc-500">Custom VIP</span>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <!-- Step 2: Service Package -->
+          <div>
+            <label class="block text-xs font-bold uppercase tracking-wider text-zinc-300 mb-2.5">
+              2. Select Package
+            </label>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+              <label class="cursor-pointer">
+                <input type="radio" name="servicePackage" value="refresh" class="peer sr-only" onchange="calculateEstimate()">
+                <div class="p-4 rounded-xl border border-white/10 peer-checked:border-brand-cyan peer-checked:bg-brand-cyan/10 bg-zinc-900 transition-all flex justify-between items-center">
+                  <div>
+                    <span class="text-xs font-bold block text-white">Refresh Package</span>
+                    <span class="text-[10px] text-zinc-400">Wash & Interior Wipe (~2.5h)</span>
+                  </div>
+                  <span class="font-heading font-bold text-sm text-brand-cyan">$160</span>
+                </div>
+              </label>
+
+              <label class="cursor-pointer">
+                <input type="radio" name="servicePackage" value="detail" class="peer sr-only" checked onchange="calculateEstimate()">
+                <div class="p-4 rounded-xl border border-white/10 peer-checked:border-brand-cyan peer-checked:bg-brand-cyan/10 bg-zinc-900 transition-all flex justify-between items-center">
+                  <div>
+                    <span class="text-xs font-bold block text-white">Detail Package</span>
+                    <span class="text-[10px] text-zinc-400">Deep Carpet & Leather (~3.5h)</span>
+                  </div>
+                  <span class="font-heading font-bold text-sm text-brand-cyan">$290</span>
+                </div>
+              </label>
+
+              <label class="cursor-pointer">
+                <input type="radio" name="servicePackage" value="full" class="peer sr-only" onchange="calculateEstimate()">
+                <div class="p-4 rounded-xl border border-white/10 peer-checked:border-brand-cyan peer-checked:bg-brand-cyan/10 bg-zinc-900 transition-all flex justify-between items-center">
+                  <div>
+                    <span class="text-xs font-bold block text-white">Full Concierge</span>
+                    <span class="text-[10px] text-zinc-400">Steam, Polish & Odor (~5h)</span>
+                  </div>
+                  <span class="font-heading font-bold text-sm text-brand-cyan">$490</span>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <!-- Step 3: Optional Add-ons -->
+          <div>
+            <label class="block text-xs font-bold uppercase tracking-wider text-zinc-300 mb-2.5">
+              3. Optional Add-ons
+            </label>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <label class="flex items-center gap-3 p-3 rounded-xl border border-white/10 bg-zinc-900/60 cursor-pointer hover:border-white/20 transition-all">
+                <input type="checkbox" id="addonCeramic" class="rounded text-brand-cyan focus:ring-0 w-4 h-4" onchange="calculateEstimate()">
+                <div class="flex-1 text-xs">
+                  <span class="font-bold text-white block">Full 9H Ceramic Coating</span>
+                  <span class="text-zinc-400 text-[10px]">Multi-stage compounding + 3-year warranty</span>
+                </div>
+                <span class="text-xs font-bold text-brand-cyan">+$550</span>
+              </label>
+
+              <label class="flex items-center gap-3 p-3 rounded-xl border border-white/10 bg-zinc-900/60 cursor-pointer hover:border-white/20 transition-all">
+                <input type="checkbox" id="addonEngine" class="rounded text-brand-cyan focus:ring-0 w-4 h-4" onchange="calculateEstimate()">
+                <div class="flex-1 text-xs">
+                  <span class="font-bold text-white block">Engine Bay Steam Clean</span>
+                  <span class="text-zinc-400 text-[10px]">Degreasing, steam blast & satin dressing</span>
+                </div>
+                <span class="text-xs font-bold text-brand-cyan">+$80</span>
+              </label>
+
+              <label class="flex items-center gap-3 p-3 rounded-xl border border-white/10 bg-zinc-900/60 cursor-pointer hover:border-white/20 transition-all">
+                <input type="checkbox" id="addonHeadlights" class="rounded text-brand-cyan focus:ring-0 w-4 h-4" onchange="calculateEstimate()">
+                <div class="flex-1 text-xs">
+                  <span class="font-bold text-white block">Headlight Restoration</span>
+                  <span class="text-zinc-400 text-[10px]">Wet sand, optical polish & ceramic clear</span>
+                </div>
+                <span class="text-xs font-bold text-brand-cyan">+$95</span>
+              </label>
+
+              <label class="flex items-center gap-3 p-3 rounded-xl border border-white/10 bg-zinc-900/60 cursor-pointer hover:border-white/20 transition-all">
+                <input type="checkbox" id="addonGlass" class="rounded text-brand-cyan focus:ring-0 w-4 h-4" onchange="calculateEstimate()">
+                <div class="flex-1 text-xs">
+                  <span class="font-bold text-white block">Windshield Inspection / Replace</span>
+                  <span class="text-zinc-400 text-[10px]">Direct insurance claim billing assistance</span>
+                </div>
+                <span class="text-xs font-bold text-emerald-400">Insurance</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Step 4: Contact & Location Info -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-zinc-300 mb-1.5">Your Full Name</label>
+              <input type="text" id="custName" required placeholder="e.g. Alexander Vance" class="w-full bg-zinc-900 border border-white/10 rounded-xl px-4 py-3 text-xs text-white placeholder-zinc-500 focus:outline-none focus:border-brand-cyan">
+            </div>
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-zinc-300 mb-1.5">Phone Number (SMS Confirmation)</label>
+              <input type="tel" id="custPhone" required placeholder="e.g. (800) 555-0199" class="w-full bg-zinc-900 border border-white/10 rounded-xl px-4 py-3 text-xs text-white placeholder-zinc-500 focus:outline-none focus:border-brand-cyan">
+            </div>
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-zinc-300 mb-1.5">Service Address / City</label>
+              <input type="text" id="custAddress" required placeholder="Where should our mobile unit arrive?" class="w-full bg-zinc-900 border border-white/10 rounded-xl px-4 py-3 text-xs text-white placeholder-zinc-500 focus:outline-none focus:border-brand-cyan">
+            </div>
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-zinc-300 mb-1.5">Preferred Date & Time</label>
+              <input type="text" id="custDate" required placeholder="e.g. Tomorrow morning or specific date" class="w-full bg-zinc-900 border border-white/10 rounded-xl px-4 py-3 text-xs text-white placeholder-zinc-500 focus:outline-none focus:border-brand-cyan">
+            </div>
+          </div>
+
+          <!-- Total Calculation Bar -->
+          <div class="p-5 rounded-2xl bg-zinc-900 border border-brand-cyan/30 flex flex-col sm:flex-row items-center justify-between gap-4 mt-6">
+            <div>
+              <span class="text-xs text-zinc-400 block">Estimated Total (No Hidden Fees):</span>
+              <div class="flex items-baseline gap-2">
+                <span id="estimateTotal" class="font-heading text-3xl font-extrabold text-brand-cyan">$290</span>
+                <span class="text-xs text-zinc-500">all taxes & mobile setup included</span>
+              </div>
+            </div>
+
+            <button type="submit" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-brand-cyan to-sky-400 hover:from-sky-400 hover:to-brand-cyan text-black font-heading font-extrabold px-8 py-3.5 rounded-xl text-sm shadow-xl shadow-brand-cyan/20 transition-all hover:scale-105 active:scale-95">
+              <i class="fa-solid fa-paper-plane"></i>
+              <span>Confirm & Request Booking</span>
+            </button>
+          </div>
+
+        </form>
+
+        <!-- Booking Success Confirmation Modal -->
+        <div id="bookingModal" class="hidden fixed inset-0 z-50 bg-black/80 backdrop-blur-md flex items-center justify-center p-4">
+          <div class="glass-panel-elevated neon-border rounded-3xl p-8 max-w-md w-full text-center relative animate-fade-in">
+            <div class="w-16 h-16 rounded-full bg-brand-cyan/20 text-brand-cyan text-2xl flex items-center justify-center mx-auto mb-4 border border-brand-cyan/30">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <h3 class="font-heading text-2xl font-bold text-white mb-2">Booking Request Received!</h3>
+            <p class="text-xs text-zinc-300 leading-relaxed mb-6">
+              Thank you! Our dispatcher has received your request. We will contact you at <strong id="modalPhone" class="text-brand-cyan"></strong> within 15 minutes to lock in your appointment time.
+            </p>
+            <div class="flex flex-col gap-3">
+              <a href="tel:+18005550199" class="w-full py-3 rounded-xl bg-brand-cyan text-black font-heading font-bold text-xs inline-flex items-center justify-center gap-2">
+                <i class="fa-solid fa-phone"></i>
+                <span>Direct Call for Urgent Booking</span>
+              </a>
+              <button onclick="closeModal()" class="w-full py-2.5 rounded-xl bg-zinc-800 text-zinc-300 hover:text-white text-xs font-semibold">
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- COMPREHENSIVE FAQ ACCORDION -->
+  <section id="faq" class="py-24 bg-gradient-to-b from-black via-zinc-950 to-black relative border-t border-zinc-900">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-brand-cyan font-bold text-xs uppercase tracking-widest bg-brand-cyan/10 px-3 py-1 rounded-full border border-brand-cyan/20">
+          CLEAR ANSWERS
+        </span>
+        <h2 class="font-heading text-3xl sm:text-5xl font-extrabold text-white mt-4 mb-4">
+          Frequently Asked Questions
+        </h2>
+        <p class="text-zinc-400 text-sm">
+          Everything you need to know about our autonomous mobile detailing service.
+        </p>
+      </div>
+
+      <!-- Accordion Items -->
+      <div class="space-y-3">
+        
+        <!-- Q1 -->
+        <div class="glass-panel rounded-2xl border border-white/5 overflow-hidden">
+          <button class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-center text-sm font-bold text-white hover:text-brand-cyan transition-colors" onclick="toggleFaq(this)">
+            <span>Do I need to provide water or electricity at my location?</span>
+            <i class="fa-solid fa-plus text-xs text-brand-cyan transition-transform duration-300"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-5 text-xs text-zinc-400 leading-relaxed border-t border-white/5 pt-3">
+            No, absolutely not. Our mobile setup is 100% self-sufficient. We carry our own filtered deionized water supply and silent onboard power generators, allowing us to perform hospital-clean detailing anywhere — private driveways, underground garages, or office parking lots.
+          </div>
+        </div>
+
+        <!-- Q2 -->
+        <div class="glass-panel rounded-2xl border border-white/5 overflow-hidden">
+          <button class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-center text-sm font-bold text-white hover:text-brand-cyan transition-colors" onclick="toggleFaq(this)">
+            <span>How long does a full detailing or ceramic appointment take?</span>
+            <i class="fa-solid fa-plus text-xs text-brand-cyan transition-transform duration-300"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-5 text-xs text-zinc-400 leading-relaxed border-t border-white/5 pt-3">
+            Duration depends on the package selected and vehicle size. A Refresh service takes approximately 2 to 2.5 hours; our signature Detail Package takes 3.5 hours; a full paint correction with ceramic coating takes between 6 to 8 hours to ensure proper surface prep and curing.
+          </div>
+        </div>
+
+        <!-- Q3 -->
+        <div class="glass-panel rounded-2xl border border-white/5 overflow-hidden">
+          <button class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-center text-sm font-bold text-white hover:text-brand-cyan transition-colors" onclick="toggleFaq(this)">
+            <span>What is the difference between polish, wax, and ceramic coating?</span>
+            <i class="fa-solid fa-plus text-xs text-brand-cyan transition-transform duration-300"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-5 text-xs text-zinc-400 leading-relaxed border-t border-white/5 pt-3">
+            Machine polishing physically levels clearcoat defects, eliminating scratches and holograms to restore optical depth. Wax provides a temporary organic shine lasting 2–3 months. A 9H Ceramic Coating bonds chemically with your clear coat to create an ultra-hard, glass-like hydrophobic shield that protects against bird droppings, acid rain, UV rays and micro-marring for up to 5 years.
+          </div>
+        </div>
+
+        <!-- Q4 -->
+        <div class="glass-panel rounded-2xl border border-white/5 overflow-hidden">
+          <button class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-center text-sm font-bold text-white hover:text-brand-cyan transition-colors" onclick="toggleFaq(this)">
+            <span>How does mobile windshield replacement work with insurance?</span>
+            <i class="fa-solid fa-plus text-xs text-brand-cyan transition-transform duration-300"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-5 text-xs text-zinc-400 leading-relaxed border-t border-white/5 pt-3">
+            Simply send us your vehicle details. We contact your insurance carrier directly, verify comprehensive glass coverage, and bill them directly. In most cases, comprehensive glass replacement entails $0 out-of-pocket cost and does not impact your insurance premium rating.
+          </div>
+        </div>
+
+        <!-- Q5 -->
+        <div class="glass-panel rounded-2xl border border-white/5 overflow-hidden">
+          <button class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-center text-sm font-bold text-white hover:text-brand-cyan transition-colors" onclick="toggleFaq(this)">
+            <span>What happens in case of bad weather or rain?</span>
+            <i class="fa-solid fa-plus text-xs text-brand-cyan transition-transform duration-300"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-5 text-xs text-zinc-400 leading-relaxed border-t border-white/5 pt-3">
+            If you have a garage, carport, or covered parking, we can detail your vehicle in all weather conditions. If working outdoors during unexpected severe rain, we offer free, priority rescheduling to the next available sunny slot.
+          </div>
+        </div>
+
+        <!-- Q6 -->
+        <div class="glass-panel rounded-2xl border border-white/5 overflow-hidden">
+          <button class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-center text-sm font-bold text-white hover:text-brand-cyan transition-colors" onclick="toggleFaq(this)">
+            <span>What types of vehicles do you detail?</span>
+            <i class="fa-solid fa-plus text-xs text-brand-cyan transition-transform duration-300"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-5 text-xs text-zinc-400 leading-relaxed border-t border-white/5 pt-3">
+            We detail all categories: daily sedans, family SUVs, pickup trucks, luxury exotics (Ferrari, Lamborghini, McLaren, Porsche), vintage collector classics, and performance motorcycles. Each vehicle receives custom-tailored chemistry suited to its delicate paintwork and upholstery.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT & LOCATION INFO -->
+  <section id="contact" class="py-20 bg-black relative border-t border-zinc-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <div class="glass-panel p-6 rounded-3xl border border-white/5">
+          <div class="w-10 h-10 rounded-xl bg-brand-cyan/10 text-brand-cyan flex items-center justify-center mb-4">
+            <i class="fa-solid fa-phone text-sm"></i>
+          </div>
+          <h4 class="font-heading font-bold text-white text-base">Direct Phone & WhatsApp</h4>
+          <p class="text-xs text-zinc-400 mt-1">Available 6 days a week for immediate assistance.</p>
+          <div class="mt-4 flex flex-col gap-1">
+            <a href="tel:+18005550199" class="text-brand-cyan hover:underline font-bold text-sm">+1 (800) 555-0199</a>
+            <a href="https://wa.me/18005550199" class="text-emerald-400 hover:underline text-xs flex items-center gap-1.5 mt-1">
+              <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="glass-panel p-6 rounded-3xl border border-white/5">
+          <div class="w-10 h-10 rounded-xl bg-brand-cyan/10 text-brand-cyan flex items-center justify-center mb-4">
+            <i class="fa-solid fa-envelope text-sm"></i>
+          </div>
+          <h4 class="font-heading font-bold text-white text-base">Email Inquiries</h4>
+          <p class="text-xs text-zinc-400 mt-1">Send us vehicle photos for instant custom appraisals.</p>
+          <div class="mt-4">
+            <a href="mailto:info@premiumcardetailing.com" class="text-brand-cyan hover:underline font-bold text-sm">info@premiumcardetailing.com</a>
+            <span class="block text-[11px] text-zinc-500 mt-1">Average response time: 20 minutes</span>
+          </div>
+        </div>
+
+        <div class="glass-panel p-6 rounded-3xl border border-white/5">
+          <div class="w-10 h-10 rounded-xl bg-brand-cyan/10 text-brand-cyan flex items-center justify-center mb-4">
+            <i class="fa-solid fa-clock text-sm"></i>
+          </div>
+          <h4 class="font-heading font-bold text-white text-base">Operating Hours</h4>
+          <p class="text-xs text-zinc-400 mt-1">Mobile units deploy Monday through Saturday.</p>
+          <div class="mt-4 text-xs text-zinc-300">
+            <div class="flex justify-between py-1 border-b border-white/5">
+              <span>Monday – Friday:</span>
+              <span class="font-semibold text-white">08:00 AM – 06:00 PM</span>
+            </div>
+            <div class="flex justify-between py-1">
+              <span>Saturday:</span>
+              <span class="font-semibold text-white">08:00 AM – 05:00 PM</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TRUST FOOTER -->
+  <footer class="bg-zinc-950 border-t border-white/5 py-12 text-zinc-400 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6 pb-8 border-b border-white/5">
+        <div class="flex items-center gap-3">
+          <img src="assets/images/1_PremiumCarDetailing_Logo.png" alt="Premium Car Detailing" class="h-8 w-auto">
+          <span class="font-heading font-black text-white text-sm tracking-wider">PREMIUM CAR DETAILING</span>
+        </div>
+
+        <div class="flex flex-wrap items-center justify-center gap-6 text-zinc-400">
+          <a href="#services" class="hover:text-white transition-colors">Services</a>
+          <a href="#packages" class="hover:text-white transition-colors">Packages</a>
+          <a href="#before-after" class="hover:text-white transition-colors">Before & After</a>
+          <a href="#process" class="hover:text-white transition-colors">Process</a>
+          <a href="#faq" class="hover:text-white transition-colors">FAQ</a>
+          <a href="#contact" class="hover:text-white transition-colors">Contact</a>
+        </div>
+
+        <div class="flex items-center gap-4 text-zinc-300 text-base">
+          <a href="#" class="w-8 h-8 rounded-full bg-zinc-900 border border-white/10 flex items-center justify-center hover:text-brand-cyan hover:border-brand-cyan transition-colors"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="w-8 h-8 rounded-full bg-zinc-900 border border-white/10 flex items-center justify-center hover:text-brand-cyan hover:border-brand-cyan transition-colors"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" class="w-8 h-8 rounded-full bg-zinc-900 border border-white/10 flex items-center justify-center hover:text-brand-cyan hover:border-brand-cyan transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-zinc-500">
+        <p>© 2026 Premium Car Detailing LLC. All rights reserved. Precision Mobile Studio.</p>
+        <p class="flex items-center gap-4">
+          <a href="#" class="hover:text-zinc-300">Privacy Policy</a>
+          <span>•</span>
+          <a href="#" class="hover:text-zinc-300">Terms of Service</a>
+          <span>•</span>
+          <a href="#" class="hover:text-zinc-300">Warranty Coverage</a>
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- MOBILE STICKY BOTTOM ACTION BAR -->
+  <div class="fixed bottom-0 left-0 right-0 z-40 bg-black/90 backdrop-blur-xl border-t border-white/10 p-3 sm:hidden flex items-center gap-3">
+    <a href="tel:+18005550199" class="flex-1 inline-flex items-center justify-center gap-2 bg-zinc-800 hover:bg-zinc-700 text-white font-heading font-bold py-3 rounded-xl border border-white/10 text-xs">
+      <i class="fa-solid fa-phone text-brand-cyan"></i>
+      <span>Call Now</span>
+    </a>
+    <a href="#booking" class="flex-1 inline-flex items-center justify-center gap-2 bg-brand-cyan hover:bg-sky-400 text-black font-heading font-extrabold py-3 rounded-xl text-xs shadow-lg shadow-brand-cyan/20">
+      <i class="fa-solid fa-calendar-check"></i>
+      <span>Book Online</span>
+    </a>
+  </div>
+
+  <!-- INTERACTIVE JAVASCRIPT CONTROLLERS -->
+  <script>
+    // Mobile Drawer Toggle
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileDrawer = document.getElementById('mobileDrawer');
+    const menuIcon = document.getElementById('menuIcon');
+
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileDrawer.classList.toggle('hidden');
+      if (mobileDrawer.classList.contains('hidden')) {
+        menuIcon.classList.replace('fa-xmark', 'fa-bars');
+      } else {
+        menuIcon.classList.replace('fa-bars', 'fa-xmark');
+      }
+    });
+
+    document.querySelectorAll('.mobile-nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileDrawer.classList.add('hidden');
+        menuIcon.classList.replace('fa-xmark', 'fa-bars');
+      });
+    });
+
+    // Interactive Before & After Slider Logic
+    const comparisonBox = document.getElementById('comparisonBox');
+    const beforeWrapper = document.getElementById('beforeWrapper');
+    const sliderHandle = document.getElementById('sliderHandle');
+    const beforeImg = document.getElementById('beforeImg');
+    const afterImg = document.getElementById('afterImg');
+
+    let isDragging = false;
+
+    function updateSlider(xPos) {
+      const rect = comparisonBox.getBoundingClientRect();
+      let offsetX = xPos - rect.left;
+      if (offsetX < 0) offsetX = 0;
+      if (offsetX > rect.width) offsetX = rect.width;
+      const percentage = (offsetX / rect.width) * 100;
+
+      beforeWrapper.style.width = percentage + '%';
+      sliderHandle.style.left = percentage + '%';
+      beforeImg.style.width = rect.width + 'px';
+    }
+
+    comparisonBox.addEventListener('mousedown', (e) => {
+      isDragging = true;
+      updateSlider(e.clientX);
+    });
+    window.addEventListener('mouseup', () => isDragging = false);
+    window.addEventListener('mousemove', (e) => {
+      if (!isDragging) return;
+      updateSlider(e.clientX);
+    });
+
+    // Touch events for mobile
+    comparisonBox.addEventListener('touchstart', (e) => {
+      isDragging = true;
+      updateSlider(e.touches[0].clientX);
+    }, { passive: true });
+    window.addEventListener('touchend', () => isDragging = false);
+    window.addEventListener('touchmove', (e) => {
+      if (!isDragging) return;
+      updateSlider(e.touches[0].clientX);
+    }, { passive: true });
+
+    window.addEventListener('resize', () => {
+      const rect = comparisonBox.getBoundingClientRect();
+      beforeImg.style.width = rect.width + 'px';
+    });
+
+    // Before/After Cases Switcher Tabs
+    const cases = {
+      scratches: {
+        before: 'assets/images/65_vorher_kratzer.png',
+        after: 'assets/images/66_nachher_poliert.png'
+      },
+      interior: {
+        before: 'assets/images/13_3_vorher.png',
+        after: 'assets/images/14_3_nachher.png'
+      },
+      swirls: {
+        before: 'assets/images/11_1_vorher.png',
+        after: 'assets/images/12_1_nachher.png'
+      },
+      hood: {
+        before: 'assets/images/53_5_vorher.png',
+        after: 'assets/images/54_5_nachher.png'
+      }
+    };
+
+    document.querySelectorAll('.slider-tab-btn').forEach(btn => {
+      btn.addEventListener('click', function() {
+        document.querySelectorAll('.slider-tab-btn').forEach(b => {
+          b.classList.remove('bg-brand-cyan', 'text-black', 'active');
+          b.classList.add('glass-panel', 'text-zinc-300');
+        });
+        this.classList.add('bg-brand-cyan', 'text-black', 'active');
+        this.classList.remove('glass-panel', 'text-zinc-300');
+
+        const c = cases[this.dataset.case];
+        if (c) {
+          beforeImg.src = c.before;
+          afterImg.src = c.after;
+          // reset slider to 50%
+          beforeWrapper.style.width = '50%';
+          sliderHandle.style.left = '50%';
+          const rect = comparisonBox.getBoundingClientRect();
+          beforeImg.style.width = rect.width + 'px';
+        }
+      });
+    });
+
+    // Initialize width
+    setTimeout(() => {
+      const rect = comparisonBox.getBoundingClientRect();
+      beforeImg.style.width = rect.width + 'px';
+    }, 200);
+
+    // Video Reels Controls
+    document.querySelectorAll('.reel-container').forEach(container => {
+      const video = container.querySelector('.reel-video');
+      const playBtn = container.querySelector('.reel-play-btn');
+      const muteBtn = container.querySelector('.reel-mute-btn');
+
+      playBtn.addEventListener('click', () => {
+        if (video.paused) {
+          video.play();
+          playBtn.classList.add('opacity-0');
+        } else {
+          video.pause();
+          playBtn.classList.remove('opacity-0');
+        }
+      });
+
+      video.addEventListener('click', () => {
+        if (video.paused) {
+          video.play();
+          playBtn.classList.add('opacity-0');
+        } else {
+          video.pause();
+          playBtn.classList.remove('opacity-0');
+        }
+      });
+
+      muteBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        video.muted = !video.muted;
+        if (video.muted) {
+          muteBtn.innerHTML = '<i class="fa-solid fa-volume-xmark"></i>';
+        } else {
+          muteBtn.innerHTML = '<i class="fa-solid fa-volume-high text-brand-cyan"></i>';
+        }
+      });
+    });
+
+    // FAQ Accordion
+    function toggleFaq(btn) {
+      const content = btn.nextElementSibling;
+      const icon = btn.querySelector('i');
+      content.classList.toggle('hidden');
+      if (content.classList.contains('hidden')) {
+        icon.classList.replace('fa-minus', 'fa-plus');
+      } else {
+        icon.classList.replace('fa-plus', 'fa-minus');
+      }
+    }
+
+    // Instant Price Calculator
+    function calculateEstimate() {
+      let basePrice = 290;
+      const pkg = document.querySelector('input[name="servicePackage"]:checked')?.value || 'detail';
+      if (pkg === 'refresh') basePrice = 160;
+      if (pkg === 'detail') basePrice = 290;
+      if (pkg === 'full') basePrice = 490;
+
+      const size = document.querySelector('input[name="vehicleSize"]:checked')?.value || 'coupe';
+      let sizeSurcharge = 0;
+      if (size === 'suv') sizeSurcharge = 30;
+      if (size === 'large') sizeSurcharge = 60;
+      if (size === 'exotic') sizeSurcharge = 100;
+
+      let addons = 0;
+      if (document.getElementById('addonCeramic').checked) addons += 550;
+      if (document.getElementById('addonEngine').checked) addons += 80;
+      if (document.getElementById('addonHeadlights').checked) addons += 95;
+
+      const total = basePrice + sizeSurcharge + addons;
+      document.getElementById('estimateTotal').textContent = '$' + total;
+    }
+
+    function preselectPackage(pkgName) {
+      const input = document.querySelector(`input[name="servicePackage"][value="${pkgName}"]`);
+      if (input) {
+        input.checked = true;
+        calculateEstimate();
+      }
+    }
+
+    // Booking Submission Handling
+    function handleBookingSubmit(e) {
+      e.preventDefault();
+      const phone = document.getElementById('custPhone').value;
+      document.getElementById('modalPhone').textContent = phone;
+      document.getElementById('bookingModal').classList.remove('hidden');
+    }
+
+    function closeModal() {
+      document.getElementById('bookingModal').classList.add('hidden');
+    }
+  </script>
+
+</body>
+</html>
