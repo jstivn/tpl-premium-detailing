@@ -43,3 +43,17 @@ Run the built-in development server:
 node server.js
 ```
 Open **`http://localhost:3000`** in any web browser.
+
+---
+
+## ⚡ Deployment to Cloudflare Pages (Instant 0.2s TTFB)
+
+1. Connect repository on GitHub (`https://github.com/jstivn/tpl-premium-detailing`).
+2. In Cloudflare Dashboard go to **Workers & Pages** -> **Create Application** -> **Pages**.
+3. Select and connect `jstivn/tpl-premium-detailing`.
+4. Build Configuration:
+   - **Framework preset:** `None (Direct HTML)`
+   - **Build command:** *(leave empty)*
+   - **Build output directory:** *(leave empty / root directory)*
+5. Click **Deploy**. The site goes live globally with instant edge caching and free SSL.
+
