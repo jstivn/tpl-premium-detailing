@@ -51,4 +51,11 @@ if (fs.existsSync(mapSrc)) {
   fs.copyFileSync(mapSrc, path.join(distDir, 'assets_map.json'));
 }
 
+// Copy _headers and _redirects if present
+const headersSrc = path.join(rootDir, '_headers');
+if (fs.existsSync(headersSrc)) {
+  fs.copyFileSync(headersSrc, path.join(distDir, '_headers'));
+  console.log('Copied _headers to dist');
+}
+
 console.log('[BUILD] Build completed successfully into dist/');
