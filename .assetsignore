@@ -1,0 +1,12 @@
+.git
+.git/**
+.github
+.github/**
+node_modules
+node_modules/**
+server.js
+README.md
+assets_map.json
+.assetsignore
+wrangler.jsonc
+*.log
