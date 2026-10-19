@@ -1,0 +1,8 @@
+name = "tpl-premium-detailing"
+compatibility_date = "2026-10-12"
+
+[observability]
+enabled = true
+
+[assets]
+directory = "."

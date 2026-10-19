@@ -1,0 +1,11 @@
+{
+  "name": "tpl-premium-detailing",
+  "version": "1.0.0",
+  "description": "Luxury mobile car detailing boilerplate template",
+  "scripts": {
+    "preinstall": "node cleanup-git.js",
+    "postinstall": "node cleanup-git.js",
+    "build": "node cleanup-git.js",
+    "start": "node server.js"
+  }
+}
