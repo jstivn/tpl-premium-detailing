@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "Luxury mobile car detailing boilerplate template",
   "scripts": {
-    "preinstall": "node cleanup-git.js",
-    "postinstall": "node cleanup-git.js",
-    "build": "node cleanup-git.js",
+    "build": "node build.js",
     "start": "node server.js"
+  },
+  "devDependencies": {
+    "wrangler": "^4.151.1"
   }
 }
